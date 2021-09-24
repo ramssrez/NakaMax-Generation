@@ -1,0 +1,10 @@
+Este es un archivo para iniciar el repositorio de Github del proyecto integrador.
+Integrantes.
+Bañuelos Valadez Francisco.
+Chavarria Ortiz Carlos Alberto
+Cid del Prado Soto Paula.
+Durán López Luis Angel
+Martinez Maciel Armando.
+Mojica Castañeda Valeria.
+Ramírez Pérez Raúl. 
+ 
