@@ -2,11 +2,9 @@ Este es un archivo para iniciar el repositorio de Github del proyecto integrador
 Integrantes.
 Bañuelos Valadez Francisco.
 Chavarria Ortiz Carlos Alberto
-Cid del Prado Soto Paula.
+Cid del Prado Soto Paula (Esta es la rama Paula)
 Durán López Luis Angel
 Martinez Maciel Armando.
-Mojica Castañeda Valeria.
-Ramírez Pérez Raúl. 
-
+Mojica Castañeda Valeria. 
 Esto es de la rama Carlos, hola
- 
+Ramírez Pérez Raúl. (Esto es de la rama Raul)
