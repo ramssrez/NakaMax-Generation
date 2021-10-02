@@ -9,6 +9,14 @@ header {
 .nav-header{
     color: #F1ECE9;
 }
+ul {
+    font-family: 'Gamja Flower', cursive;
+}
+.dropdown-item{
+    font-family: 'Gamja Flower', cursive;
+}
+
+
 .btn-login{
     position: absolute;
     width: 133px;
@@ -17,6 +25,7 @@ header {
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
+    font-family: 'Quintessential', cursive;
 
 }
 /*
@@ -36,6 +45,7 @@ bottom: 30%;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
+    font-family: 'Quintessential', cursive;
 
 }
 #carrito-icon {
