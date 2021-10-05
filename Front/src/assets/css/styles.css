@@ -5,6 +5,7 @@ header {
     height: 120px;
     left: 0px;
     top: 0px;
+
 }
 .nav-header{
     color: #F1ECE9;
@@ -21,7 +22,7 @@ ul {
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1140px;
+    left: 1040px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -41,7 +42,7 @@ bottom: 30%;
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1289px;
+    left: 1189px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -62,3 +63,23 @@ bottom: 30%;
     padding: 0px;
 
 }
+
+/* Carroucel */
+#sec-carroucel{
+    position: absolute;
+    width: 1006px;
+    height: 512px;
+    left: 200px;
+    top: 149px;
+   
+
+}
+.c-text{
+    color: black;
+    font-family: 'Gamja Flower', cursive;
+}
+h5{
+    font-family: 'Quintessential', cursive;
+}
+
+/* CARDS CATEGORIAS */
