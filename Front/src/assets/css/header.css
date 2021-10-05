@@ -1,0 +1,64 @@
+header {
+    background-color: #02569C;
+    position: absolute;
+    width: 1440px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+}
+.nav-header{
+    color: #F1ECE9;
+}
+ul {
+    font-family: 'Gamja Flower', cursive;
+}
+.dropdown-item{
+    font-family: 'Gamja Flower', cursive;
+}
+
+
+.btn-login{
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    left: 1140px;
+    top: 13px;
+    background-color: #F2A516;
+    color: #F1ECE9;
+    font-family: 'Quintessential', cursive;
+
+}
+/*
+#login-icon {
+    position: absolute;
+left: 13%;
+right: 75.04%;
+top: 20%;
+bottom: 30%;
+}
+*/
+.btn-carrito {
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    left: 1289px;
+    top: 13px;
+    background-color: #F2A516;
+    color: #F1ECE9;
+    font-family: 'Quintessential', cursive;
+
+}
+#carrito-icon {
+    position: absolute;
+    left: 7%;
+    right: 50%;
+    top: 15%;
+    bottom: 25%;
+}
+.nav-he {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+}
