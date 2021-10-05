@@ -1,3 +1,5 @@
+/* ---- header ---- */
+
 header {
     background-color: #02569C;
     position: absolute;
@@ -64,6 +66,7 @@ bottom: 30%;
 
 }
 
+
 /* Carroucel */
 #sec-carroucel{
     position: absolute;
@@ -83,3 +86,32 @@ h5{
 }
 
 /* CARDS CATEGORIAS */
+
+/* ---- user Window (uW) ---- */
+
+.uWlinksBG{
+    background-color: #949398;
+}
+
+.uWdataBG{
+    background-color: #F1ECE9;
+}
+
+
+/* ---- footer ---- */
+
+.subtitulos{
+    font-family: 'Gamja Flower', cursive;
+}
+
+.subtitulosBG{
+    background-color: #02569C;
+}
+
+.textTyC_AP_BG{
+    background-color: #F1ECE9;
+}
+
+.textN{
+    font-family: 'Poppins', sans-serif;
+}
