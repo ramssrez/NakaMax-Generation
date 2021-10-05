@@ -62,3 +62,14 @@ bottom: 30%;
     padding: 0px;
 
 }
+.login{
+    height:100%;
+    border: solid 10px wheat;
+}
+.div-logo{
+    background-color: #02569C;
+    margin: 0 auto;
+}
+.seccion-login{
+    border: solid 10px black;
+}
