@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/src/assets/css/styles.css" type="text/css">
-        <title>Document</title>
+        <title>Cuenta de usuario</title>
     </head>
     <body>
         <h1>User Window</h1>
@@ -26,7 +26,39 @@
                             <h4>General</h4>
                         </div>
                         <div class="col-7 uWdataBG rounded-top">
-                            <p>hola</p>
+                            <table class="table table-borderless">
+                                <tbody>
+                                  <tr>
+                                    <td>NOMBRE</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                  <tr>
+                                    <td>USUARIO</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                  <tr>
+                                    <td>CORREO</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                  <tr>
+                                    <td>FECHA DE NACIMIENTO</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                  <tr>
+                                    <td>CONTRASEÑA</td>
+                                    <td>********</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger mx-2">Eliminar cuenta</button>
+                            </div>
+                            <hr>
                         </div>
                     </div>
                     <div class="row justify-content-around">
@@ -34,7 +66,21 @@
                             <h4>Idioma y región</h4>
                         </div>
                         <div class="col-7 uWdataBG">
-                            <p>hola</p>
+                            <table class="table table-borderless">
+                                <tbody>
+                                  <tr>
+                                    <td>IDIOMA</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                  <tr>
+                                    <td>UBICAIÓN</td>
+                                    <td>XXX</td>
+                                    <td>EDITAR</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <hr>
                         </div>
                     </div>
                     <div class="row justify-content-around">
@@ -42,7 +88,67 @@
                             <h4>Notificaiones</h4>
                         </div>
                         <div class="col-7 uWdataBG rounded-bottom">
-                            <p>hola</p>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>COMENTARIOS</td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios1" id="Radio1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    ACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios1" id="Radio2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    DESACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PREGUNTAS</td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios2" id="Radios1" value="option3" checked>
+                                                <label class="form-check-label" for="exampleRadios3">
+                                                    ACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios2" id="Radios2" value="option4">
+                                                <label class="form-check-label" for="exampleRadios4">
+                                                    DESACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRANSACCIONES</td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios3" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    ACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Radios3" id="Radios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    DESACTIVAR
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -55,7 +161,39 @@
             </section>
         </section>
 
-         <!-- Footer -->
+        <section class="px-5 my-3">
+            <h2>Reportar</h2>
+            <div class="border border-secondary rounded">
+                <div class="p-3 form-group">
+                    <h5>TIPO DE REPORTE:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">ENVIO TARDIO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">PRODUCTO DAÑADO</label>
+                      </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">NO HA LLEGADO</label>
+                    </br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">YA LLEGO, PERO TARDO</label>
+                    </div>
+                    </br>
+                    <label for="exampleFormControlTextarea1">AGREGAR DESCRIPCIÓN</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    <div class="mt-3 d-flex justify-content-end">
+                        <button type="button">ENVIAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer class="bg-dark subtitulos">
             <div class="row justify-content-between pt-2">
                 <div class="col-7">
@@ -66,17 +204,16 @@
                     </div>
                     <div class="row p-3">
                         <div class="col-2 mx-5">
-                            <a href="/index.html"><img class="rounded-pill" src="/src/assets/images/logo-nakamas.png" alt="Enlace logo Nakamas" width="150"></a>
+                            <a href="#inicio"><img class="rounded-pill" src="/src/assets/images/logo-nakamas.png" alt="Enlace logo Nakamas" width="150"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-2 mx-5">
                     <div class="row d-flex justify-content-center"><p class="text-white">NUESTRAS REDES SOCIALES</p></div>
-                            <div class="row d-flex justify-content-center">
-                                <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1" src="/src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
-                                <a href="https://www.facebook.com" target="_blank"><img class="mx-1" src="/src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
-                                <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1" src="/src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30"></a>
-                            </div>
+                    <div class="row d-flex justify-content-center">
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1" src="/src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img class="mx-1" src="/src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1" src="/src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30"></a>
                     </div>
                 </div>
             </div>
