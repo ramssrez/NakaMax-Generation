@@ -123,3 +123,122 @@ h1 {
 .textN{
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* ---- 10-starWindow ----*/
+.carrito-compra {
+    font-family: 'Gamja Flower', cursive;
+
+}
+
+.precio {
+    margin-left: 90%;
+}
+
+.inp-cantidad{
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    color: #02569C;
+}
+
+.all-btn {
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+    color: #F1ECE9;
+
+}
+
+.btn-eliminar {
+    background-color: #02569C;
+}
+
+.btn-pago {
+    background-color: #cc2424;
+}
+
+.btn-productos {
+    background-color: #4edf4e;
+}
+.subtotales{
+    position: relative;
+    margin-bottom: 4%;
+   
+}
+
+.subtotales .subtotal {
+    position: absolute;
+    right: 0;
+}
+
+/* ---- 10-starWindow ----*/
+
+.imagen-logo-crud {
+    width: 250px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-alta-producto {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 500px;
+    margin-bottom: 50px;
+    font-family: 'Gamja Flower', cursive;
+    background: rgba(2, 87, 156, 0.199);
+    box-shadow: 0 8px 32px 0 rgba(24, 37, 206, 0.37);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 50px;
+}
+
+.ingresa-datos {
+    margin-top: 50px;
+}
+
+.inp-datos {
+    /* border-radius: 10px; */
+    width: 400px;
+    text-align: center;
+    color: #02569C;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid #02569C;
+
+}
+
+.descripcion{
+    display: block;
+    margin: auto;
+    width:400px;
+    height:100px;
+    border: none;
+    border-bottom: 3px solid #02569C;
+}
+
+/* imagen */
+#file {
+    display: none;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    border: none;
+    color: #fff;
+    background-color: #02569C;
+    cursor: pointer;
+}
+   
+.btn:hover{
+    transition: all .4s;
+    background-color: #000;
+}
+
