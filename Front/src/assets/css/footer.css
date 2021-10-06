@@ -1,0 +1,25 @@
+.subtitulos{
+    font-family: 'Gamja Flower', cursive;
+}
+
+.subtitulosBG{
+    background-color: #02569C;
+}
+
+.textTyC_AP_BG{
+    background-color: #F1ECE9;
+}
+
+.textN{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* user Window (uW)*/
+
+.uWlinksBG{
+    background-color: #949398;
+}
+
+.uWdataBG{
+    background-color: #F1ECE9;
+}

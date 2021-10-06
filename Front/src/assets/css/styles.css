@@ -1,10 +1,13 @@
+/* ---- header ---- */
+
 header {
     background-color: #02569C;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 120px;
     left: 0px;
     top: 0px;
+
 }
 .nav-header{
     color: #F1ECE9;
@@ -21,11 +24,13 @@ ul {
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1140px;
+    left: 1040px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
+    border-radius: 8px;
+
 
 }
 /*
@@ -41,11 +46,12 @@ bottom: 30%;
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1289px;
+    left: 1189px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
+    border-radius: 8px;
 
 }
 #carrito-icon {
@@ -62,6 +68,60 @@ bottom: 30%;
     padding: 0px;
 
 }
+/* Carroucel */
+#sec-carroucel{
+    position: absolute;
+    width: 1006px;
+    height: 512px;
+    left: 200px;
+    top: 149px;
+   
+
+}
+.c-text{
+    color: black;
+    font-family: 'Gamja Flower', cursive;
+}
+h5{
+    font-family: 'Quintessential', cursive;
+}
+
+/* CARDS CATEGORIAS */
+
+/* ---- user Window (uW) ---- */
+
+.uWlinksBG{
+    background-color: #949398;
+}
+
+.uWdataBG{
+    background-color: #F1ECE9;
+}
+
+
+/* ---- footer ---- */
+
+.subtitulos{
+    font-family: 'Gamja Flower', cursive;
+}
+
+.subtitulosBG{
+    background-color: #02569C;
+}
+
+.textTyC_AP_BG{
+    background-color: #F1ECE9;
+}
+
+.textN{
+    font-family: 'Poppins', sans-serif;
+}
+.jumbotron{
+    background-color:#F2A516;
+    border-radius: 8px;
+
+}
+
 .login{
     height:100%;
     border: solid 10px wheat;
