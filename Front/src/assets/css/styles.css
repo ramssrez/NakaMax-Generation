@@ -2,12 +2,10 @@
 
 header {
     background-color: #02569C;
-    position: absolute;
     width: 100%;
     height: 120px;
     left: 0px;
     top: 0px;
-
 }
 .nav-header{
     color: #F1ECE9;
@@ -124,8 +122,8 @@ h5{
 
 /*  Inicio Sección del login */
 .login{
-    margin-top: 5%;
-    margin-bottom: 5%;  
+    margin-top: 2%;
+    margin-bottom: 2%;  
 }
 .login img{
     width: 25%;
