@@ -3,7 +3,7 @@
 header {
     background-color: #02569C;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 120px;
     left: 0px;
     top: 0px;
@@ -29,6 +29,8 @@ ul {
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
+    border-radius: 8px;
+
 
 }
 /*
@@ -49,6 +51,7 @@ bottom: 30%;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
+    border-radius: 8px;
 
 }
 #carrito-icon {
@@ -114,4 +117,9 @@ h5{
 
 .textN{
     font-family: 'Poppins', sans-serif;
+}
+.jumbotron{
+    background-color:#F2A516;
+    border-radius: 8px;
+
 }
