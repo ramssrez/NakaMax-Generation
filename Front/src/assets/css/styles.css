@@ -124,15 +124,53 @@ h5{
 
 /*  Inicio Sección del login */
 .login{
-    height:100%;
-    border: solid 10px wheat;
+    margin-top: 5%;
+    margin-bottom: 5%;  
 }
-.div-logo{
-    background-color: #02569C;
+.login img{
+    width: 25%;
+    border-radius: .5rem;
+    display: block;
     margin: 0 auto;
 }
 .seccion-login{
-    border: solid 10px black;
+    border: solid 0.1rem #02569C;
+    border-radius: 2rem;
+    width: 50%;
+    height: 100%;
+    background-color: #EFEFEF;
 }
-
-/* Fin sección del login */
+.seccion-login img{
+    width: 50%;
+    border-radius: .5rem;
+    display: block;
+    margin: 30px auto;
+}
+.div-login{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.login a{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Gamja Flower', cursive;
+}
+.btn{
+    background: #02569C;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+    border-radius: 0.5rem;
+}
+.form-login input{
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+    border-radius: 1rem;
+    border: solid 0.1rem #02569C;
+}
