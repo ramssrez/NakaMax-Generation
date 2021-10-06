@@ -1,5 +1,8 @@
 /* ---- header ---- */
-
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, black 20%, #F1ECE9 80%, #F2A516);
+}
 header {
     background-color: #02569C;
     position: absolute;
@@ -7,7 +10,6 @@ header {
     height: 120px;
     left: 0px;
     top: 0px;
-
 }
 .nav-header{
     color: #F1ECE9;
@@ -18,41 +20,35 @@ ul {
 .dropdown-item{
     font-family: 'Gamja Flower', cursive;
 }
+.nav-he {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 
-
+}
+/* Login y carrito (Botones)*/
 .btn-login{
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1040px;
+    right: 233px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
-    border-radius: 8px;
-
-
+    border-radius: 32px;
 }
-/*
-#login-icon {
-    position: absolute;
-left: 13%;
-right: 75.04%;
-top: 20%;
-bottom: 30%;
-}
-*/
 .btn-carrito {
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1189px;
+    right: 70px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
-    border-radius: 8px;
-
+    border-radius: 32px;
 }
 #carrito-icon {
     position: absolute;
@@ -61,24 +57,12 @@ bottom: 30%;
     top: 15%;
     bottom: 25%;
 }
-.nav-he {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
 
-}
-
-
-/* Carroucel */
+/* Carroucel Principal */
 #sec-carroucel{
-    position: absolute;
-    width: 1006px;
+    margin: 100px auto;
+    width: 80%;
     height: 512px;
-    left: 200px;
-    top: 149px;
-   
-
 }
 .c-text{
     color: black;
@@ -86,6 +70,28 @@ bottom: 30%;
 }
 h5{
     font-family: 'Quintessential', cursive;
+}
+/* Categorias circulos*/
+#cat-1{
+    background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
+    background-color:#F2A516;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border: none;
+}
+#boton-categoria{
+    text-align: center;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color:black;
+}
+.bi{
+    border-radius: 24px 4px;
+}
+.circulos{
+   margin: 0 auto;
 }
 
 /* CARDS CATEGORIAS */
@@ -117,9 +123,4 @@ h5{
 
 .textN{
     font-family: 'Poppins', sans-serif;
-}
-.jumbotron{
-    background-color:#F2A516;
-    border-radius: 8px;
-
 }
