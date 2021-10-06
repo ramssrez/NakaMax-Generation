@@ -122,6 +122,7 @@ h5{
 
 }
 
+/*  Inicio Sección del login */
 .login{
     height:100%;
     border: solid 10px wheat;
@@ -133,3 +134,5 @@ h5{
 .seccion-login{
     border: solid 10px black;
 }
+
+/* Fin sección del login */
