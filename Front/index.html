@@ -17,13 +17,9 @@
     />
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quintessential&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poppins&family=Quintessential&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/ed5625f24b.js"
@@ -111,7 +107,7 @@
         <a href="#" class="btn btn-outline-success btn-carrito my-3 my-sm-0">
           <img
             id="carrito-icon"
-            src="src/assets/images/carrito-de-compras.png"
+            src="./src/assets/images/carrito-de-compras.png"
             width="30"
             height="30"
             alt=""
@@ -181,33 +177,31 @@
   </div>
 </div>
  </main>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!--categorias-->
-<main>
-  <div class="jumbotron container">
-    <div class="row">
-      <div class="card-deck col-sm-12">
-        <div class="col-lg-4">
-          <a href="#" target="_blanck">
-            <img src="./src/assets/images/descuento.png" class="card-img-top" alt="..." width="100px" height="200px">
-          </a>
-        </div>
-        <div class="col-lg-4">
-          <a href="#" target="_blanck">
-            <img src="./src/assets/images/tijera.png" class="card-img-top" alt="..."  width="200px" height="200px">
-          </a>
-        </div>
-        <div class="col-lg-4">
-          <a href="#" target="_blanck">
-            <img src="./src/assets/images/pop.png" class="card-img-top" alt="..." width="200px" height="200px">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+ <!-- Categorias -->
+<main class="container">
+  <div id="boton-categoria" class="container">
+    <a class="btn btn-warning bi" href="#"><h1>Categorias</h1></a>
   <br><br>
+  </div>
+  <div class="row container">
+    <button id="cat-1" class="circulos">
+      <a href="#">
+        <img src="./src/assets/images/descuento.png" alt="..." width="150px" height="100px">
+      </a>
+    </button>
+    <button id="cat-1" class="circulos">
+      <a href="#">
+        <img src="./src/assets/images/tijera.png" alt="..."  width="150px" height="100px">
+      </a>
+    </button>
+    <button id="cat-1" class="circulos">
+      <a href="#">
+        <img src="./src/assets/images/pop.png" alt="..." width="150px" height="100px">
+      </a>
+    </button>
+  </div>
 </main>
+<br><br>
 
 <!-- cards articulos -->
 <main>
@@ -344,7 +338,7 @@
       <div class="carousel-item active">
         <div class="container">
           <div class="row">
-            <div class="card-group">
+            <div class="card-deck">
               <div class="card">
                <a href="#">
                 <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
@@ -368,7 +362,7 @@
       <div class="carousel-item">
         <div class="container">
           <div class="row">
-            <div class="card-group">
+            <div class="card-deck">
               <div class="card">
                <a href="#">
                 <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
@@ -392,7 +386,7 @@
       <div class="carousel-item">
         <div class="container">
           <div class="row">
-            <div class="card-group">
+            <div class="card-deck">
               <div class="card">
                <a href="#">
                 <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
@@ -431,7 +425,7 @@
    
 
     <!-- Footer -->
-    <footer class="bg-dark subtitulos">
+    <footer class="container-fluid bg-dark subtitulos">
       <div class="row justify-content-between pt-2">
           <div class="col-7">
               <div class="row d-flex justify-content-around">
@@ -445,7 +439,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-2 mx-5">
+          <div class="col-2 mx-3">
               <div class="row d-flex justify-content-center"><p class="text-white">NUESTRAS REDES SOCIALES</p></div>
               <div class="row d-flex justify-content-center">
                   <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1" src="./src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
