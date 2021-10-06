@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts icons google pero no supe como poner los iconos y mejor puse img -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ed5625f24b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Front/src/assets/css/styles.css" type="text/css" />
+    <!-- Icono en la pestaña de la ventana -->
+    <link rel="shortcut icon" href="/Front/src/assets/images/iconTitle.jpg" />
+
+    <title>Alta y Mod. Producto</title>
+
+</head>
+<body>
+    <div class="container">
+    
+        <form action="" class="formulario-alta-producto">
+            <div class="imagen-logo">
+                <img src="/Front/src/assets/images/logo-nakamas.png" alt="" class="imagen-logo-crud">
+            </div>
+
+            <div class="text-center">
+                <h1 class="ingresa-datos">Ingresa los Siguientes Datos</h1>
+                <p>
+                    <input type="text" placeholder="Datos del producto" class="inp-datos">
+                </p>
+    
+                <p>
+                    <input type="text" placeholder="Costo" class="inp-datos">
+                </p>
+    
+                <p>
+                    <input type="text" placeholder="Categoria" class="inp-datos">
+                </p>
+    
+                <textarea class="form-control text-center descripcion" id="exampleFormControlTextarea1" rows="3" placeholder="Descripccion del Producto"></textarea>
+                <br>
+                <!-- Imagen -->
+                <!-- Nota: La imagen solo esta de prueba -->
+                <div class="contenedor-imagen pb-3">
+                    <img src="/Front/src/assets/images/img-prueb.png" alt="">
+                </div>
+                
+                <input type="file" name="archivo" id="file">
+                <input type="button" value="IMAGEN" class="btn all-btn" onclick="document.getElementById('file').click()">
+                
+                <br>
+                <!-- fin de imagen -->
+                <p>
+                    <button class="btn all-btn">AGREGAR</button>
+                </p>
+            </div>
+        </form>
+    </div>
+  
+
+    <!-- Footer -->
+    <footer class="bg-dark subtitulos">
+        <div class="row justify-content-between pt-2">
+            <div class="col-7">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-3"><a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a></div>
+                    <div class="col-3"><a class="text-white" href="05-contactUs">FAQs</a></div>
+                    <div class="col-2"><a class="text-white" href="05-contactUs">CONTACTO</a></div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-2 mx-5">
+                        <a href="#inicio"><img class="rounded-pill" src="/src/assets/images/logo-nakamas.png"
+                                alt="Enlace logo Nakamas" width="150"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 mx-5">
+                <div class="row d-flex justify-content-center">
+                    <p class="text-white">NUESTRAS REDES SOCIALES</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col d-flex justify-content-end">
+                <a class="text-white" href="/src/assets/html/13-termsPrivacy.html">TÉRMINOS Y CONDICIONES</a>
+            </div>
+            <div class="col">
+                <a class="text-white" href="05-contactUs">AVISO DE PRIVACIDAD</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

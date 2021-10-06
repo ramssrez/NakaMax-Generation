@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts icons google pero no supe como poner los iconos y mejor puse img -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ed5625f24b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Front/src/assets/css/styles.css" type="text/css" />
+    <!-- Icono en la pestaña de la ventana -->
+    <link rel="shortcut icon" href="/Front/src/assets/images/iconTitle.jpg" />
+
+    <title>Carrito de Compras</title>
+
+</head>
+
+<body>
+    <div class="container carrito-compra">
+
+        <div class="row prodcuto">
+            <!-- Carrito Compras -->
+            <div class="col-xl-8 col-sm-12">
+                <h2 class="m-3">Carrito de Compras</h2>
+                <span class="precio texto">PRECIO</span>
+                <hr>
+                <span class="precio numero">$1,650.99</span>
+
+                <!-- Producto -->
+                <div class="row p-2">
+
+                    <!-- Imagen del producto -->
+                    <div class="col-xl-6 col-sm-12">
+                        <img src="/Front/src/assets/images/imagen-producto.png" alt="" class="imagen-producto">
+                    </div>
+
+                    <!-- Descripcion de la compra -->
+                    <div class="col-xl-6 col-sm-12">
+                        <p class="nombre-producto">Shusui Sword Roronoa Zoro - One piece</p>
+                        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"></p>
+                        <button class="btn-eliminar all-btn">ELIMINAR</button>
+                    </div>
+                </div>
+
+                <div class="subtotales">
+                    <p class=" subtotal">subtotal (<span class="cantidad">1</span> producto): <span
+                            class="precio_total">$1650.00</span></p>
+                </div>
+                <hr>
+
+            </div>
+
+            <!-- Compra -->
+            <div class="col-xl-4 col-sm-12 text-center">
+                <h2 class="mt-5 mb-5">Compra</h2>
+
+                <p>Cantidad de Productos<span class="cantidad">1</span></p>
+                <p>Subtotal: <span class="subtotal">$1,650.99</span></p>
+                <p>Costo de Envio <span class="costo-envio">$150.00</span></p>
+                <hr>
+                <p>Total <span class="total">$1,800.99</span></p>
+
+                <p><button class="btn-pago all-btn">PROCEDER PAGO</button></p>
+                <p><button class="btn-productos all-btn">VER MAS PRODUCTOS</button></p>
+            </div>
+        </div>
+
+        <!-- Inicia el carrucel -->
+        <h3 class="text-center">Articulos Similares</h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-uno.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-dos.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-tres.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-cuatro.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-cuatro.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-tres.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-dos.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-uno.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-dos.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-cuatro.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-uno.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-tres.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-tres.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-uno.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-cuatro.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-dos.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-tres.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-uno.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-cuatro.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <img src="/Front/src/assets/images/img-dos.pn" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark subtitulos">
+        <div class="row justify-content-between pt-2">
+            <div class="col-7">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-3"><a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a></div>
+                    <div class="col-3"><a class="text-white" href="05-contactUs">FAQs</a></div>
+                    <div class="col-2"><a class="text-white" href="05-contactUs">CONTACTO</a></div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-2 mx-5">
+                        <a href="#inicio"><img class="rounded-pill" src="/src/assets/images/logo-nakamas.png"
+                                alt="Enlace logo Nakamas" width="150"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 mx-5">
+                <div class="row d-flex justify-content-center">
+                    <p class="text-white">NUESTRAS REDES SOCIALES</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1"
+                            src="/src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col d-flex justify-content-end">
+                <a class="text-white" href="/src/assets/html/13-termsPrivacy.html">TÉRMINOS Y CONDICIONES</a>
+            </div>
+            <div class="col">
+                <a class="text-white" href="05-contactUs">AVISO DE PRIVACIDAD</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
