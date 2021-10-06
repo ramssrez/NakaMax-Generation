@@ -1,7 +1,7 @@
 header {
     background-color: #02569C;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 120px;
     left: 0px;
     top: 0px;
@@ -21,7 +21,7 @@ ul {
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1140px;
+    left: 75%;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -41,7 +41,7 @@ bottom: 30%;
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1289px;
+    left: 87%;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
