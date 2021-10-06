@@ -1,9 +1,11 @@
 /* ---- header ---- */
-
+body{
+    margin: 0;
+   
+}
 header {
     background-color: #02569C;
-    position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 120px;
     left: 0px;
     top: 0px;
@@ -17,38 +19,35 @@ ul {
 .dropdown-item{
     font-family: 'Gamja Flower', cursive;
 }
+.nav-he {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 
-
+}
+/* Login y carrito (Botones)*/
 .btn-login{
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1140px;
+    right: 233px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
-
+    border-radius: 32px;
 }
-/*
-#login-icon {
-    position: absolute;
-left: 13%;
-right: 75.04%;
-top: 20%;
-bottom: 30%;
-}
-*/
 .btn-carrito {
     position: absolute;
     width: 133px;
     height: 45px;
-    left: 1289px;
+    right: 70px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
-
+    border-radius: 32px;
 }
 #carrito-icon {
     position: absolute;
@@ -57,13 +56,44 @@ bottom: 30%;
     top: 15%;
     bottom: 25%;
 }
-.nav-he {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
 
+/* Carroucel Principal */
+#sec-carroucel{
+    margin: 100px auto;
+    width: 80%;
+    height: 512px;
 }
+.c-text{
+    color: black;
+    font-family: 'Gamja Flower', cursive;
+}
+h5{
+    font-family: 'Quintessential', cursive;
+}
+/* Categorias circulos*/
+#cat-1{
+    background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
+    background-color:#F2A516;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border: none;
+}
+#boton-categoria{
+    text-align: center;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color:black;
+}
+.bi{
+    border-radius: 24px 4px;
+}
+.circulos{
+   margin: 0 auto;
+}
+
+/* CARDS CATEGORIAS */
 
 /* ---- user Window (uW) ---- */
 
@@ -93,6 +123,7 @@ bottom: 30%;
 .textN{
     font-family: 'Poppins', sans-serif;
 }
+
 
 /* ---- 10-starWindow ----*/
 .carrito-compra {
@@ -210,3 +241,4 @@ bottom: 30%;
     transition: all .4s;
     background-color: #000;
 }
+
