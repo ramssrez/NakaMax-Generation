@@ -30,19 +30,91 @@
       src="https://kit.fontawesome.com/ed5625f24b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/Front/src/assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="src/assets/css/styles.css" type="text/css" />
     <!-- Icono en la pestaña de la ventana -->
-    <link rel="shortcut icon" href="/Front/src/assets/images/iconTitle.jpg" />
+    <link rel="shortcut icon" href="src/assets/images/iconTitle.jpg" />
 
     <title>Alta y Mod. Producto</title>
 
 </head>
 <body>
+    <!-- HEADER -->
+    <header id="heade" class="container-fluid pt-2">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./src/assets/images/nakamax.png"
+            width="100"
+            height="40"
+            alt=""
+          />
+        </a>
+        <nav class="navbar navbar-expand-lg">
+          <li class="nav-item dropdown nav-he material-icons-outlined">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+  
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-he">
+              <a class="navbar-brand nav-header" href="#">ARTISTICOS</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <li class="nav-item active">
+              <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Boton Login -->
+          <a href="" class="btn btn-outline-success btn-login my-2 my-sm-0">
+            <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
+  
+          <!-- Boton Carrito -->
+          <a href="#" class="btn btn-outline-success btn-carrito my-3 my-sm-0">
+            <img
+              id="carrito-icon"
+              src="./src/assets/images/carrito-de-compras.png"
+              width="30"
+              height="30"
+              alt=""
+            /><strong>Carrito</strong>
+          </a>
+  
+        </nav>
+      </header>
+       <!-- HEADER -->
     <div class="container">
     
         <form action="" class="formulario-alta-producto">
             <div class="imagen-logo">
-                <img src="/Front/src/assets/images/logo-nakamas.png" alt="" class="imagen-logo-crud">
+                <img src="src/assets/images/logo-nakamas.png" alt="" class="imagen-logo-crud">
             </div>
 
             <div class="text-center">
@@ -64,16 +136,16 @@
                 <!-- Imagen -->
                 <!-- Nota: La imagen solo esta de prueba -->
                 <div class="contenedor-imagen pb-3">
-                    <img src="/Front/src/assets/images/img-prueb.png" alt="">
+                    <img src="src/assets/images/img-prueb.png" alt="">
                 </div>
                 
                 <input type="file" name="archivo" id="file">
-                <input type="button" value="IMAGEN" class="btn all-btn" onclick="document.getElementById('file').click()">
+                <input type="button" value="IMAGEN" class="btn all-btn btn-12crud" onclick="document.getElementById('file').click()">
                 
                 <br>
                 <!-- fin de imagen -->
                 <p>
-                    <button class="btn all-btn">AGREGAR</button>
+                    <button class="btn all-btn btn-12crud">AGREGAR</button>
                 </p>
             </div>
         </form>

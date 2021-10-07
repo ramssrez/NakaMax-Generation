@@ -27,7 +27,7 @@ ul {
 
 }
 /* Login y carrito (Botones)*/
-.btn-login{
+.bt-login{
     position: absolute;
     width: 133px;
     height: 45px;
@@ -38,7 +38,7 @@ ul {
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
 }
-.btn-carrito {
+.bt-carrito {
     position: absolute;
     width: 133px;
     height: 45px;
@@ -95,6 +95,7 @@ h1 {
 }
 .bi{
     border-radius: 24px 4px;
+    
 }
 .circulos{
    margin: 0 auto;
@@ -236,7 +237,7 @@ h1 {
     display: none;
 }
 
-.btn{
+.btn-12crud{
     display: block;
     margin: auto;
     border: none;
@@ -245,47 +246,47 @@ h1 {
     cursor: pointer;
 }
    
-.btn:hover{
+.btn-12crud:hover{
     transition: all .4s;
     background-color: #000;
 }
 
 /*  Inicio Sección del login */
-.login{
+.login-01log{
     margin-top: 2%;
     margin-bottom: 2%;  
 }
-.login img{
+.login-01log img{
     width: 25%;
     border-radius: .5rem;
     display: block;
     margin: 0 auto;
 }
-.seccion-login{
+.seccion-01login{
     border: solid 0.1rem #02569C;
     border-radius: 2rem;
     width: 50%;
     height: 100%;
     background-color: #EFEFEF;
 }
-.seccion-login img{
+.seccion-01login img{
     width: 50%;
     border-radius: .5rem;
     display: block;
     margin: 30px auto;
 }
-.div-login{
+.div-01log{
     display: flex;
     justify-content: space-around;
     margin: 2rem;
 }
-.login a{
+.login-01log a{
     font-size: 30px;
     color: black;
     text-decoration: none;
     font-family: 'Gamja Flower', cursive;
 }
-.btn{
+.btn-01log{
     background: #02569C;
     color: white;
     text-align: center;
@@ -295,7 +296,11 @@ h1 {
     font-family: 'Gamja Flower', cursive;
     border-radius: 0.5rem;
 }
-.form-login input{
+.btn-01log:hover{
+    transition: all .4s;
+    background-color: #F2A516;
+}
+.form-01log input{
     font-size: 25px;
     font-family: 'Gamja Flower', cursive;
     text-align: center;
