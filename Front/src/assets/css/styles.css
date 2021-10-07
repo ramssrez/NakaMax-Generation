@@ -27,7 +27,7 @@ ul {
 
 }
 /* Login y carrito (Botones)*/
-.btn-login{
+.bt-login{
     position: absolute;
     width: 133px;
     height: 45px;
@@ -38,7 +38,7 @@ ul {
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
 }
-.btn-carrito {
+.bt-carrito {
     position: absolute;
     width: 133px;
     height: 45px;
