@@ -237,7 +237,7 @@ h1 {
     display: none;
 }
 
-.btn{
+.btn-12crud{
     display: block;
     margin: auto;
     border: none;
@@ -246,7 +246,7 @@ h1 {
     cursor: pointer;
 }
    
-.btn:hover{
+.btn-12crud:hover{
     transition: all .4s;
     background-color: #000;
 }
