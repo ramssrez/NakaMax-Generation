@@ -33,7 +33,7 @@
 
   <body>
     <!-- HEADER -->
-    <header id="heade" class="container-fluid pt-2">
+    <header class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
           src="./src/assets/images/nakamax.png"
@@ -70,7 +70,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav nav-he">
-            <a class="navbar-brand nav-header" href="#">ARTISTICOS</a>
+            <a class="navbar-brand nav-header" href="#">HOME</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -87,13 +87,12 @@
         </div>
 
         <!-- Boton Login -->
-        <a href="" class="btn btn-outline-success btn-login my-2 my-sm-0">
+        <a href="" class="btn btn-outline-success bt-login my-2 my-sm-0">
           <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
 
         <!-- Boton Carrito -->
-        <a href="#" class="btn btn-outline-success btn-carrito my-3 my-sm-0">
-          <img
-            id="carrito-icon"
+        <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
+          <img id="carrito-icon"
             src="./src/assets/images/carrito-de-compras.png"
             width="30"
             height="30"
@@ -108,8 +107,8 @@
 
     <!-- Aqui termina el HEADER -->
 
-<br><br><br><br><br>
-    <!--  Aqui empieza el div donde esta el carrousel -->
+
+    <!--  Aqui empieza el carrousel principal-->
 
  <main>
   <div id="sec-carroucel" class="container">
@@ -192,6 +191,10 @@
 <!-- cards articulos -->
 <main>
   <div class="container">
+    <div id="boton-categoria" class="container">
+      <a class="btn btn-warning bi" href="#"><h1>Lo mas vendido</h1></a>
+    <br><br>
+    </div>
     <div class="row">
       <div class="card-group">
         <div class="card">
@@ -310,6 +313,10 @@
 <!--Empieza Video youtube -->
 
       <div class="container">
+        <div id="boton-categoria" class="container">
+          <a class="btn btn-warning bi" href="#"><h1>Artesanales</h1></a>
+        <br><br>
+        </div>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/jWkbLH9_5uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -319,87 +326,93 @@
 <br><br>
 <!-- Empieza Carrousel de abajo -->
 <main>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row">
-            <div class="card-deck">
-              <div class="card">
-               <a href="#">
-                <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
-               </a>
-               
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="card-deck">
-              <div class="card">
-               <a href="#">
-                <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
-               </a>
-               
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="card-deck">
-              <div class="card">
-               <a href="#">
-                <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
-               </a>
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-              <div class="card">
-                <a href="#">
-                  <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+  <div class="container jumbotron">
+    <div id="boton-categoria" class="container">
+      <a class="btn btn-warning bi" href="#"><h1>Promociones</h1></a>
+    <br><br>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-     
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-  
-    </a>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="card-deck">
+                <div class="card">
+                 <a href="#">
+                  <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
+                 </a>
+                 
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="card-deck">
+                <div class="card">
+                 <a href="#">
+                  <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
+                 </a>
+                 
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="card-deck">
+                <div class="card">
+                 <a href="#">
+                  <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
+                 </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-2.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="./src/assets/images/login-3.png" class="card-img-top" alt="...">
+                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+       
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    
+      </a>
+    </div>
   </div>
 </main>
 <br><br>
