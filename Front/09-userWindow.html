@@ -12,14 +12,71 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="/Front/src/assets/css/styles.css" type="text/css">
-        <title>Cuenta de usuario</title>
+        <link rel="stylesheet" href="src/assets/css/styles.css" type="text/css" />
+        <link rel="shortcut icon" href="src/assets/images/iconTitle.jpg" />
+        <title>Naka+ Cuenta de usuario</title>
     </head>
     <body>
+        <!-- HEADER -->
+        <header class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="src/assets/images/nakamax.png" width="100" height="40" alt=""/>
+            </a>
+            <nav class="navbar navbar-expand-lg">
+                <li class="nav-item dropdown nav-he material-icons-outlined">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+  
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-he">
+                        <a class="navbar-brand nav-header" href="#">HOME</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Boton Login -->
+                <a href="" class="btn btn-outline-success bt-login my-2 my-sm-0">
+                    <i class="far fa-user-circle"></i><strong>Iniciar</strong>
+                </a>
+  
+                <!-- Boton Carrito -->
+                <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
+                <img id="carrito-icon" src="./src/assets/images/carrito-de-compras.png" width="30" height="30" alt=""
+                    /><strong>Carrito</strong>
+                </a>
+            </nav>
+        </header>
+       <!-- HEADER -->
+
+       <!-- Ventana de Usuario -->
         <br>
         <main class="container-fluid subtitulos">
             <section class="px-5 my-3">
-                <h1>Configuración</h1>
+                <h1 class="subtitulos">Configuración</h1>
                 <div class="row justify-content-around">
                     <div class="col-sm-3 uWlinksBG text-white text-center rounded-top">
                         <br>
@@ -31,10 +88,10 @@
                             <div class="col">
                                 <p>NOMBRE</p>
                             </div>
-                            <div class="col">
+                            <div class="col-7">
                                 <p>Juan Antonio Perez Perez</p>
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <button type="button">EDITAR</button>
                             </div>
                         </div>
@@ -42,10 +99,10 @@
                             <div class="col">
                                 <p>USUARIO</p>
                             </div>
-                            <div class="col">
+                            <div class="col-7">
                                 <p>JuanChito</p>
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <button type="button">EDITAR</button>
                             </div>
                         </div>
@@ -53,10 +110,10 @@
                             <div class="col">
                                 <p>CORREO</p>
                             </div>
-                            <div class="col">
+                            <div class="col-7">
                                 <p>juanchito@gmail.com</p>
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <button type="button">EDITAR</button>
                             </div>
                         </div>
@@ -64,10 +121,10 @@
                             <div class="col">
                                 <p>CONTRASEÑA</p>
                             </div>
-                            <div class="col">
+                            <div class="col-7">
                                 <p>*******</p>
                             </div>
-                            <div class="col">
+                            <div class="col d-flex justify-content-center">
                                 <button type="button">EDITAR</button>
                             </div>
                         </div>
@@ -211,7 +268,7 @@
                 </div>
                 <div class="row p-3">
                     <div class="col-2 mx-5">
-                        <a href="#inicio"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png" alt="Enlace logo Nakamas" width="150"></a>
+                        <a href="index.html"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png" alt="Enlace logo Nakamas" width="150"></a>
                     </div>
                 </div>
             </div>
