@@ -1,64 +1,84 @@
+html, body {
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.adn-title {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: xx-large;
+text-align: center;
+}
+
+.adn-subtitle {
+  color: white;
+  background-color: #02569c;
+  font-family: "Gamja Flower", cursive;
+  font-size: x-large;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+.adn-description {
+  color: black;
+  background-color: #F1ECE9;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  width: 1300px;
+  height: 250px;
+  text-align: justify;
+  justify-content: center;
+
+  /* border-color: #F1ECE9 200px solid; */
+}
+
+
+/* CARROUSEL */
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 * {
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 
 html, body {
-  /* margin: 100px; */
-  padding: 100px;
+  align-items: center;
+  /* margin: 0;
+  padding: 0; */
   width: 100%;
   height: 100%;
 }
 
 body {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   transition: background .4s ease-in;
   background-color: white;
   
-
   /* &.blue {
     background-color: #428aa6;
   } */
 }
 
-.adn-subtitulo {
-  background-color: #02569C;
-  justify-content: center;
-  font-size: larger;
-  color: #F1ECE9;
-
-}
-
-.adn-description {
-  background-color: #F1ECE9;
-  justify-content: center;
-  font-size: medium
-  color black;
-}
-
-
 input[type=radio] {
   display: none;
 }
 
-.adn-card {
+.card {
   position: absolute;
   width: 60%;
   height: 100%;
   left: 0;
   right: 0;
-  margin: auto;
+  margin:auto;
   transition: transform .4s ease;
   cursor: pointer;
 }
 
-.adn-container {
+.container {
   width: 100%;
   max-width: 800px;
   max-height: 600px;
@@ -70,7 +90,7 @@ input[type=radio] {
   align-items: center;
 }
 
-.adn-cards {
+.cards {
   position: relative;
   width: 100%;
   height: 100%;
@@ -102,12 +122,12 @@ img {
   z-index: 1;
   
   img {
-    box-shadow: 10px 10px 5px 0px rgba(81, 81, 81, 0.47);
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
   }
 }
 
-.adn-etiqueta {
-  background-color: #F5DF4E;
+.player {
+  background-color: #fff;
   border-radius: 8px;
   min-width: 320px;
   padding: 16px 10px;
@@ -117,22 +137,21 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   height: 36px;
-  overflow:visible;
+  overflow: hidden;
 }
 
-/* .play-icon{ margin-right: 10px; } */
+.play-icon{ margin-right: 10px; }
 
 .song-info {
   width: calc(100% - 32px);
   display: block;
-  position:sticky;
 }
 
 .song-info .title {
-  color: #000000;
-  font-size: 20px;
+  color: #403d40;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -142,10 +161,10 @@ img {
   width: 100%;
 }
 
-.subtitle {
+.adn-name, .time {
   font-size: 12px;
   line-height: 16px;
-  color: #000000;
+  color: #c6c5c6;
 }
 
 .time {
@@ -176,7 +195,7 @@ img {
 .info-area {
   width: 100%;
   position: absolute;
-  top: 100;
+  top: 0;
   left: 30px;
   transition: transform .4s ease-in;
 }
