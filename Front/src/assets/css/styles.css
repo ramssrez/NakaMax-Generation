@@ -17,6 +17,7 @@ header {
 }
 ul {
     font-family: 'Gamja Flower', cursive;
+    font-size: 28px;
 }
 .dropdown-item{
     font-family: 'Gamja Flower', cursive;
@@ -36,9 +37,9 @@ hr {
 /* Login y carrito (Botones)*/
 .bt-login{
     position: absolute;
-    width: 133px;
+    width: 150px;
     height: 45px;
-    right: 233px;
+    right: 250px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -226,6 +227,7 @@ footer{
 
 .ingresa-datos {
     margin-top: 50px;
+    font-family: 'Gamja Flower', cursive;
 }
 
 .inp-datos {
@@ -324,3 +326,58 @@ footer{
     border: solid 0.1rem #02569C;
 }
 /* Fin de la sección de Login */
+
+/* Seccion de menu */
+
+#menu{
+  margin:0;
+  padding:0;
+}
+
+#menu li {
+  background-color:#02569C;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu a{
+  display:block;
+  padding:10px;
+  letter-spacing:1px;
+}
+
+#menu li:hover {
+  background:#F2A516;
+}
+
+#menu li a:hover{
+  color: black;
+  filter: brightness(0.1);
+}
+
+#menu ul {
+  list-style:none;
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#F1ECE9;
+  padding:0;
+}
+
+#menu ul li {
+  float:none;
+  width: 195%;
+}
+
+#menu ul a {
+  padding:10px 15px;
+  font-size: 26px;
+  color: #F1ECE9;
+}
+
+#menu li:hover > ul {
+  display:block;
+}
