@@ -395,13 +395,13 @@ footer{
     border: solid 1px white;
     border-radius: .1rem;
 }
-
 .carrito-icon-06descrip{
     margin-right: 10%;
 }
 .card-body h3{
-    font-size: 50px;
     font-family: 'Quintessential', cursive;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
 /* Fin de la descripción */
