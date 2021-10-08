@@ -386,10 +386,15 @@ h1 {
     font-size: 20px;
     display: block;
     border: solid 1px white;
+    border-radius: .1rem;
 }
 
 .carrito-icon-06descrip{
     margin-right: 10%;
+}
+.card-body h3{
+    font-size: 50px;
+    font-family: 'Quintessential', cursive;
 }
 
 /* Fin de la descripción */
