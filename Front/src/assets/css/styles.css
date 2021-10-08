@@ -325,6 +325,12 @@ footer{
     border-radius: 1rem;
     border: solid 0.1rem #02569C;
 }
+.div-01log .register-01log{
+    color: rgba(0, 0, 0, .4);
+}
+.div-01log .loginWord-01log{
+    text-decoration: underline;
+}
 /* Fin de la sección de Login */
 
 /* Seccion de menu */
@@ -380,4 +386,23 @@ footer{
 
 #menu li:hover > ul {
   display:block;
+}
+
+/* Sección de la descripción */
+.btn-06descrip{
+    background: #F2A516;
+    color: white;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    display: block;
+    border: solid 1px white;
+    border-radius: .1rem;
+}
+.carrito-icon-06descrip{
+    margin-right: 10%;
+}
+.card-body h3{
+    font-family: 'Quintessential', cursive;
+    text-align: center;
+    margin-bottom: 10%;
 }
