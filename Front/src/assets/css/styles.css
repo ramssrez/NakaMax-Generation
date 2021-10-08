@@ -17,7 +17,6 @@ header {
 }
 ul {
     font-family: 'Gamja Flower', cursive;
-    font-size: 28px;
 }
 .dropdown-item{
     font-family: 'Gamja Flower', cursive;
@@ -29,12 +28,17 @@ ul {
     padding: 0px;
 
 }
+hr {
+    height: 1px;
+    border-color:#cc2424;
+    background-color:#F2A516;
+  }
 /* Login y carrito (Botones)*/
 .bt-login{
     position: absolute;
-    width: 150px;
+    width: 133px;
     height: 45px;
-    right: 250px;
+    right: 233px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -82,6 +86,7 @@ h5{
 }
 .jumbotron{
     background-color: #F07A0D;
+    
 }
 /* Categorias circulos*/
 #cat-1{
@@ -175,12 +180,11 @@ footer{
 }
 
 .btn-pago {
-    background-color: #f94949;
+    background-color: #cc2424;
 }
 
 .btn-productos {
-    background-color: #CBD979;
-    color: #000;
+    background-color: #4edf4e;
 }
 .subtotales{
     position: relative;
@@ -220,9 +224,8 @@ footer{
     margin-top: 50px;
 }
 
-#ingresa-datos {
+.ingresa-datos {
     margin-top: 50px;
-    font-family: 'Gamja Flower', cursive;
 }
 
 .inp-datos {
@@ -259,11 +262,9 @@ footer{
     cursor: pointer;
 }
    
-
-.btn-12crud:active{
+.btn-12crud:hover{
     transition: all .4s;
-    box-shadow: 5px 5px 5px 0px #02569C;
-    color: #fff;
+    background-color: #000;
 }
 
 /*  Inicio Sección del login */
@@ -323,58 +324,3 @@ footer{
     border: solid 0.1rem #02569C;
 }
 /* Fin de la sección de Login */
-
-/* Seccion de menu */
-
-#menu{
-  margin:0;
-  padding:0;
-}
-
-#menu li {
-  background-color:#02569C;
-  position:relative;
-  float:left;
-  margin:0;
-  padding:0;
-}
-
-#menu a{
-  display:block;
-  padding:10px;
-  letter-spacing:1px;
-}
-
-#menu li:hover {
-  background:#F2A516;
-}
-
-#menu li a:hover{
-  color: black;
-  filter: brightness(0.1);
-}
-
-#menu ul {
-  list-style:none;
-  display:none;
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#F1ECE9;
-  padding:0;
-}
-
-#menu ul li {
-  float:none;
-  width: 195%;
-}
-
-#menu ul a {
-  padding:10px 15px;
-  font-size: 26px;
-  color: #F1ECE9;
-}
-
-#menu li:hover > ul {
-  display:block;
-}

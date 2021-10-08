@@ -44,7 +44,7 @@
           </ul>
         </li>
       </ul>
-      
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
@@ -61,7 +61,7 @@
       <a class="navbar-brand" href="./index.html">
         <img src="./src/assets/images/nakamax.png" alt="" height="80" />
       </a>
-      
+
     </nav>
   </header>
 
@@ -79,11 +79,11 @@
             <a href="./01-log.html">Inicia sesion</a>
           </div>
           <div class="d-flex justify-content-center flex-wrap m-5">
-            <input type="text" class="entradaR" placeholder="usuario" />
-            <input type="text" class="entradaR" placeholder="nombre completo" />
-            <input type="email" class="entradaR" placeholder="correo electronico" />
-            <select name="" id="" class="entradaR">
-              <option value="">Genero favorito</option>
+            <input type="text" class="entradaR" placeholder="USUARIO" id="user" />
+            <input type="text" class="entradaR" placeholder="NOMBRE COMPLETO" id="name" />
+            <input type="email" class="entradaR" placeholder="CORREO ELECTRONICO" id="email"/>
+            <select name="" id="genFav" class="entradaR">
+              <option value="">GENERO FAVORITO DE ANIME</option>
               <option value="shounen">Shounen</option>
               <option value="ecchi">Ecchi</option>
               <option value="shoujo">Shoujo</option>
@@ -98,17 +98,17 @@
               <option value="gore">Gore</option>
               <option value="hentai">Hentai</option>
             </select>
-            <label class="form-check-label entradaR my-1" for="vendedor">Fecha de nacimiento</label>
+            <label class="form-check-label entradaR my-1" for="vendedor">FECHA DE NACIMIENTO</label>
             <input type="date" class="entradaR" name="" id="fechaNacimiento" />
-            <input type="password" class="entradaR" name="" id="" placeholder="contraseña" />
-            <input type="password" class="entradaR" name="" id="" placeholder="confirmar contraseña" />
+            <input type="password" class="entradaR" name="" id="contraseña" placeholder="CONTRASEÑA" />
+            <input type="password" class="entradaR" name="" id="cContraseña" placeholder="CONFIRMAR CONTRASEÑA" />
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="comprador" value="option1" />
-              <label class="form-check-label entradaR my-1" for="comprador">comprador</label>
+              <label class="form-check-label entradaR my-1" for="comprador">COMPRADOR</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="vendedor" value="option2" />
-              <label class="form-check-label entradaR my-1" for="vendedor">vendedor</label>
+              <label class="form-check-label entradaR my-1" for="vendedor">VENDEDOR</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="TyCA" value="option1" />
@@ -119,8 +119,8 @@
             </div>
           </div>
           <div class="contBotonR">
-            <button type="submit" class="btnR mb-4 entradaR">
-              crear cuenta
+            <button type="button" class="btnR mb-4 entradaR" id="registrarUs">
+              CREAR CUENTA
             </button>
           </div>
         </form>
@@ -171,6 +171,12 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
   <script src="./src/assets/js/registro.js"></script>
 </body>
 

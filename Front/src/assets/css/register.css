@@ -19,7 +19,6 @@ fieldset {
   font-family: 'Gamja Flower', cursive;
   color: black;
   font-size: 18px;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
   width: 99%;
@@ -40,4 +39,8 @@ fieldset {
 
 header{
   height: 100px;
+}
+
+.inpRojo{
+  border-color: red;
 }
