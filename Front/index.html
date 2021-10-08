@@ -26,31 +26,33 @@
 <body>
   <!-- HEADER -->
   <header class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="./src/assets/images/nakamax.png" width="100" height="40" alt="" />
     </a>
     <nav class="navbar navbar-expand-lg">
-      <li class="nav-item dropdown nav-he material-icons-outlined">
+      <ul class="nav-item dropdown nav-he material-icons-outlined">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-bars"></i>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+        <li class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a href="#"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo"> Artezanales</a>
+          <a href="#"><img src="./src/assets/images/pinturas.png" width="55" alt="logo"> Posters y cuadros</a>
+          <a href="#"><img src="./src/assets/images/maniqui.png" width="55" alt="logo"> Ropa</a>
+          <a href="#"><img src="./src/assets/images/material-escolar.png" width="55" alt="logo"> Escolares</a>
+          <a href="#"><img src="./src/assets/images/libro-comico.png" width="55" alt="logo"> Mangas y comics</a>
+          <a href="#"><img src="./src/assets/images/osito-de-peluche.png" width="55" alt="logo"> Peluches</a>
+          <a href="#"><img src="./src/assets/images/pop.png" width="55" alt="logo"> Funkos</a>
+        </li>
+      </ul>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
-
+          <a class="navbar-brand nav-header" href="#">HOME</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <li class="nav-item active">
             <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
           </li>
@@ -64,7 +66,7 @@
       </div>
 
       <!-- Boton Login -->
-      <a href="" class="btn btn-outline-success bt-login my-2 my-sm-0">
+      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
         <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
 
       <!-- Boton Carrito -->
@@ -72,7 +74,6 @@
         <img id="carrito-icon" src="./src/assets/images/carrito-de-compras.png" width="30" height="30"
           alt="" /><strong>Carrito</strong>
       </a>
-
     </nav>
   </header>
   <!-- HEADER -->
@@ -135,8 +136,10 @@
       </div>
     </div>
   </main>
+ 
   <!-- Categorias -->
   <main class="container">
+    <hr>
     <div id="boton-categoria" class="container">
       <a class="btn btn-warning bi" href="#">
         <h1>Categorias</h1>
@@ -161,11 +164,12 @@
       </button>
     </div>
   </main>
-  <br><br>
+ 
 
   <!-- cards articulos -->
   <main>
     <div class="container">
+      <hr>
       <div id="boton-categoria" class="container">
         <a class="btn btn-warning bi" href="#">
           <h1>Lo mas vendido</h1>
@@ -176,36 +180,36 @@
         <div class="card-group">
           <div class="card">
             <img src="./src/assets/images/pp-cards/iron-man.jpg" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card">
             <img src="./src/assets/images/pp-cards/figure-1.png" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card">
             <img src="./src/assets/images/pp-cards/figure-2.png" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
@@ -215,12 +219,12 @@
         <div class="card-group">
           <div class="card">
             <img src="./src/assets/images/pp-cards/figure-3.png" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
@@ -228,24 +232,24 @@
           <div class="card">
             <img src="./src/assets/images/pp-cards/star-wars.png" width="640" height="340" class="card-img-top"
               alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card">
             <img src="./src/assets/images/pp-cards/bb-yoda.jpg" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
@@ -255,36 +259,36 @@
         <div class="card-group">
           <div class="card">
             <img src="src/assets/images/pp-cards/funko.jpg" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card">
             <img src="./src/assets/images/pp-cards/iron-man.jpg" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card">
             <img src="./src/assets/images/pp-cards/figure-1.png" width="640" height="340" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">$999</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-              <p class="card-text">
-                <a href="#" class="btn btn-warning">Comprar ahora</a>
+              <p class="c-text">
+                <a href="#" class="btn btn-warning m-3">Comprar ahora</a>
                 <a href="#" class="btn btn-warning">Añadir al carrito</a>
               </p>
             </div>
@@ -295,11 +299,11 @@
     </div>
   </main>
   <!-- Terminacards articulos -->
-  <br><br>
+
 
   <!--Empieza Video youtube -->
 
-  <div class="container">
+  <div class="container"><hr>
     <div id="boton-categoria" class="container">
       <a class="btn btn-warning bi" href="#">
         <h1>Artesanales</h1>
@@ -313,12 +317,11 @@
     </div>
   </div>
   <!-- Termina Video youtube -->
-
-  <br><br>
+ <br>
   <!-- Empieza Carrousel de abajo -->
   <main>
     <div class="jumbotron">
-      <div id="boton-categoria" class="container">
+      <div id="boton-categoria" class="container"><hr>
         <a class="btn btn-warning bi" href="#">
           <h1>Promociones</h1>
         </a>
@@ -405,10 +408,11 @@
       <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
 
       </a>
+      <hr>
     </div>
     </div>
   </main>
-  <br><br>
+  <br>
   <!-- Termina Carrousel de abajo -->
   <!-- Script de prueba <script src="src/assets/js/main.js"></script>-->
   <script src="./src/assets/js/cards-cat.js"></script>
