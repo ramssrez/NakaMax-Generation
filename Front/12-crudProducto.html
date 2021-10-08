@@ -109,12 +109,13 @@
           placeholder="Descripccion del Producto"></textarea>
         <br>
         <!-- Imagen -->
+        <div>
+            <p>Imagen del Producto</p>
+           <div id="preview" class="styleImage"></div>
+          <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg">
+          <input type="button" class="btn all-btn btn-12crud mb-3 mt-3" value="IMAGEN" onclick="document.getElementById('file').click()">
+        </div>
 
-        <div id="preview" class="styleImage"></div>
-
-        <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg">
-        <input type="button" class="btn all-btn btn-12crud mb-3 mt-3" value="IMAGEN"
-          onclick="document.getElementById('file').click()">
       </div>
 
     
