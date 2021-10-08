@@ -384,6 +384,12 @@ h1 {
     color: white;
     font-family: 'Gamja Flower', cursive;
     font-size: 20px;
+    display: block;
+    border: solid 1px white;
+}
+
+.carrito-icon-06descrip{
+    margin-right: 10%;
 }
 
 /* Fin de la descripción */
