@@ -1,7 +1,8 @@
 fieldset {
-  border: solid 1px black;
-  border-radius: 10px;
-  width: 40%;
+  border: solid 0.1rem #02569C;
+  border-radius: 2rem;
+  width: 45%;
+  background-color: #EFEFEF;
 }
 
 #legend {
@@ -41,6 +42,18 @@ header{
   height: 100px;
 }
 
+.regLog{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 30px;
+}
+
+.regLog .register-01log{
+  color: #000;
+  text-decoration: underline;
+}
+.regLog .loginWord-01log{
+  color: rgba(0, 0, 0, .4);
+}
 .inpRojo{
   border-color: red;
 }
