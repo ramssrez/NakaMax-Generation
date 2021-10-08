@@ -1,7 +1,9 @@
 /* ---- header ---- */
 body{
     margin: 0;
-   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header {
     background-color: #02569C;
@@ -26,6 +28,11 @@ ul {
     padding: 0px;
 
 }
+hr {
+    height: 1px;
+    border-color:#cc2424;
+    background-color:#F2A516;
+  }
 /* Login y carrito (Botones)*/
 .bt-login{
     position: absolute;
@@ -77,6 +84,10 @@ ul {
 h5{
     font-family: 'Quintessential', cursive;
 }
+.jumbotron{
+    background-color: #F07A0D;
+    
+}
 /* Categorias circulos*/
 #cat-1{
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
@@ -115,6 +126,11 @@ h1 {
 
 
 /* ---- footer ---- */
+
+
+footer{
+    margin-top: auto;
+}
 
 .subtitulos{
     font-family: 'Gamja Flower', cursive;
@@ -307,4 +323,84 @@ h1 {
     border-radius: 1rem;
     border: solid 0.1rem #02569C;
 }
+.div-01log .register-01log{
+    color: rgba(0, 0, 0, .4);
+}
+.div-01log .loginWord-01log{
+    text-decoration: underline;
+}
 /* Fin de la sección de Login */
+
+/* Seccion de menu */
+
+#menu{
+  margin:0;
+  padding:0;
+}
+
+#menu li {
+  background-color:#02569C;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu a{
+  display:block;
+  padding:10px;
+  letter-spacing:1px;
+}
+
+#menu li:hover {
+  background:#F2A516;
+}
+
+#menu li a:hover{
+  color: black;
+  filter: brightness(0.1);
+}
+
+#menu ul {
+  list-style:none;
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#F1ECE9;
+  padding:0;
+}
+
+#menu ul li {
+  float:none;
+  width: 195%;
+}
+
+#menu ul a {
+  padding:10px 15px;
+  font-size: 26px;
+  color: #F1ECE9;
+}
+
+#menu li:hover > ul {
+  display:block;
+}
+
+/* Sección de la descripción */
+.btn-06descrip{
+    background: #F2A516;
+    color: white;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    display: block;
+    border: solid 1px white;
+    border-radius: .1rem;
+}
+.carrito-icon-06descrip{
+    margin-right: 10%;
+}
+.card-body h3{
+    font-family: 'Quintessential', cursive;
+    text-align: center;
+    margin-bottom: 10%;
+}
