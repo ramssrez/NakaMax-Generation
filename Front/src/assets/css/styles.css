@@ -77,6 +77,9 @@ ul {
 h5{
     font-family: 'Quintessential', cursive;
 }
+.jumbotron{
+    background-color: #F07A0D;
+}
 /* Categorias circulos*/
 #cat-1{
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
