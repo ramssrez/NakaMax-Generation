@@ -155,11 +155,12 @@ h1 {
 }
 
 .btn-pago {
-    background-color: #cc2424;
+    background-color: #f94949;
 }
 
 .btn-productos {
-    background-color: #4edf4e;
+    background-color: #CBD979;
+    color: #000;
 }
 .subtotales{
     position: relative;
@@ -199,8 +200,9 @@ h1 {
     margin-top: 50px;
 }
 
-.ingresa-datos {
+#ingresa-datos {
     margin-top: 50px;
+    font-family: 'Gamja Flower', cursive;
 }
 
 .inp-datos {
@@ -237,8 +239,9 @@ h1 {
     cursor: pointer;
 }
    
-.btn:hover{
+.btn:active{
     transition: all .4s;
-    background-color: #000;
+    box-shadow: 5px 5px 5px 0px #02569C;
+    color: #fff;
 }
 
