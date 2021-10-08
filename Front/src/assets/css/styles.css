@@ -377,3 +377,13 @@ h1 {
 #menu li:hover > ul {
   display:block;
 }
+
+/* Sección de la descripción */
+.btn-06descrip{
+    background: #F2A516;
+    color: white;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+}
+
+/* Fin de la descripción */
