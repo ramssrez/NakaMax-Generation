@@ -37,10 +37,10 @@
 
   <body>
     <!-- HEADER -->
-    <header id="heade" class="container-fluid pt-2">
+    <header class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
-          src="src/assets/images/nakamax.png"
+          src="./src/assets/images/nakamax.png"
           width="100"
           height="40"
           alt=""
@@ -74,11 +74,18 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav nav-he">
-            
-                  <a class="navbar-brand nav-header" href="#">ARTISTICOS</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand nav-header" href="#">HOME</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <li class="nav-item active">
               <a class="nav-link nav-header" href="#"
                 >ARTISTICOS<span class="sr-only">(current)</span></a
@@ -96,95 +103,147 @@
         </div>
 
         <!-- Boton Login -->
-        <a href="" class="btn btn-outline-success btn-login my-2 my-sm-0"
-          ><i class="far fa-user-circle"></i> <strong>Log in</strong></a
+        <a href="" class="btn btn-outline-success bt-login my-2 my-sm-0">
+          <i class="far fa-user-circle"></i><strong>Iniciar</strong></a
         >
 
         <!-- Boton Carrito -->
-        <a href="#" class="btn btn-outline-success btn-carrito my-3 my-sm-0">
+        <a
+          href="#"
+          class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0"
+        >
           <img
             id="carrito-icon"
-            src="src/assets/images/carrito-de-compras.png"
+            src="./src/assets/images/carrito-de-compras.png"
             width="30"
             height="30"
             alt=""
           /><strong>Carrito</strong>
         </a>
-
-        <!--  <button class="btn btn-carrito my-3 my-sm-0" type="submit"</button>-->
       </nav>
     </header>
-     <!-- HEADER -->
+    <!-- HEADER -->
 
     <section class="login-01log">
       <div class="container seccion-01login">
-        <img src="src/assets/images/nakamax.png" alt="">
-        <div class="div-login">
+        <img src="src/assets/images/nakamax.png" alt="" />
+        <div class="div-01log">
           <a href="#">Registrarse</a>
           <a href="#">Iniciar Sesión</a>
         </div>
         <form class="form-01log">
           <div class="mt-5 mr-5 ml-5">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Correo Electronico"
+            />
           </div>
           <div class="m-5">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Contraseña"
+            />
           </div>
-          <button type="submit" class="btn pr-5 pl-5 mb-4 btn-01log">Iniciar Sesión</button>
+          <button type="submit" class="btn pr-5 pl-5 mb-4 btn-01log">
+            Iniciar Sesión
+          </button>
         </form>
       </div>
     </section>
 
-        <!-- Footer -->
-        <footer class="bg-dark subtitulos">
-          <div class="row justify-content-between pt-2">
-              <div class="col-7">
-                  <div class="row d-flex justify-content-around">
-                      <div class="col-3"><a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a></div>
-                      <div class="col-3"><a class="text-white" href="05-contactUs">PREGUNTAS Y RESPUESTAS</a></div>
-                      <div class="col-2"><a class="text-white" href="05-contactUs">CONTACTO</a></div>
-                  </div>
-                  <div class="row p-3">
-                      <div class="col-2 mx-5">
-                          <a href="#inicio"><img class="rounded-pill" src="src/assets/images/nakamax.png" alt="Enlace logo Nakamas" width="150"></a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-2 mx-5">
-                  <div class="row d-flex justify-content-center"><p class="text-white">NUESTRAS REDES SOCIALES</p></div>
-                  <div class="row d-flex justify-content-center">
-                      <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1" src="src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
-                      <a href="https://www.facebook.com" target="_blank"><img class="mx-1" src="src/assets/images/logo-facebook.png" alt="Enlace facebook" width="30" height="30"></a>
-                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1" src="src/assets/images/logo-instagram.png" alt="Enlace instagram" width="30" height="30"></a>
-                  </div>
-              </div>
+    <!-- Footer -->
+    <footer class="bg-dark subtitulos">
+      <div class="row justify-content-between pt-2">
+        <div class="col-7">
+          <div class="row d-flex justify-content-around">
+            <div class="col-3">
+              <a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a>
+            </div>
+            <div class="col-3">
+              <a class="text-white" href="05-contactUs"
+                >PREGUNTAS Y RESPUESTAS</a
+              >
+            </div>
+            <div class="col-2">
+              <a class="text-white" href="05-contactUs">CONTACTO</a>
+            </div>
           </div>
-          <div class="row pb-2">
-              <div class="col d-flex justify-content-end">
-                  <a class="text-white" href="./src/assets/html/13-termsPrivacy.html">TÉRMINOS Y CONDICIONES</a>
-              </div>
-              <div class="col">
-                  <a class="text-white" href="05-contactUs">AVISO DE PRIVACIDA</a>
-              </div>
+          <div class="row p-3">
+            <div class="col-2 mx-5">
+              <a href="#inicio"
+                ><img
+                  class="rounded-pill"
+                  src="src/assets/images/nakamax.png"
+                  alt="Enlace logo Nakamas"
+                  width="150"
+              /></a>
+            </div>
           </div>
-      </footer>
+        </div>
+        <div class="col-2 mx-5">
+          <div class="row d-flex justify-content-center">
+            <p class="text-white">NUESTRAS REDES SOCIALES</p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <a href="https://twitter.com/?lang=es" target="_blank"
+              ><img
+                class="mx-1"
+                src="src/assets/images/logo-twitter.png"
+                alt="Enlace twitter"
+                width="30"
+                height="30"
+            /></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                class="mx-1"
+                src="src/assets/images/logo-facebook.png"
+                alt="Enlace facebook"
+                width="30"
+                height="30"
+            /></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"
+              ><img
+                class="mx-1"
+                src="src/assets/images/logo-instagram.png"
+                alt="Enlace instagram"
+                width="30"
+                height="30"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col d-flex justify-content-end">
+          <a class="text-white" href="./src/assets/html/13-termsPrivacy.html"
+            >TÉRMINOS Y CONDICIONES</a
+          >
+        </div>
+        <div class="col">
+          <a class="text-white" href="05-contactUs">AVISO DE PRIVACIDA</a>
+        </div>
+      </div>
+    </footer>
 
-
-          <!-- Scripts de Bootstrap -->
+    <!-- Scripts de Bootstrap -->
     <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
