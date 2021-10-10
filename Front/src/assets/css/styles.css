@@ -17,6 +17,7 @@ header {
 }
 ul {
     font-family: 'Gamja Flower', cursive;
+    font-size: 28px;
 }
 .dropdown-item{
     font-family: 'Gamja Flower', cursive;
@@ -36,9 +37,9 @@ hr {
 /* Login y carrito (Botones)*/
 .bt-login{
     position: absolute;
-    width: 133px;
+    width: 150px;
     height: 45px;
-    right: 233px;
+    right: 250px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -226,6 +227,7 @@ footer{
 
 .ingresa-datos {
     margin-top: 50px;
+    font-family: 'Gamja Flower', cursive;
 }
 
 .inp-datos {
