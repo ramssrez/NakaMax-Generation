@@ -152,6 +152,7 @@ footer{
 
 
 /* ---- 10-starWindow ----*/
+/* Solo modifica de aquí Valeria */
 .carrito-compra {
     font-family: 'Gamja Flower', cursive;
 
@@ -166,6 +167,12 @@ footer{
     width: 150px;
     text-align: center;
     color: #02569C;
+}
+
+.separador {
+    height: 1px;
+    border-color:#000000;
+    background-color:#000000;
 }
 
 .all-btn {
@@ -198,7 +205,7 @@ footer{
     right: 0;
 }
 
-/* ---- 10-starWindow ----*/
+/* ---- 12 crudProducto ----*/
 
 .imagen-logo-crud {
     width: 250px;
@@ -208,6 +215,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .formulario-alta-producto {
     display: block;
@@ -225,13 +233,12 @@ footer{
     margin-top: 50px;
 }
 
-.ingresa-datos {
+#ingresa-datos {
     margin-top: 50px;
     font-family: 'Gamja Flower', cursive;
 }
 
 .inp-datos {
-    /* border-radius: 10px; */
     width: 400px;
     text-align: center;
     color: #02569C;
@@ -250,7 +257,7 @@ footer{
     border-bottom: 3px solid #02569C;
 }
 
-/* imagen */
+/* ---- 12 crudProducto (subir imagen) ----*/
 #file {
     display: none;
 }
@@ -268,6 +275,9 @@ footer{
     transition: all .4s;
     background-color: #000;
 }
+/* Hasta aquí Valeria */
+
+
 
 /*  Inicio Sección del login */
 .login-01log{
