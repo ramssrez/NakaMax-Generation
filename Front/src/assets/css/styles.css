@@ -266,14 +266,14 @@ footer{
     display: block;
     margin: auto;
     border: none;
-    color: #fff;
+    color: #F1ECE9;
     background-color: #02569C;
-    cursor: pointer;
 }
    
 .btn-12crud:hover{
     transition: all .4s;
-    background-color: #000;
+    background-color: #F1ECE9;
+    color: #02569C;
 }
 /* Hasta aquí Valeria */
 
