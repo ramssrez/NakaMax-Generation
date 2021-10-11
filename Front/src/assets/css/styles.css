@@ -11,9 +11,18 @@ header {
     height: 120px;
     left: 0px;
     top: 0px;
+    z-index: 100;
+}
+.li-00-index{
+    list-style: none;
 }
 .nav-header{
     color: #F1ECE9;
+
+}
+.nav-header:hover{
+    color:#F2A516;
+    
 }
 ul {
     font-family: 'Gamja Flower', cursive;
@@ -29,7 +38,7 @@ ul {
     padding: 0px;
 
 }
-hr {
+.lineas-hr {
     height: 1px;
     border-color:#cc2424;
     background-color:#F2A516;
@@ -82,7 +91,7 @@ hr {
     color: black;
     font-family: 'Gamja Flower', cursive;
 }
-h5{
+.item-price{
     font-family: 'Quintessential', cursive;
 }
 .jumbotron{
