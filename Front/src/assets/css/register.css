@@ -1,34 +1,43 @@
-fieldset {
-  border: solid 0.1rem #02569C;
+.fieldset-02register {
+  border: solid 1px #02569C;
   border-radius: 2rem;
   width: 45%;
-  background-color: #EFEFEF;
+  background-color: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgba(24, 37, 206, 0.37);
 }
-
-#legend {
+#legend-02register {
   position: relative;
   top: -35px;
   left: 20%;
 }
-
-#legend img{
+#legend-02register img{
   border-radius: 5px;
   width: 60%;
 }
-
 .entradaR{
   font-family: 'Gamja Flower', cursive;
   color: black;
-  font-size: 18px;
   text-align: center;
-  letter-spacing: 2px;
-  width: 99%;
-  margin-bottom: 8%;
+  width: 98%;
+  margin-bottom: 7%;
+  font-size: 25px;
+  border-radius: 1rem;
+  border: solid 0.1rem #02569C;
+}
+.radio-02register{
+  border: none;
+}
+#label-02register{
+  border-right: none;
+  border-radius: 1rem 0  0 1rem;
+}
+#fechaNacimiento{
+  border-radius: 0 1rem 1rem 0;
 }
 .letrasChiquitas{
   font-size: 10px;
 }
-.btnR{
+.btn-02register{
   background: #02569C;
   color: white;
   width: 60%;
@@ -37,21 +46,23 @@ fieldset {
   margin: 0 20%;
   height: 50px;
 }
-
-header{
+.btn-02register:hover{
+  transition: all .4s;
+  background-color: #F2A516;
+  color: #000;
+}
+.header-02register{
   height: 100px;
 }
-
 .regLog{
   font-family: 'Gamja Flower', cursive;
   font-size: 30px;
 }
-
-.regLog .register-01log{
+.regLog .register-02register{
   color: #000;
   text-decoration: underline;
 }
-.regLog .loginWord-01log{
+.regLog .loginWord-02register{
   color: rgba(0, 0, 0, .4);
 }
 .inpRojo{
