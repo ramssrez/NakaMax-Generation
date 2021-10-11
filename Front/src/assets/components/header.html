@@ -27,13 +27,13 @@
 <body>
   <!-- Aqui comienza el HEADER -->
 
-  <header id="container-fluid">
-    <a class="navbar-brand" href="./index.html">
+  <header class="container-fluid">
+    <a class="navbar-brand" href="index.html">
       <img src="./src/assets/images/nakamax.png" width="100" height="40" alt="" />
     </a>
     <nav class="navbar navbar-expand-lg">
-      <ul class="navbar-nav nav-he" id="menu">
-        <li>
+      <ul id="menu" class="nav-item nav-he">
+        <li class="li-00-index">
           <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png" alt="CATEGORIAS"></a>
           <ul>
             <li><a href="#"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo"> Artezanales</a></li>
@@ -53,30 +53,26 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="./index.html">ARTISTICOS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="./index.html">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="./index.html">LO MAS VENDIDO</a>
+            <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
           </li>
         </ul>
       </div>
 
       <!-- Boton Login -->
-      <a href="./01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0"> <img
-          src="./src/assets/images/agregar-usuario.png" alt="inicio de sesion" width="25">
-        <strong> Inicio de sesion</strong>
-      </a>
-      <br />
+      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
+        <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
 
       <!-- Boton Carrito -->
-      <a href="./10-starWindow.html" class="btn btn-outline-success bt-carrito my-2 my-sm-0">
-        <img id="carrito-icon" src="./src/assets/images/carro-de-la-compra.png" width="30" height="30" alt="" /><strong>
-          Carrito</strong>
+      <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
+        <img id="carrito-icon" src="./src/assets/images/carro-de-la-compra.png" width="30" height="30"
+          alt="" /><strong>Carrito</strong>
       </a>
-
     </nav>
   </header>
 
