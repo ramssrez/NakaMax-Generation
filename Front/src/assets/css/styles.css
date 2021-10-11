@@ -29,7 +29,7 @@ ul {
     padding: 0px;
 
 }
-hr {
+.lineas-hr {
     height: 1px;
     border-color:#cc2424;
     background-color:#F2A516;
@@ -82,7 +82,7 @@ hr {
     color: black;
     font-family: 'Gamja Flower', cursive;
 }
-h5{
+.item-price{
     font-family: 'Quintessential', cursive;
 }
 .jumbotron{
