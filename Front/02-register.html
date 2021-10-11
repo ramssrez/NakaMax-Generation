@@ -18,14 +18,13 @@
   <!-- CCS nuestro -->
   <link rel="stylesheet" href="./src/assets/css/footer.css" type="text/css" />
   <link rel="stylesheet" href="./src/assets/css/styles.css" type="text/css" />
-  <link rel="stylesheet" href="./src/assets/css/register.css" type="text/css" />
   <title>Registro</title>
 </head>
 
 <body>
   <!-- Aqui comienza el HEADER -->
 
-  <header id="container-fluid">
+  <header class="container-fluid" id="header-02register">
     <nav class="navbar navbar-expand-lg">
       <ul class="navbar-nav nav-he" id="menu">
         <li>
@@ -69,20 +68,20 @@
 
   <main class="conteiner">
     <div class="d-flex justify-content-center my-5">
-      <fieldset >
-        <div id="legend">
+      <fieldset class="fieldset-02register">
+        <div id="legend-02register">
           <img src="src/assets/images/nakamax.png" alt="Logo nakamax" />
         </div>
         <form action="GET">
           <div class="regLog d-flex justify-content-around">
-            <a href="./02-register.html" class="register-01log">Registrarse</a>
-            <a href="./01-log.html" class="loginWord-01log">Iniciar Sesion</a>
+            <a href="./02-register.html" class="register-02register">Registrarse</a>
+            <a href="./01-log.html" class="loginWord-02register">Iniciar Sesion</a>
           </div>
           <div class="d-flex justify-content-center flex-wrap m-5">
-            <input type="text" class="entradaR" placeholder="USUARIO" id="user" />
-            <input type="text" class="entradaR" placeholder="NOMBRE COMPLETO" id="name" />
-            <input type="email" class="entradaR" placeholder="CORREO ELECTRONICO" id="email"/>
-            <select name="" id="genFav" class="entradaR">
+            <input type="text" class="form-control entradaR" placeholder="USUARIO" id="user" />
+            <input type="text" class="form-control entradaR" placeholder="NOMBRE COMPLETO" id="name" />
+            <input type="email" class="form-control entradaR" placeholder="CORREO ELECTRONICO" id="email"/>
+            <select name="" id="genFav" class="form-control entradaR py-1">
               <option value="">GENERO FAVORITO DE ANIME</option>
               <option value="shounen">Shounen</option>
               <option value="ecchi">Ecchi</option>
@@ -98,17 +97,19 @@
               <option value="gore">Gore</option>
               <option value="hentai">Hentai</option>
             </select>
-            <label class="form-check-label entradaR my-1" for="vendedor">FECHA DE NACIMIENTO</label>
-            <input type="date" class="entradaR" name="" id="fechaNacimiento" />
-            <input type="password" class="entradaR" name="" id="contraseña" placeholder="CONTRASEÑA" />
-            <input type="password" class="entradaR" name="" id="cContraseña" placeholder="CONFIRMAR CONTRASEÑA" />
+            <div class="row d-flex flex-nowrap justify-content-center">
+              <label class="form-check-label entradaR col-6 py-1" for="fechaNacimiento" id="label-02register">FECHA DE NACIMIENTO</label>
+              <input type="date" class=" form-control entradaR col-6" name="" id="fechaNacimiento" />
+            </div>
+            <input type="password" class="form-control entradaR" name="" id="contraseña" placeholder="CONTRASEÑA" />
+            <input type="password" class="form-control entradaR" name="" id="cContraseña" placeholder="CONFIRMAR CONTRASEÑA" />
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="comprador" value="option1" />
-              <label class="form-check-label entradaR my-1" for="comprador">COMPRADOR</label>
+              <label class="form-check-label entradaR my-1 radio-02register" for="comprador">COMPRADOR</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="vendedor" value="option2" />
-              <label class="form-check-label entradaR my-1" for="vendedor">VENDEDOR</label>
+              <label class="form-check-label entradaR my-1 radio-02register" for="vendedor">VENDEDOR</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="TyCA" value="option1" />
@@ -119,7 +120,7 @@
             </div>
           </div>
           <div class="contBotonR">
-            <button type="button" class="btnR mb-4 entradaR" id="registrarUs">
+            <button type="button" class="btn-02register mb-4 entradaR" id="registrarUs">
               CREAR CUENTA
             </button>
           </div>
