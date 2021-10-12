@@ -84,11 +84,11 @@
                                 <div class="col">
                                     <p>NOMBRE</p>
                                 </div>
-                                <div class="col-7">
-                                    <p>Juan Antonio Perez Perez</p>
+                                <div class="col-7" id="divName">
+                                    <p id="userName">Juan Antonio Perez Perez</p>
                                 </div>
-                                <div class="col d-flex justify-content-center">
-                                    <button type="button">EDITAR</button>
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <button id="uWeditName" class="btn">EDITAR</button>
                                 </div>
                             </div>
                             <div class="row">
@@ -126,7 +126,7 @@
                             </div>
                             <br>
                             <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-danger mx-2">ELIMINAR CUENTA</button>
+                                <button type="button" class="uWbtn btn mx-2">ELIMINAR CUENTA</button>
                             </div>
                             <hr>
                         </div>
@@ -216,8 +216,8 @@
                     </div>
                 </section>
                 <section class="my-4 mr-5 d-flex justify-content-end">
-                    <button type="button" class="btn btn-danger mx-2 mr-5">GUARDAR</button>
-                    <button type="button" class="btn btn-danger mx-2 mr-5">CERRAR SESIÓN</button>
+                    <button type="button" class="btn uWbtn mx-2 mr-5">GUARDAR</button>
+                    <button type="button" class="btn uWbtn mx-2 mr-5">CERRAR SESIÓN</button>
                 </section>
             </section>
             <section class="container-fluid px-5 my-3 subtitulos mb-5">
@@ -239,7 +239,7 @@
                         <label for="exampleFormControlTextarea1">AGREGAR DESCRIPCIÓN</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         <div class="mt-3 d-flex justify-content-end">
-                            <button type="button" class="btn btn-danger mx-2">ENVIAR</button>
+                            <button type="button" class="btn uWbtn mx-2">ENVIAR</button>
                         </div>
                     </form>
                 </div>
@@ -278,6 +278,9 @@
             </div>
         </div>
     </footer>
+
+        <!-- JS userWindow -->
+        <script src="./src/assets/js/userWindow.js"></script>
 
         <!-- JS Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

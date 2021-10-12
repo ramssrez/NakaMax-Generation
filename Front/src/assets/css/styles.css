@@ -140,7 +140,13 @@ h1 {
 .uWdataBG{
     background-color: #F1ECE9;
 }
-
+.uWbtn{
+    background-color: #dc3545;
+    color: white;
+}
+.uWbtn:hover{
+    background-color: #F2A516;
+}
 
 /* ---- footer ---- */
 
