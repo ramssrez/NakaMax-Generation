@@ -657,6 +657,21 @@ footer{
     font-size: 25px;
     font-family: 'Gamja Flower', cursive;
 }
+.btn-11pay{
+    background: #02569C;
+    color: white;
+    text-align: center;
+    display: block;
+/*     margin: 0 auto;
+ */    
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+    border-radius: 0.5rem;
+}
+.btn-11pay:hover{
+    transition: all .4s;
+    background-color: #F2A516;
+}
 /* Finalización sección de pago */
 
 /* Comienza sección acerca de nosotros */
