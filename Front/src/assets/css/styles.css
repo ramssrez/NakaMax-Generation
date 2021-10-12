@@ -74,13 +74,6 @@ ul {
     bottom: 25%;
 }
 
-.nav-he {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-}
 /* Carroucel */
 #sec-carroucel{
    height: 900px;
@@ -97,6 +90,15 @@ ul {
 .jumbotron{
     background-color: #F07A0D;
     
+}
+.promo-carrusel{
+    transform: 1s;
+    color: #F1ECE9;
+}
+.promo-carrusel:hover{
+    transform:scale(1.3);
+    color: #F2A516;
+
 }
 /* Categorias circulos*/
 #cat-1{
@@ -123,12 +125,24 @@ h1 {
 }
 .circulos{
    margin: 0 auto;
+   transform: 1s;
+}
+.circulos:hover{
+    transform:scale(1.3);
 }
 .boton-02-cards-pp{
     background-color: #F2A516;
     color:#000;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+}
+/* Carrusel de abajo pagina principal */
+.pp-card{
+    transform: 1s;
+}
+.pp-card:hover{
+    transform:scale(1.3);
+    z-index: 100;
 }
 
 /* CARDS CATEGORIAS */
