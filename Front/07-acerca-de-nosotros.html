@@ -11,6 +11,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+Display&family=Poppins:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   <title>Acerca de nosotros</title>
 </head>
 </br>
@@ -76,15 +81,16 @@
 <!-- TERMINA HEADER -->
 
 <!-- ACERCA DE NOSOTROS -->
-<section class="row">
-  <h1 class=adn-title>Acerca de nosotros</h1>
+<section>
+  <h1 class=title-adn>Acerca de nosotros</h1>
   </br>
   </br>
   </br>
-  <div class="adn-subtitle">VISIÓN</div>
+  <!-- DESCRIPCIÓN DE VISIÓN -->
+  <div class="subtitle-adn">VISIÓN</div>
   </h3>
   <div>
-    <p class="adn-description">
+    <p class="description-adn">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
       quibusdam dignissimos qui. Commodi ipsam sed culpa impedit expedita
       cum dolore recusandae! Fuga voluptatibus eligendi deserunt at incidunt
@@ -105,10 +111,10 @@
 
   <!-- DESCRIPCIÓN DE MISIÓN -->
   <h3>
-    <div class="adn-subtitle">MISIÓN</div>
+    <div class="subtitle-adn">MISIÓN</div>
   </h3>
   <div>
-    <p class="adn-description">
+    <p class="description-adn">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
       quibusdam dignissimos qui. Commodi ipsam sed culpa impedit expedita
       cum dolore recusandae! Fuga voluptatibus eligendi deserunt at incidunt
@@ -131,17 +137,18 @@
 
 </section>
 
-<!-- CARROUSEL -->
 
-<section class="row">
-<div class="container">
-  <center>
+
+<!-- CARROUSEL 
+<section>
+<div class=>
     <input type="radio" name="slider" id="item-1" checked>
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
     <div class="cards">
+  
       <label class="card" for="item-1" id="song-1">
-        <img src="http://pm1.narvii.com/6278/5eecae57032c7a285084e2d2540f3b086ee588f8_00.jpg" alt="song">
+        <img src= "./src/assets/images/img-dos.png">
       </label>
       <label class="card" for="item-2" id="song-2">
         <img src="https://cdn.alfabetajuega.com/wp-content/uploads/2021/02/nico-robin-abj-780x405.jpg" alt="song">
@@ -159,41 +166,97 @@
             <path d="M5 3l14 9-14 9V3z" />
           </svg>
         </div>
-        <div class="info-area" id="test">
+        <!-<div class="time">Descripción carrousel</div> -->
+<!-- <div class="info-area" id="test">
           <label class="song-info" id="song-info-1">
             <div class="adn-name">Nombre</div>
             <div class="sub-line">
               <div class="adn-apellido">Lorem ipsum dolor sit amet</div>
-              <!-- <div class="time">Descripción</div> -->
+              <div class="time">Descripción carrousel</div> 
             </div>
           </label>
           <label class="song-info" id="song-info-2">
             <div class="adn-name">Nombre</div>
             <div class="sub-line">
               <div class="adn-apellido">Lorem ipsum dolor sit amet</div>
-              <!-- <div class="time">Descripción</div> -->
+              <div class="time">Descripción carrousel</div> 
             </div>
           </label>
           <label class="song-info" id="song-info-3">
             <div class="adn-name">Nombre</div>
             <div class="sub-line">
               <div class="adn-apellido">Lorem ipsum dolor sit amet</div>
-              <!-- <div class="time">Descripción</div> -->
+              
             </div>
           </label>
         </div>
       </div>
-      <!-- <div class="progress-bar">
+      <div class="progress-bar">
         <span class="progress"></span>
-      </div> -->
+      </div>
     </div>
-  </center>
 </section>
 
+-->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://tierragamer.com/wp-content/uploads/2019/09/One-Piece-Monkey-D-Luffy-Sonrisa.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class = "name-adn">NOMBRE COMPLETO</h5>
+        <p class = "rol-adn">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.alfabetajuega.com/wp-content/uploads/2021/02/nico-robin-abj-780x405.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class = "name-adn" >NOMBRE COMPLETO</h5>
+        <p class = "rol-adn">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.alfabetajuega.com/wp-content/uploads/2021/02/sanji-780x405.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class = "name-adn">NOMBRE COMPLETO</h5>
+        <p class = "rol-adn">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
 </div>
+</div>
+
 </br>
 </br>
 </br>
+
+<!-- DESCRIPCIÓN DE CADA UNO -->
+<section>
+  <div>
+    <p class="quien-adn">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+      quibusdam dignissimos qui. Commodi ipsam sed culpa impedit expedita
+      cum dolore recusandae! Fuga voluptatibus eligendi deserunt at incidunt
+      dolorum dolorem quos! Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Aliquam, fugit dolorum veritatis, corrupti quaerat
+      ratione aliquid vero nesciunt, ut dolore velit explicabo aut
+      laudantium officia quisquam assumenda. Reiciendis, rerum totam. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+  </div>
+</section>
 
 <!-- FOOTER -->
 
@@ -248,21 +311,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-  <!-- DESCRIPCIÓN DE CADA UNO -->
-  <section class="row">
-  <div>
-    <p class="adn-quien">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-      quibusdam dignissimos qui. Commodi ipsam sed culpa impedit expedita
-      cum dolore recusandae! Fuga voluptatibus eligendi deserunt at incidunt
-      dolorum dolorem quos! Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Aliquam, fugit dolorum veritatis, corrupti quaerat
-      ratione aliquid vero nesciunt, ut dolore velit explicabo aut
-      laudantium officia quisquam assumenda. Reiciendis, rerum totam. Lorem
-      ipsum, dolor sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
-</section>
+
 </body>
 
 </html>
