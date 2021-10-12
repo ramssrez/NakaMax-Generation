@@ -443,7 +443,41 @@ footer{
     width: 10%;
     margin: 10px;
 }
-
+.ul-06descrip li{
+    list-style: none;
+    margin-right: 10px;
+    margin-right: 10px;
+    border: solid 1px #F2A516;
+    background: rgba(2, 87, 156, 0.199)
+}
+.ul-06descrip li a{
+    color: #02569C;
+    font-size: 28px;
+    margin: 10px;
+}
+.ul-06descrip li:hover {
+    background: #F2A516;
+}
+.ul-06descrip .li-06descrip-title{
+    background-color: #02569C;
+}
+.ul-06descrip .li-06descrip-title a{
+    color: white;
+}
+.div-lista-06descrip ul{
+    padding: 0;
+    width: 100%;
+}
+.div-cards-06descrip{
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.div-padre-06descrip{
+    display: flex;
+    justify-content: space-between;
+}
+/* Finalizacion de la descripción */
 
 /* Seccion de la página de registro */
 .fieldset-02register {
