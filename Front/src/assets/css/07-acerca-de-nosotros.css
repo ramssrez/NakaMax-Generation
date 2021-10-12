@@ -1,17 +1,25 @@
-html,
+
 body {
-  align-items: center;
+ 
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    font-family: "Noto Sans Display", sans-serif;
+    transition: 0.4s ease-in;
+    background-color: white;
+    width: 100%;
+    height: 100%;
   margin-left: 15px;
   margin-right: 10px;
 }
 
-.adn-title {
+.title-adn {
   font-family: "Noto Sans Display", sans-serif;
   font-size: xx-large;
   text-align: center;
 }
 
-.adn-subtitle {
+.subtitle-adn {
   color: white;
   background-color: #02569c;
   font-family: "Gamja Flower", cursive;
@@ -21,7 +29,7 @@ body {
   text-align: center;
 }
 
-.adn-description {
+.description-adn {
   color: black;
   background-color: #f1ece9;
   font-family: "Poppins", sans-serif;
@@ -34,7 +42,7 @@ body {
   /* border-color: #F1ECE9 200px solid; */
 }
 
-.adn-quien {
+.quien-adn {
   color: black;
   background-color: #f1ece9;
   font-family: "Poppins", sans-serif;
@@ -43,39 +51,49 @@ body {
   height: 200px;
   text-align: justify;
   justify-content: center;
+  border-color: #02569c 200px solid;
+}
 
-  /* border-color: #F1ECE9 200px solid; */
+.name-adn {
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  color: #02569c;
+  font-style:italic;
+  background-color: #f1ece9;
+  width: 200px;
+  height: 20px;
+}
+
+.rol-adn {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: #02569c;
+  background-color: #f1ece9;
 }
 
 /* CARROUSEL */
 
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 * {
-  box-sizing: content-box;
-}
+  box-sizing:inherit;
+} */
 
-html,
+/* html,
 body {
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
+  margin: 100;
+  padding: 100; 
+  width: 90%;
+  height: 90%; 
+} */
 
-body {
-  align-items: center;
-  justify-content: center;
-  padding: 20px 10px;
-  font-family: "Noto Sans Display", sans-serif;
-  transition: background 0.4s ease-in;
-  background-color: white;
 
-  /* &.blue {
-    background-color: #428aa6;
-  } */
-}
+
+  /* .blue {
+    background-color: #02569c;
+  }
+
 
 input[type="radio"] {
   display: none;
@@ -83,24 +101,24 @@ input[type="radio"] {
 
 .card {
   position: absolute;
-  width: 60%;
+  width: 100%;
   height: 100%;
   left: 0;
   right: 0;
   margin: auto;
   transition: transform 0.4s ease;
   cursor: pointer;
+  opacity: 1.5;
 }
 
 .container {
-  width: 100%;
+  
   max-width: 800px;
   max-height: 600px;
-  height: 100%;
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
 }
 
@@ -108,12 +126,12 @@ input[type="radio"] {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 500px;
 }
 
 img {
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -144,7 +162,7 @@ img {
   /* img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
   } */
-}
+/* }
 
 .player {
   background-color: #f1ece9;
@@ -167,7 +185,7 @@ img {
   margin-right: 10px;
 } */
 
-.song-info {
+/* .song-info {
   width: calc(100% - 32px);
   display: block;
 }
@@ -189,7 +207,7 @@ img {
   font-size: medium;
   line-height: 16px;
   color: black;
-}
+} */ 
 
 /* .time {
   font-size: 12px;
@@ -199,7 +217,7 @@ img {
   margin-left: auto;
 } */
 
-.progress-bar {
+/* .progress-bar {
   height: 3px;
   width: 100%;
   background-color: #e9efff;
@@ -212,7 +230,7 @@ img {
   position: relative;
   width: 60%;
   height: 100%;
-  background-color: #2992dc;
+  background-color: #f1ece9;
   border-radius: 6px;
 }
 
@@ -234,5 +252,5 @@ img {
 
 #item-3:checked ~ .player #test {
   transform: translateY(-80px);
-}
+} */ 
 

@@ -25,13 +25,13 @@
 </head>
 
 <body>
-    <header id="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+    <header class="container-fluid">
+        <a class="navbar-brand" href="index.html">
             <img src="./src/assets/images/nakamax.png" width="100" height="40" alt="" />
         </a>
         <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav nav-he" id="menu">
-                <li>
+            <ul id="menu" class="nav-item nav-he">
+                <li class="li-00-index">
                     <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png"
                             alt="CATEGORIAS"></a>
                     <ul>
@@ -57,55 +57,141 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav nav-he">
                     <li class="nav-item active">
-                        <a class="nav-link nav-header" href="./index.html">ARTISTICOS<span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link nav-header" href="./index.html">PROMOCIONES<span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-header" href="./index.html">LO MAS VENDIDO</a>
+                        <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Boton Login -->
-            <a href="./01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0"> <img
-                    src="./src/assets/images/agregar-usuario.png" alt="inicio de sesion" width="25">
-                <strong> Inicio de sesion</strong>
-            </a>
-            <br />
+            <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
+                <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
 
             <!-- Boton Carrito -->
-            <a href="./10-starWindow.html" class="btn btn-outline-success bt-carrito my-2 my-sm-0">
+            <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
                 <img id="carrito-icon" src="./src/assets/images/carro-de-la-compra.png" width="30" height="30"
-                    alt="" /><strong>
-                    Carrito</strong>
+                    alt="" /><strong>Carrito</strong>
             </a>
-
         </nav>
     </header>
+
     <br>
-    <br><br>
+    <br>
+    <div class="container">
+        <h2>Detalles de la compra</h2>
+    </div>
+
+    <div class="container">
+        <h2>Metodos de pago</h2>
+        <h3>Selecciona un metodo de pago</h3>
+        <div class="form-check check-11pay">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <img src="./src/assets/images/tarjetas.png" alt="tarjetas" />
+            <label class="form-check-label" for="flexRadioDefault2">
+                Pago con tarjeta de crédito o débito
+            </label>
+        </div>
+        <div class="form-check check-11pay">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <img src="./src/assets/images/efectivo.png" alt="efectivo" />
+            <label class="form-check-label" for="flexRadioDefault1">
+                Pago en efectivo
+            </label>
+        </div>
+        <div class="form-check check-11pay">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <img src="./src/assets/images/paypal.png" alt="paypal" />
+            <label class="form-check-label" for="flexRadioDefault1">
+                Paypal
+            </label>
+        </div>
+        <p>TOTAL:</p>
+        <p>$259</p>
+        <button type="submit" class="btn pr-5 pl-5 mb-4 btn-11pay">
+            Realizar pago
+        </button>
+        <button type="submit" class="btn pr-5 pl-5 mb-4 btn-11pay">
+            Regresar al carrito
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="container carrito-compra">
+
+        <div class="row prodcuto">
+            <!-- Carrito Compras -->
+            <div class="col-xl-8 col-sm-12">
+                <h2 class="m-3">Detalles de la compra</h2>
+                <span class="precio texto">PRECIO</span>
+                <hr class="separador">
+                <span class="precio numero">$1,650.99</span>
+
+                <!-- Producto -->
+                <div class="row p-2">
+
+                    <!-- Imagen del producto -->
+                    <div class="col-xl-6 col-sm-12">
+                        <img src="src/assets/images/imagen-producto.png" alt="" class="imagen-producto">
+                    </div>
+
+                    <!-- Descripcion de la compra -->
+                    <div class="col-xl-6 col-sm-12">
+                        <p class="nombre-producto">Shusui Sword Roronoa Zoro - One piece</p>
+                        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"></p>
+                        <button class="btn-eliminar all-btn">ELIMINAR</button>
+                    </div>
+                </div>
+
+                <div class="subtotales">
+                    <p class=" subtotal">subtotal (<span class="cantidad">1</span> producto): <span
+                            class="precio_total">$1650.00</span></p>
+                </div>
+                <hr class="separador">
+
+            </div>
+
+            <!-- Compra -->
+            <div class="col-xl-4 col-sm-12 text-center">
+                <h2 class="mt-5 mb-5">Compra</h2>
+
+                <p>Cantidad de Productos<span class="cantidad">1</span></p>
+                <p>Subtotal: <span class="subtotal">$1,650.99</span></p>
+                <p>Costo de Envio <span class="costo-envio">$150.00</span></p>
+                <hr class="separador">
+                <p>Total <span class="total">$1,800.99</span></p>
+
+                <p><button class="btn-pago all-btn">PROCEDER PAGO</button></p>
+                <p><button class="btn-productos all-btn">VER MAS PRODUCTOS</button></p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
     <footer class="container-fluid bg-dark subtitulos">
         <div class="row justify-content-between pt-2">
             <div class="col-7">
                 <div class="row d-flex justify-content-around">
-                    <div class="col-3">
-                        <a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a>
-                    </div>
-                    <div class="col-3">
-                        <a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a>
-                    </div>
-                    <div class="col-2">
-                        <a class="text-white" href="05-contactUS.html">CONTACTO</a>
-                    </div>
+                    <div class="col-3"><a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a></div>
+                    <div class="col-3"><a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a></div>
+                    <div class="col-2"><a class="text-white" href="05-contactUS.html">CONTACTO</a></div>
                 </div>
                 <div class="row p-3">
                     <div class="col-2 mx-5">
-                        <a href="index.html"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png"
-                                alt="Enlace logo Nakamas" width="150" /></a>
+                        <a href="#inicio"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png"
+                                alt="Enlace logo Nakamas" width="150"></a>
                     </div>
                 </div>
             </div>
@@ -115,14 +201,12 @@
                 </div>
                 <div class="row d-flex justify-content-center">
                     <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1"
-                            src="./src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30"
-                            height="30" /></a>
+                            src="./src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
                     <a href="https://www.facebook.com" target="_blank"><img class="mx-1"
-                            src="./src/assets/images/logo-facebook.png" alt="Enlace facebook" width="30"
-                            height="30" /></a>
+                            src="./src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
                     <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1"
-                            src="./src/assets/images/logo-instagram.png" alt="Enlace instagram" width="30"
-                            height="30" /></a>
+                            src="./src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30"
+                            height="30"></a>
                 </div>
             </div>
         </div>
@@ -135,7 +219,6 @@
             </div>
         </div>
     </footer>
-
     <!-- JS Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

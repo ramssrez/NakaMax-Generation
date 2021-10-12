@@ -74,16 +74,11 @@ ul {
     bottom: 25%;
 }
 
-.nav-he {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-}
 /* Carroucel */
 #sec-carroucel{
    height: 900px;
+   width: auto;
+   
 }    
 .c-text{
     color: black;
@@ -95,6 +90,15 @@ ul {
 .jumbotron{
     background-color: #F07A0D;
     
+}
+.promo-carrusel{
+    transform: 1s;
+    color: #F1ECE9;
+}
+.promo-carrusel:hover{
+    transform:scale(1.3);
+    color: #F2A516;
+
 }
 /* Categorias circulos*/
 #cat-1{
@@ -121,12 +125,24 @@ h1 {
 }
 .circulos{
    margin: 0 auto;
+   transform: 1s;
+}
+.circulos:hover{
+    transform:scale(1.3);
 }
 .boton-02-cards-pp{
     background-color: #F2A516;
     color:#000;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+}
+/* Carrusel de abajo pagina principal */
+.pp-card{
+    transform: 1s;
+}
+.pp-card:hover{
+    transform:scale(1.3);
+    z-index: 100;
 }
 
 /* CARDS CATEGORIAS */
@@ -228,22 +244,23 @@ footer{
 }
 
 /* ---- 12 crudProducto ----*/
-
 .imagen-logo-crud {
-    width: 250px;
-    border-radius: 20px;
+    width: 60%;
+    border-radius: .5rem;
     display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    margin-bottom: 0px;
 }
 
+.div-img-12crud {
+    top: -60px;
+    position: relative;
+  }
 
 .formulario-alta-producto {
     display: block;
-    margin: auto;
-    height: auto;
-    width: 500px;
+    margin: 0 auto;
+    width: 55%;
     margin-bottom: 50px;
     font-family: 'Gamja Flower', cursive;
     background: rgba(2, 87, 156, 0.199);
@@ -253,7 +270,7 @@ footer{
     border-radius: 2rem;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-top: 50px;
-    border: solid 1px #02569C;
+    border: solid 0.1rem #02569C;
 }
 
 #ingresa-datos {
@@ -266,9 +283,9 @@ footer{
     text-align: center;
     color: #02569C;
     border: none;
-    border-radius: 10px;
-    border-bottom: 2px solid #02569C;
-
+    border-radius: 1rem;
+    border: 0.1rem solid #02569B;
+    font-size: 25px;
 }
 
 .descripcion{
@@ -277,7 +294,8 @@ footer{
     width:400px;
     height:100px;
     border: none;
-    border-bottom: 3px solid #02569C;
+    font-size: 25px;
+    border: .1rem solid #02569C
 }
 
 /* ---- 12 crudProducto (subir imagen) ----*/
@@ -296,7 +314,7 @@ footer{
    
 .btn-12crud:hover{
     transition: all .4s;
-    background-color: #000;
+    background-color: #F2A516;
 }
 /* Hasta aquí Valeria */
 
@@ -316,17 +334,22 @@ footer{
 .seccion-01login{
     border: solid 0.1rem #02569C;
     border-radius: 2rem;
-    width: 50%;
+    width: 45%;
     height: 100%;
     box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
     background: rgba(2, 87, 156, 0.199)
 }
 .seccion-01login img{
-    width: 50%;
+    width: 60%;
     border-radius: .5rem;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-bottom: 0px;
 }
+.div-img-01log {
+    top: -60px;
+    position: relative;
+  }
 .div-01log{
     display: flex;
     justify-content: space-around;
@@ -552,3 +575,267 @@ footer{
 .inpRojo{
   border-color: red;
 }
+
+/* Seccion de contacto */
+
+.tituloDeSeccion-05contact, .subtitulo-05contact, .tituloDeSubeccion{
+  font-size: 80px;
+  font-family: 'Gamja Flower', cursive;
+  text-align: center;
+}
+.contactoRedesSociales a, .entrada-05contact, .opcionesFAQs{
+  font-family: 'Gamja Flower', cursive;
+  color: black;
+  font-size: 18px;
+}
+.formularioContacto, .formularioReporteError{
+  border: solid 1px #02569C;
+  border-radius: 30px;
+}
+.formularioContacto .entrada-05contact, .formularioReporteError .entrada-05contact{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 1%;
+  font-size: 22px;
+  border-radius: 1rem;
+  border: solid 0.1rem #02569C;
+}
+.entrada-05contact{
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+}
+.select-05contact{
+  text-align: center;
+  font-size: 22px;
+  border-radius: 1rem;
+  border: solid 0.1rem #02569C;
+}
+.button-05contact{
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  height: 50px;
+  width: 90px;
+  text-transform: uppercase;
+  font-family: 'Quintessential', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+.subtitulo-05contact{
+  font-size: 36px;
+}
+.mapa{
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+.direccion, .pregunta, .respuesta{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.opcionesFAQs{
+  margin: 0;
+}
+.tituloDeSubeccion{
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+.pregunta{
+  font-size: 22px;
+  text-align: center;
+}
+.respuesta{
+  text-align: justify;
+  padding: 1%;
+}
+/* Estilos de la sección de pago */
+.check-11pay{
+    margin: 1%;
+}
+.check-11pay img{
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.check-11pay label{
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+}
+.btn-11pay{
+    background: #02569C;
+    color: white;
+    text-align: center;
+    display: block;
+/*     margin: 0 auto;
+ */    
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+    border-radius: 0.5rem;
+}
+.btn-11pay:hover{
+    transition: all .4s;
+    background-color: #F2A516;
+}
+/* Finalización sección de pago */
+
+/* Comienza sección acerca de nosotros */
+
+.title-adn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin: 40px;
+}
+
+.subtitle-adn {
+  color: white;
+  background-color: #02569c;
+  font-family: "Gamja Flower", cursive;
+  font-size: x-large;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 40px;
+}
+
+.description-adn {
+  color: black;
+  background-color: #f1ece9;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  padding: 30px;
+  /* width: 1300px;
+  height: 250px; */
+  text-align: justify;
+  justify-content: center;
+  margin: 30px;
+
+
+}
+
+.quien-adn {
+  color: black;
+  background-color: #f1ece9;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  width: 900px;
+  height: 200px;
+  text-align: justify;
+  padding: 20px;
+  margin: 220px;
+}
+
+
+.name-adn {
+  /* font-family: "Poppins", sans-serif;
+  font-size: large;
+  color: #02569c;
+  font-style:italic;
+  background-color: #f1ece9;
+  width: 200px;
+  height: 20px; */
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(1, 7, 66, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid #f1ece9;
+  margin-top: 50px;
+  border: solid 1px #02569C;
+}
+
+.rol-adn {
+  /* font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: #02569c;
+  background-color: #f1ece9; */
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-top: 50px;
+  border: solid 1px #02569C;
+}
+
+/* Termina sección acerca de nosotros */
+
+/* Comienza sección datos del vendedor  */
+.formulario-dv {
+  background-color: white;
+  border: #02569c 1px solid;
+  height: 850px;
+  width: 500px;
+  padding: 50px;
+}
+
+.titulo-dv {
+  color: #000000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: xx-large;
+}
+
+.sub-titulo-dv {
+  color: #000000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: large;
+}
+
+.campo-dv {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 16px;
+  background: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-top: 50px;
+  border: solid 1px #02569C;
+  /* text-align: center;
+  border: #949398 1px solid;
+  height: 20px;
+  width: 300px;
+  color: whitesmoke 0.5px solid;
+  font-family: "Noto Sans", sans-serif;
+  font-size: medium;
+  background-color: rgb(255, 250, 250); */
+}
+
+.campo-dv:hover {
+  background-color: #f1ece9;
+}
+
+.button-dv {
+  color: whitesmoke;
+  height: 60px;
+  width: 200px;
+  font-family: "Quintessential", cursive;
+  font-size: xx-large;
+  background-color: #02569c;
+}
+
+/* Termina sección datos del vendedor */
