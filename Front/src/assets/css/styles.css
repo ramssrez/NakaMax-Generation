@@ -464,9 +464,12 @@ footer{
 .ul-06descrip .li-06descrip-title a{
     color: white;
 }
-.div-lista-06descrip{
+.div-lista-06descrip ul{
+    padding: 0;
     width: 20%;
-    margin: 0;
+}
+.div-cards-06descrip{
+    width: 70%;
 }
 /* Finalizacion de la descripción */
 
