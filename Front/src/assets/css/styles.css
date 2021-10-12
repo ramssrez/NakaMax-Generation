@@ -84,6 +84,8 @@ ul {
 /* Carroucel */
 #sec-carroucel{
    height: 900px;
+   width: auto;
+   
 }    
 .c-text{
     color: black;
