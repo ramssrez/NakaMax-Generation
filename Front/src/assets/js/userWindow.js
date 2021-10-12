@@ -1,4 +1,3 @@
-// alert("archivo enlazado");
 const $uWbuttonEdit = document.querySelector('#uWeditName');
 const $inputName = document.getElementById('divName');
 const $Name = document.querySelector('#userName');
@@ -12,13 +11,21 @@ $uWbuttonEdit.addEventListener('click',()=>{
     $inputName.appendChild(InputItem);
     $inputName.appendChild(btnGuardar);
 
-    $uWbuttonEdit.disabled = "true";
+    disableBtn();
 
     btnGuardar.addEventListener('click',() => {
-        $uWbuttonEdit.disabled = "false";
+        enableBtn();
         const inputNameValue = InputItem.value;
         $Name.textContent = inputNameValue;
         $inputName.removeChild(InputItem);
         $inputName.removeChild(btnGuardar);
     })
 })
+
+function disableBtn() {
+    document.getElementById("uWeditName").disabled = true;
+}
+
+function enableBtn() {
+    document.getElementById("uWeditName").disabled = false;
+}
