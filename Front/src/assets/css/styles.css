@@ -644,3 +644,163 @@ footer{
   text-align: justify;
   padding: 1%;
 }
+
+/* Comienza sección acerca de nosotros */
+
+.title-adn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin: 40px;
+}
+
+.subtitle-adn {
+  color: white;
+  background-color: #02569c;
+  font-family: "Gamja Flower", cursive;
+  font-size: x-large;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 40px;
+}
+
+.description-adn {
+  color: black;
+  background-color: #f1ece9;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  padding: 30px;
+  /* width: 1300px;
+  height: 250px; */
+  text-align: justify;
+  justify-content: center;
+  margin: 30px;
+
+
+}
+
+.quien-adn {
+  color: black;
+  background-color: #f1ece9;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  width: 900px;
+  height: 200px;
+  text-align: justify;
+  padding: 20px;
+  margin: 220px;
+}
+
+
+.name-adn {
+  /* font-family: "Poppins", sans-serif;
+  font-size: large;
+  color: #02569c;
+  font-style:italic;
+  background-color: #f1ece9;
+  width: 200px;
+  height: 20px; */
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(1, 7, 66, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid #f1ece9;
+  margin-top: 50px;
+  border: solid 1px #02569C;
+}
+
+.rol-adn {
+  /* font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: #02569c;
+  background-color: #f1ece9; */
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-top: 50px;
+  border: solid 1px #02569C;
+}
+
+/* Termina sección acerca de nosotros */
+
+/* Comienza sección datos del vendedor  */
+.formulario-dv {
+  background-color: white;
+  border: #02569c 1px solid;
+  height: 850px;
+  width: 500px;
+  padding: 50px;
+}
+
+.titulo-dv {
+  color: #000000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: xx-large;
+}
+
+.sub-titulo-dv {
+  color: #000000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: large;
+}
+
+.campo-dv {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 16px;
+  background: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 2rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-top: 50px;
+  border: solid 1px #02569C;
+  /* text-align: center;
+  border: #949398 1px solid;
+  height: 20px;
+  width: 300px;
+  color: whitesmoke 0.5px solid;
+  font-family: "Noto Sans", sans-serif;
+  font-size: medium;
+  background-color: rgb(255, 250, 250); */
+}
+
+.campo-dv:hover {
+  background-color: #f1ece9;
+}
+
+.button-dv {
+  color: whitesmoke;
+  height: 60px;
+  width: 200px;
+  font-family: "Quintessential", cursive;
+  font-size: xx-large;
+  background-color: #02569c;
+}
+
+/* Termina sección datos del vendedor */
