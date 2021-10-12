@@ -466,10 +466,16 @@ footer{
 }
 .div-lista-06descrip ul{
     padding: 0;
-    width: 20%;
+    width: 100%;
 }
 .div-cards-06descrip{
-    width: 70%;
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.div-padre-06descrip{
+    display: flex;
+    justify-content: space-between;
 }
 /* Finalizacion de la descripción */
 
