@@ -316,11 +316,16 @@ footer{
     background: rgba(2, 87, 156, 0.199)
 }
 .seccion-01login img{
-    width: 50%;
+    width: 60%;
     border-radius: .5rem;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-bottom: 0px;
 }
+.legend-01log {
+    top: -60px;
+    position: relative;
+  }
 .div-01log{
     display: flex;
     justify-content: space-around;
