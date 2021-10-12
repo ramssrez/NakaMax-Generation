@@ -1,4 +1,4 @@
-.dv-formulario {
+.formulario-dv {
   background-color: white;
   border: #02569c 1px solid;
   height: 550px;
@@ -6,19 +6,19 @@
   padding: 50px;
 }
 
-.dv-titulo {
+.titulo-dv {
   color: #000000;
   font-family: "Noto Sans", sans-serif;
   font-size: xx-large;
 }
 
-.dv-sub-titulo {
+.sub-titulo-dv {
   color: #000000;
   font-family: "Noto Sans", sans-serif;
   font-size: large;
 }
 
-.dv-campo {
+.campo-dv {
   text-align: center;
   border: #949398 1px solid;
   height: 20px;
@@ -29,11 +29,11 @@
   background-color: rgb(255, 250, 250);
 }
 
-.dv-campo:hover {
+.campo-dv:hover {
   background-color: #f1ece9;
 }
 
-.dv-button {
+.button-dv {
   color: whitesmoke;
   height: 60px;
   width: 200px;
