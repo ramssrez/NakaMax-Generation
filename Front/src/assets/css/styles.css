@@ -644,3 +644,17 @@ footer{
   text-align: justify;
   padding: 1%;
 }
+/* Estilos de la sección de pago */
+.check-11pay{
+    
+}
+.check-11pay img{
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.check-11pay label{
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+}
+/* Finalización sección de pago */
