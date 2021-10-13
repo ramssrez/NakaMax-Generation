@@ -687,13 +687,13 @@ footer{
   color: white;
   background-color: #02569c;
   font-family: "Gamja Flower", cursive;
-  font-size: x-large;
-  width: 120px;
-  height: 40px;
+  font-size: xx-large;
+  width: 150px;
+  height: 70px;
   text-align: center;
   justify-content: center;
-  padding: 0px;
-  margin: 40px;
+  padding: 15px;
+  margin-left: 70px;
 }
 
 .description-adn {
@@ -720,7 +720,8 @@ footer{
   height: 200px;
   text-align: justify;
   padding: 20px;
-  margin: 220px;
+  margin-left: 260px;
+  margin-bottom: 200px;
 }
 
 
@@ -768,7 +769,13 @@ footer{
   margin-top: 50px;
   border: solid 1px #02569C;
 }
-
+.d-block-adn
+{
+  height: 700px;
+  width: 300px;
+  margin-right: 70px;
+  padding: 50px;
+}
 /* Termina sección acerca de nosotros */
 
 /* Comienza sección datos del vendedor  */
