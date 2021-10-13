@@ -12,10 +12,6 @@ header {
     left: 0px;
     top: 0px;
     z-index: 100;
-    float: none;
-    display: block;
-    text-align: left;
-    overflow: hidden;
 }
 .li-00-index{
     list-style: none;
