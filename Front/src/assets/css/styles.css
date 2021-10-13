@@ -12,6 +12,10 @@ header {
     left: 0px;
     top: 0px;
     z-index: 100;
+    float: none;
+    display: block;
+    text-align: left;
+    overflow: hidden;
 }
 .li-00-index{
     list-style: none;
@@ -32,10 +36,11 @@ ul {
     font-family: 'Gamja Flower', cursive;
 }
 .nav-he {
-    display: flex;
+   
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    
 
 }
 .lineas-hr {
