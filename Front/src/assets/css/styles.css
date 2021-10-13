@@ -156,7 +156,22 @@ h1 {
 .uWdataBG{
     background-color: #F1ECE9;
 }
+.uWbtn{
+    background-color: #dc3545;
+    color: white;
+}
+.uWbtn:hover{
+    background-color: #F2A516;
+}
 
+.uWborder{
+  border: solid 1px #02569C;
+  border-radius: 30px;
+}
+
+.uWinputSize{
+  width: 280px;
+}
 
 /* ---- footer ---- */
 
