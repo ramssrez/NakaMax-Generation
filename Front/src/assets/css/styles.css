@@ -700,6 +700,16 @@ footer{
   font-family: 'Gamja Flower', cursive;
   font-size: 20px;
 }
+.div-11payPadre{
+  display: flex;
+  justify-content: space-between;
+}
+.div-11payHijoUno{
+  width: 70%;
+}
+.div-11payHijoDos{
+  width: 30%;
+}
 /* Finalización sección de pago */
 
 /* Comienza sección acerca de nosotros */
