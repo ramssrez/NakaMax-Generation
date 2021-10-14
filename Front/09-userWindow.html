@@ -117,13 +117,14 @@
                                 <div class="col">
                                     <p>CONTRASEÑA</p>
                                 </div>
-                                <div class="col" id="divPassword">
-                                    <p id="password" class="px-2">*******</p>
+                                <div class="col">
+                                    <p class="px-2" id="password">*******</p>
                                 </div>
                                 <div class="col d-flex justify-content-center">
                                     <button id="uWeditPassword" class="btn">EDITAR</button>
                                 </div>
                             </div>
+                            <div class="row justify-content-center" id="divPassword"></div>
                             <br>
                             <div class="d-flex justify-content-end">
                                 <button type="button" class="uWbtn btn mx-2">ELIMINAR CUENTA</button>
@@ -133,18 +134,16 @@
                     </div>
                     <div class="row justify-content-around">
                         <div class="col-sm-3 uWlinksBG text-white text-center">
-                            <h4>IDIOMA Y REGIÓN</h4>
+                            <h4>PAÍS</h4>
                         </div>
                         <div class="col-sm-7 uWdataBG">
                             <div class="row">
-                                <div class="col">
-                                    <p>IDIOMA</p>
+                                <div class="col d-flex justify-content-center">
+                                    <p id="region" class="px-2">MÉXICO</p>
                                 </div>
-                                <div class="col">
-                                    <p>ESPANGLIS</p>
-                                </div>
-                                <div class="col">
-                                    <button type="button">EDITAR</button>
+                                <div class="col" id="divRegion"></div>
+                                <div class="col d-flex justify-content-center">
+                                    <button id="uWeditRegion" class="btn">EDITAR</button>
                                 </div>
                             </div>
                             <hr>
@@ -220,6 +219,8 @@
                     <button type="button" class="btn uWbtn mx-2 mr-5">CERRAR SESIÓN</button>
                 </section>
             </section>
+
+            <!-- Form para realizar reportes -->
             <section class="container-fluid px-5 my-3 subtitulos mb-5">
                 <h2>Reportar</h2>
                 <div class="p-3 uWborder">
