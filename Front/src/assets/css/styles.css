@@ -688,6 +688,14 @@ footer{
     transition: all .4s;
     background-color: #F2A516;
 }
+.div-11payDecription h2{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 40px;
+}
+.div-11payDecription h3{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 30px;
+}
 /* Finalización sección de pago */
 
 /* Comienza sección acerca de nosotros */
