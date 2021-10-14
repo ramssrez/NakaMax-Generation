@@ -688,6 +688,28 @@ footer{
     transition: all .4s;
     background-color: #F2A516;
 }
+.div-11payDecription h2{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 40px;
+}
+.div-11payDecription h3{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 30px;
+}
+.div-11payDecription span,p {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
+.div-11payPadre{
+  display: flex;
+  justify-content: space-between;
+}
+.div-11payHijoUno{
+  width: 70%;
+}
+.div-11payHijoDos{
+  width: 30%;
+}
 /* Finalización sección de pago */
 
 /* Comienza sección acerca de nosotros */
