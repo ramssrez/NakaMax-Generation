@@ -13,6 +13,33 @@ header {
     top: 0px;
     z-index: 100;
 }
+.sub-menu {
+  position: relative;
+}
+.sub-menu #cart{
+  display: none;
+}
+.sub-menu:hover #cart{
+  display: block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background:#02569C;
+  padding: 20px;
+}
+.vacio {
+  padding: 10px;
+  background-color: #F2A516;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+.button {
+  background-color: #F2A516;
+  color: rgb(255, 255, 255);
+}
 .li-00-index{
     list-style: none;
 }
@@ -49,7 +76,7 @@ ul {
     position: absolute;
     width: 150px;
     height: 45px;
-    right: 250px;
+    right: 50px;
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
@@ -687,6 +714,28 @@ footer{
 .btn-11pay:hover{
     transition: all .4s;
     background-color: #F2A516;
+}
+.div-11payDecription h2{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 40px;
+}
+.div-11payDecription h3{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 30px;
+}
+.div-11payDecription span,p {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
+.div-11payPadre{
+  display: flex;
+  justify-content: space-between;
+}
+.div-11payHijoUno{
+  width: 70%;
+}
+.div-11payHijoDos{
+  width: 30%;
 }
 /* Finalización sección de pago */
 
