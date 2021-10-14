@@ -2,18 +2,19 @@ const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach(addToCartButton => {
     addToCartButton.addEventListener('click', addToCartClicked);
 });
-const carritoItemsContenedor = document.querySelector('.carritoItemsContenedor');
+const carritoItemsContenedor = document.querySelector('#carritoItemsContenedor');
 
 function addToCartClicked(event) {
     const button = event.target;
     const item = button.closest('.card');
 
+    const itemImagen = item.querySelector('.item-imagen').src;
     const itemTitulo = item.querySelector('.item-titulo').textContent;
     const itemPrecio = item.querySelector('.item-price').textContent;
-    const itemImagen = item.querySelector('.item-imagen').src;
+    const itemText = item.querySelector('.c-text').textContent;
 
     addItemAlCarrito(itemTitulo, itemPrecio, itemImagen);
-    console.log(itemTitulo, itemPrecio, itemImagen)
+    console.log(itemImagen,itemTitulo, itemPrecio, itemText)
 }
 
 function addItemAlCarrito(itemTitulo, itemPrecio, itemImagen) {
@@ -62,7 +63,7 @@ function addItemAlCarrito(itemTitulo, itemPrecio, itemImagen) {
             </div>
 `;
 carritoCompraRow.innerHTML = carritoContenido;
-//carritoItemsContenedor.append(carritoCompraRow);
+//carritoItemsContenedor.appendChild(carritoCompraRow);
 
 actualizarCompraTotal();
 }
