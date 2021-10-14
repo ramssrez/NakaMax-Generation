@@ -696,6 +696,10 @@ footer{
   font-family: 'Gamja Flower', cursive;
   font-size: 30px;
 }
+.div-11payDecription span,p {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+}
 /* Finalización sección de pago */
 
 /* Comienza sección acerca de nosotros */
