@@ -48,7 +48,7 @@
           </ul>
         </li>
       </ul>
-     
+      
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
@@ -56,10 +56,10 @@
             <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#Promos">PROMOCIONES<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
+            <a class="nav-link nav-header" href="#LoMasVendido">LO MAS VENDIDO</a>
           </li>
         </ul>
       </div>
@@ -101,8 +101,7 @@
       
     </nav>
   </header>
-  <!-- HEADER -->
-
+  
 
   <!-- Aqui termina el HEADER -->
 
@@ -200,20 +199,19 @@
       <hr class="lineas-hr">
       <div id="boton-categoria" class="container">
         <a class="btn bi" href="#">
-          <h1>Lo mas vendido</h1>
+          <h1 id="LoMasVendido">Lo mas vendido</h1>
         </a>
         <br><br>
       </div>
       <div class="row" id="lista-productos" >
         <div class="card-group">
-          <div class="card pp-card item">
-            <img src="./src/assets/images/pp-cards/iron-man.jpg" width="640" height="340" class="card-img-top item-imagen"
-              alt="Figura de colleccion Iron Man">
+          <div class="card pp-card item" >
+            <img src="" width="640" height="340" class="card-img-top item-imagen"
+              alt="Figura de colleccion Iron Man" id="imgProducto00">
             <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Iron Man</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h3 class="card-title item-titulo" id="tituloProducto00"></h3>
+              <h5 class="card-title item-price" id="precioProducto00"></h5>
+              <p class="c-text" id="descProducto00"></p>
               <p class="c-text">
                 <button class="boton-02-cards-pp m-3">Comprar ahora</button>
                 <button class="boton-02-cards-pp addToCart button" data-id="1">Añadir al carrito</button>
@@ -230,7 +228,7 @@
                 content. This content is a little bit longer.</p>
               <p class="c-text">
                 <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <button class="boton-02-cards-pp addToCart"> Añadir al carrito </button>
               </p>
             </div>
           </div>
@@ -368,7 +366,7 @@
       <div id="boton-categoria" class="container">
         <hr>
         <a class="btn bi" href="#">
-          <h1>Promociones</h1>
+          <h1 id="Promos">Promociones</h1>
         </a>
         <br><br>
       </div>
@@ -504,8 +502,8 @@
       </div>
     </div>
   </footer>
-  <script src="./src/assets/js/carritov2.js"></script>
-  
+
+  <script src="./src/assets/js/main.js"></script>
 
 
   <!-- Scripts de Bootstrap -->
