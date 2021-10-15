@@ -36,6 +36,15 @@ header {
   border-radius: 10px;
   color: rgb(255, 255, 255);
 }
+.borrar-producto {
+  background-color: rgb(235, 61, 61);
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color:rgb(206, 186, 186);
+  font-weight: bold;
+
+}
 .button {
   background-color: #F2A516;
   color: rgb(255, 255, 255);
