@@ -75,7 +75,7 @@
   </header>
 
   <section id="contactanos" class="container my-5">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <h3 class="tituloDeSeccion-05contact col-12">Contactanos</h3>
       <div class="izquierda col-12 col-xl-5">
         <div class="contactoRedesSociales">
@@ -149,26 +149,28 @@
   <section id="Reportes" class="container my-5">
     <h3 class="tituloDeSeccion-05contact">Reporte de error</h3>
     <form action="GET" class="p-3 formularioReporteError">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label" for="inlineCheckbox1"><h6>Tipo de reporte:</h6></label>
+      <div class="row d-flex flex-wrap justify-content-around">
+        <div class="form-check form-check-inline col-12 ml-5">
+          <label class="form-check-label" for="inlineCheckbox1"><h6>Tipo de reporte:</h6></label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+          <label class="form-check-label" for="inlineCheckbox1">Falla general</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+          <label class="form-check-label" for="inlineCheckbox2">Link caido</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
+          <label class="form-check-label" for="inlineCheckbox3">Pagina con error</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" />
+          <label class="form-check-label" for="inlineCheckbox4">Elemento no carga</label>
+        </div>
       </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-        <label class="form-check-label" for="inlineCheckbox1">Falla general</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-        <label class="form-check-label" for="inlineCheckbox2">Link caido</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-        <label class="form-check-label" for="inlineCheckbox3">Pagina con error</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" />
-        <label class="form-check-label" for="inlineCheckbox4">Elemento no carga</label>
-      </div>
-      <hr />
+      <hr class="hr-05contact"/>
       <textarea name="" id="" cols="20" rows="5" placeholder="Descripcion" class=" entrada-05contact form-control m-0"></textarea>
       <div class="d-flex justify-content-center">
         <button type="submit" class="button-05contact btn-danger m-2">ENVIAR</button>
