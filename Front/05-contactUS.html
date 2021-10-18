@@ -30,16 +30,16 @@
         <li>
           <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png" alt="CATEGORIAS"></a>
           <ul>
-            <li><a href="#"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo"> Artezanales</a></li>
-            <li><a href="#"><img src="./src/assets/images/pinturas.png" width="55" alt="logo"> Posters y cuadros</a>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo"> Artezanales</a></li>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/pinturas.png" width="55" alt="logo"> Posters y cuadros</a>
             </li>
-            <li><a href="#"><img src="./src/assets/images/maniqui.png" width="55" alt="logo"> Ropa</a></li>
-            <li><a href="#"><img src="./src/assets/images/material-escolar.png" width="55" alt="logo"> Escolares</a>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/maniqui.png" width="55" alt="logo"> Ropa</a></li>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/material-escolar.png" width="55" alt="logo"> Escolares</a>
             </li>
-            <li><a href="#"><img src="./src/assets/images/libro-comico.png" width="55" alt="logo"> Mangas y comics</a>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/libro-comico.png" width="55" alt="logo"> Mangas y comics</a>
             </li>
-            <li><a href="#"><img src="./src/assets/images/osito-de-peluche.png" width="55" alt="logo"> Peluches</a></li>
-            <li><a href="#"><img src="./src/assets/images/pop.png" width="55" alt="logo"> Funkos</a></li>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/osito-de-peluche.png" width="55" alt="logo"> Peluches</a></li>
+            <li><a href="./06-descripcion.html"><img src="./src/assets/images/pop.png" width="55" alt="logo"> Funkos</a></li>
           </ul>
         </li>
       </ul>
@@ -47,13 +47,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="./index.html">ARTISTICOS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#artesanales">ARTISTICOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="./index.html">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#promociones">PROMOCIONES<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="./index.html">LO MAS VENDIDO</a>
+            <a class="nav-link nav-header" href="./index.html#promociones">LO MAS VENDIDO</a>
           </li>
         </ul>
       </div>
@@ -75,9 +75,9 @@
   </header>
 
   <section id="contactanos" class="container my-5">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <h3 class="tituloDeSeccion-05contact col-12">Contactanos</h3>
-      <div class="izquierda col-12 col-xl-5">
+      <div class="izquierda col-12 col-md-5">
         <div class="contactoRedesSociales">
           <div class="row">
             <a href="http://"><img src="./src/assets/images/FB back and white.png" alt="logoFaceBook"
@@ -118,7 +118,7 @@
           </form>
         </div>
       </div>
-      <div class="derecha col-12 col-xl-7">
+      <div class="derecha col-12 col-md-7">
         <h4 class="subtitulo-05contact">Nuestras oficinas</h4>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1881.256352568315!2d-99.14218122846464!3d19.433449541747976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1633400567257!5m2!1ses-419!2smx"
@@ -149,26 +149,28 @@
   <section id="Reportes" class="container my-5">
     <h3 class="tituloDeSeccion-05contact">Reporte de error</h3>
     <form action="GET" class="p-3 formularioReporteError">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label" for="inlineCheckbox1"><h6>Tipo de reporte:</h6></label>
+      <div class="row d-flex flex-wrap justify-content-around">
+        <div class="form-check form-check-inline col-12 ml-5">
+          <label class="form-check-label" for="inlineCheckbox1"><h6>Tipo de reporte:</h6></label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+          <label class="form-check-label" for="inlineCheckbox1">Falla general</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+          <label class="form-check-label" for="inlineCheckbox2">Link caido</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
+          <label class="form-check-label" for="inlineCheckbox3">Pagina con error</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" />
+          <label class="form-check-label" for="inlineCheckbox4">Elemento no carga</label>
+        </div>
       </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-        <label class="form-check-label" for="inlineCheckbox1">Falla general</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-        <label class="form-check-label" for="inlineCheckbox2">Link caido</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-        <label class="form-check-label" for="inlineCheckbox3">Pagina con error</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" />
-        <label class="form-check-label" for="inlineCheckbox4">Elemento no carga</label>
-      </div>
-      <hr />
+      <hr class="hr-05contact"/>
       <textarea name="" id="" cols="20" rows="5" placeholder="Descripcion" class=" entrada-05contact form-control m-0"></textarea>
       <div class="d-flex justify-content-center">
         <button type="submit" class="button-05contact btn-danger m-2">ENVIAR</button>
@@ -180,13 +182,13 @@
       <div class="col-7">
         <div class="row d-flex justify-content-around">
           <div class="col-3">
-            <a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a>
+            <a class="text-white" href="./07-acerca-de-nosotros.html">ACERCA DE NOSOTROS</a>
           </div>
           <div class="col-3">
-            <a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a>
+            <a class="text-white" href="./05-contactUS.html#FAQs">PREGUNTAS Y RESPUESTAS</a>
           </div>
           <div class="col-2">
-            <a class="text-white" href="05-contactUS.html">CONTACTO</a>
+            <a class="text-white" href="./05-contactUS.html">CONTACTO</a>
           </div>
         </div>
         <div class="row p-3">
@@ -215,7 +217,7 @@
         <a class="text-white" href="13-termsPrivacy.html">TÉRMINOS Y CONDICIONES</a>
       </div>
       <div class="col">
-        <a class="text-white" href="13-termsPrivacy.html">AVISO DE PRIVACIDA</a>
+        <a class="text-white" href="13-termsPrivacy.html">AVISO DE PRIVACIDAD</a>
       </div>
     </div>
   </footer>
