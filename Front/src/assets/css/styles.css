@@ -790,7 +790,6 @@ footer{
   justify-content: center;
   margin: 30px;
 
-
 }
 
 .quien-adn {
@@ -806,15 +805,7 @@ footer{
   margin-bottom: 200px;
 }
 
-
 .name-adn {
-  /* font-family: "Poppins", sans-serif;
-  font-size: large;
-  color: #02569c;
-  font-style:italic;
-  background-color: #f1ece9;
-  width: 200px;
-  height: 20px; */
   display: block;
   margin: auto;
   height: auto;
@@ -832,10 +823,6 @@ footer{
 }
 
 .rol-adn {
-  /* font-family: "Poppins", sans-serif;
-  font-size: small;
-  color: #02569c;
-  background-color: #f1ece9; */
   display: block;
   margin: auto;
   height: auto;
@@ -858,7 +845,6 @@ footer{
   margin-right: 70px;
   padding: 50px;
 }
-
 
 /* Termina sección acerca de nosotros */
 
@@ -900,14 +886,6 @@ footer{
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-top: 50px;
   border: solid 1px #02569C;
-  /* text-align: center;
-  border: #949398 1px solid;
-  height: 20px;
-  width: 300px;
-  color: whitesmoke 0.5px solid;
-  font-family: "Noto Sans", sans-serif;
-  font-size: medium;
-  background-color: rgb(255, 250, 250); */
 }
 
 .campo-dv:hover {
