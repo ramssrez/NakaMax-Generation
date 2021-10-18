@@ -4,7 +4,7 @@
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
     
     opacity: .4;
-    position: absolute;
+    position:fixed;
     bottom: -150; 
     animation: burbujas 3s linear infinite;
     
