@@ -19,12 +19,17 @@
   <script src="https://kit.fontawesome.com/ed5625f24b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="src/assets/css/styles.css" type="text/css" />
   <link rel="stylesheet" href="./src/assets/css/burbujas.css">
+  <link rel="stylesheet" href="./src/assets/css/loader.css">
   <title>Inicio</title>
   <!-- Icono en la pestaña de la ventana -->
   <link rel="shortcut icon" href="src/assets/images/iconTitle.jpg" />
 </head>
 
 <body>
+  <!-- Loader -->
+  <div id="contenedor_carga">
+    <img src="./src/assets/images/loader.svg" alt="sombrero" id="carga">
+  </div>
   <!-- HEADER -->
   <header class="container-fluid">
     <a class="navbar-brand" href="index.html">
@@ -129,7 +134,7 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active pp-card">
                 <a href="#" target="_blanck">
                   <img src="src/assets/images/pp-cards/hello-world.jpg" class=" w-100" alt="..." width="520px"
                     height="380px">
@@ -139,7 +144,7 @@
                   </div>
                 </a>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item pp-card">
                 <a href="#" target="_blanck">
                   <img src="src/assets/images/pp-cards/camisetas-de-animejpg.jpg" class=" w-100" alt="..." width="620px"
                     height="380px">
@@ -149,7 +154,7 @@
                   </div>
                 </a>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item pp-card">
                 <a href="#" target="_blanck">
                   <img src="src/assets/images/pp-cards/figuras-anime.jpg" class=" w-100" alt="..." width="620px"
                     height="380px">
@@ -568,7 +573,7 @@
     </div>
   </footer>
   <script src="./src/assets/js/carritoo.js"></script>
-
+  <script src="./src/assets/js/main.js"></script>
 
 
   <!-- Scripts de Bootstrap -->
