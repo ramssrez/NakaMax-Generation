@@ -788,9 +788,9 @@ footer{
 
 .title-adn {
   font-family: "Gamja Flower", cursive;
-  font-size: xx-large;
+  font-size: 60px;
   text-align: center;
-  margin: 40px;
+  margin: 20px;
 }
 
 .subtitle-adn {
@@ -809,36 +809,39 @@ footer{
 .description-adn {
   color: black;
   background-color: #f1ece9;
+  justify-content:space-between;
   font-family: "Poppins", sans-serif;
   font-size: large;
-  padding: 30px;
-  /* width: 1300px;
-  height: 250px; */
+  padding: 20px;
+  margin: 20px;
+  width: 1200px;
+  height: 200px;
   text-align: justify;
-  justify-content: center;
-  margin: 30px;
-
 }
 
 .quien-adn {
+  color: black; 
+  background-color: #f1ece9;
+  justify-content:space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  padding: 20px;
+  margin: 30px;
+  width: 700px;
+  height: 200px;
+  text-align: justify;
+}
+/*{
   color: black;
   background-color: #f1ece9;
   font-family: "Poppins", sans-serif;
   font-size: large;
-  width: 900px;
-  height: 200px;
+  width: 700px;
+  height: 300px; 
+  justify-content:center;
   text-align: justify;
   padding: 20px;
-  margin-left: 260px;
   margin-bottom: 200px;
-}
-
-/* .carousel-inner {
-  height: 400px;
-  width: 400px;
-  justify-content: center;
-  margin-right: 300px;
-  padding: 30px;
 } */
 
 .name-adn {
@@ -862,7 +865,7 @@ footer{
   display: block;
   margin: auto;
   height: auto;
-  width: 500px;
+  width: 550px;
   margin-bottom: 50px;
   font-family: "Poppins", sans-serif;
   background: rgba(2, 87, 156, 0.199);
@@ -894,8 +897,9 @@ footer{
 
 .nakamax-dv {
   justify-content: space-around;
-  margin-block-start: 30px;
   align-items: center;
+  position: relative;
+  top: -60px;
 }
 
 .titulo-dv {
