@@ -123,7 +123,7 @@ $uWbuttonEditUser.addEventListener('click',()=>{
 $uWbuttonEditEmail.addEventListener('click',()=>{
     action = "NewEmail"
     sessionStorage.setItem("typeEditData",action);
-    window.location.href = "/Front/03-verifyPassword.html";
+    window.location.href = "./03-verifyPassword.html";
 })
 
 let EditEmail = sessionStorage.getItem('verify');
@@ -163,7 +163,7 @@ if(EditEmail === "verified"){
 $uWbuttonEditPassword.addEventListener('click',()=>{
     action = "NewPassword"
     sessionStorage.setItem("typeEditData",action);
-    window.location.href = "/Front/03-verifyPassword.html";
+    window.location.href = "./03-verifyPassword.html";
 })
 
 //Edición de la region. Seleccion de una lista.

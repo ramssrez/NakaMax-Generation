@@ -32,10 +32,10 @@ $buttonVerify.addEventListener('click', ()=>{
 
             //dirigiendo a pantallas según el campo que se quiera editar: correo o contraseña
             if(editField === "NewPassword"){
-                document.location.href = "/Front/04-newPassword.html";
+                document.location.href = "./04-newPassword.html";
                 sessionStorage.removeItem('typeEditData');
             }else{
-                document.location.href = "/Front/09-userWindow.html";
+                document.location.href = "./09-userWindow.html";
                 sessionStorage.removeItem('typeEditData');
                 sessionStorage.setItem("verify","verified");
             }

@@ -26,7 +26,7 @@ $savePassword.addEventListener('click', ()=>{
             $confirmPassword.value = "";
         }else{
             alert('nueva contraseña guardada');
-            document.location.href = ('/Front/09-userWindow.html');
+            document.location.href = ('./09-userWindow.html');
         } 
     }
     else{
@@ -36,7 +36,7 @@ $savePassword.addEventListener('click', ()=>{
 
 // cancelar nueva contraseña
 $cancelNewPassword.addEventListener('click', ()=>{
-    window.location.href = "/Front/09-userWindow.html";
+    window.location.href = "./09-userWindow.html";
 })
 
 // cancelar boton back navegador
