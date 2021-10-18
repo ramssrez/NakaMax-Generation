@@ -81,6 +81,7 @@ $registrarUS.addEventListener('click', () =>{
   }
   if (inptsVal == 9) {
     console.log('Puedes registrar');
+    document.location.href = "./09-userWindow.html";
   }
 
 });
