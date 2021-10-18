@@ -787,7 +787,7 @@ footer{
 /* Comienza sección acerca de nosotros */
 
 .title-adn {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Gamja Flower", cursive;
   font-size: xx-large;
   text-align: center;
   margin: 40px;
@@ -833,6 +833,14 @@ footer{
   margin-bottom: 200px;
 }
 
+/* .carousel-inner {
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  margin-right: 300px;
+  padding: 30px;
+} */
+
 .name-adn {
   display: block;
   margin: auto;
@@ -868,46 +876,51 @@ footer{
 }
 .d-block-adn
 {
-  height: 700px;
-  width: 300px;
-  margin-right: 70px;
-  padding: 50px;
+  margin-right: 20px;
+  padding: 30px;
 }
 
 /* Termina sección acerca de nosotros */
 
 /* Comienza sección datos del vendedor  */
 .formulario-dv {
-  background-color: white;
-  border: #02569c 1px solid;
-  height: 850px;
-  width: 500px;
-  padding: 50px;
+  border: solid 1px #02569C;
+  border-radius: 2rem;
+  width: 700px;
+  height: 1150px;
+  background-color: rgba(2, 87, 156, 0.199);
+  box-shadow: 10px 10px 32px 0 rgba(24, 37, 206, 0.37);
+}
+
+.nakamax-dv {
+  justify-content: space-around;
+  margin-block-start: 30px;
+  align-items: center;
 }
 
 .titulo-dv {
   color: #000000;
-  font-family: "Noto Sans", sans-serif;
-  font-size: xx-large;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 60px;
 }
 
 .sub-titulo-dv {
   color: #000000;
-  font-family: "Noto Sans", sans-serif;
-  font-size: large;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 40px;
 }
 
 .campo-dv {
   display: block;
   margin: auto;
   height: auto;
-  width: 350px;
+  width: 600px;
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Gamja Flower', cursive;
-  font-size: 16px;
-  background: rgba(2, 87, 156, 0.199);
-  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
+  font-size: 25px;
+  background:white;
+  /* box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%); */
   backdrop-filter: blur( 3px );
   -webkit-backdrop-filter: blur( 3px );
   border-radius: 2rem;
@@ -924,7 +937,7 @@ footer{
   color: whitesmoke;
   height: 60px;
   width: 200px;
-  font-family: "Quintessential", cursive;
+  font-family: 'Gamja Flower', cursive;
   font-size: xx-large;
   background-color: #02569c;
 }
