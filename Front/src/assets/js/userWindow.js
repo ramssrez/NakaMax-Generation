@@ -19,7 +19,12 @@ const $uWbuttonEditPassword = document.querySelector('#uWeditPassword');
 const $inputPassword = document.getElementById('divPassword');
 const $Password = document.querySelector('#password');
 
-// funciones para activar y desactivar boton editar
+// País
+const $uWbuttonEditRegion = document.querySelector('#uWeditRegion');
+const $inputRegion = document.getElementById('divRegion');
+const $Region = document.querySelector('#region');
+
+// funciones para activar y desactivar botones de editar
 function disableBtn(idElement) {
     document.getElementById(idElement).disabled = true;
 }
@@ -27,7 +32,7 @@ function enableBtn(idElement) {
     document.getElementById(idElement).disabled = false;
 }
 
-// Creación de boton guardar
+// Creación de boton general: guardar 
 const btnGuardar = document.createElement('button');
 btnGuardar.type = 'button';
 btnGuardar.innerText = "Guardar";
@@ -93,34 +98,31 @@ $uWbuttonEditEmail.addEventListener('click',()=>{
     })
 })
 
-// Edición de la contraseña
+// Edición de la contraseña. Envia a la página correspondiente para la edicion: 03-verifyPassword
 $uWbuttonEditPassword.addEventListener('click',()=>{
-    const createDivPassword = document.createElement('div');
-    let contra = `
-    <div class="input-group mb-3">
-        <input id="pass" type="password" class="form-control" placeholder="Nueva contraseña">
-        <div class="input-group-append">
-            <button id="eyeBtn" class="btn btn-outline-secondary" type="button">
-            <img src="./src/assets/images/ver.png" alt="Ojo" style="width: 20px;">
-            </button>
-        </div>
-    </div>`;
-    createDivPassword.innerHTML = contra;
-    $inputPassword.appendChild(createDivPassword);
-    $inputPassword.appendChild(btnGuardar);
-
-    disableBtn("uWeditPassword");
-
-    btnGuardar.addEventListener('click',() => {
-        enableBtn("uWeditPassword");
-        const inputValue = document.querySelector("#pass").value;
-        $Password.textContent = inputValue;
-        $inputPassword.removeChild(createDivPassword);
-        $inputPassword.removeChild(btnGuardar);
-    })
+    window.location.href = "/Front/03-verifyPassword.html";
 })
 
-const $botonEye = document.getElementById("eyeBtn");
-$botonEye.addEventListener('click',()=>{
-    alert("hola");
+// Edición de la region. Seleccion de una lista.
+$uWbuttonEditRegion.addEventListener('click',()=>{
+    const desplegable = document.createElement('div');
+    desplegable.innerHTML = `
+    <select name="" id="regiones" class="uWborder uWinputSize mx-2 p-2">
+      <option value="">PAÍS</option>
+      <option value="MÉXICO">MÉXICO</option>
+      <option value="EUA">EUA</option>
+      <option value="CANADA">CANADA</option>
+      <option value="CHINA">CHINA</option>
+    </select>`
+    $inputRegion.appendChild(desplegable);
+    disableBtn("uWeditRegion");
+
+    const $seleccionPais = document.querySelector('#regiones');
+
+    $seleccionPais.addEventListener('change', (e) => {
+        let regionSeleccionada = e.target.value;
+        $Region.textContent = regionSeleccionada;
+        enableBtn("uWeditRegion");
+        $inputRegion.removeChild(desplegable);
+    })
 })
