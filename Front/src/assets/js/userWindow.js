@@ -25,12 +25,26 @@ const $inputRegion = document.getElementById('divRegion');
 const $Region = document.querySelector('#region');
 
 // funciones para activar y desactivar botones de editar
-function disableBtn(idElement) {
-    document.getElementById(idElement).disabled = true;
+function disableBtn() {
+    // document.getElementById(idElement).disabled = true;
+    $uWbuttonEdit.disabled = true;
+    $uWbuttonEditUser.disabled = true;
+    $uWbuttonEditEmail.disabled = true;
+    $uWbuttonEditPassword.disabled = true;
+    $uWbuttonEditRegion.disabled = true;
 }
-function enableBtn(idElement) {
-    document.getElementById(idElement).disabled = false;
+function enableBtn() {
+    // document.getElementById(idElement).disabled = false;
+    $uWbuttonEdit.disabled = false;
+    $uWbuttonEditUser.disabled = false;
+    $uWbuttonEditEmail.disabled = false;
+    $uWbuttonEditPassword.disabled = false;
+    $uWbuttonEditRegion.disabled = false;
 }
+
+//variables
+// variable para guardar tipo de accion en session storage
+let action = "";
 
 // Creación de boton general: guardar 
 const btnGuardar = document.createElement('button');
@@ -38,7 +52,13 @@ btnGuardar.type = 'button';
 btnGuardar.innerText = "Guardar";
 btnGuardar.className = 'uWbtn btn m-2';
 
-// Edición del nombre
+// Creación del boton general: cancelar
+const btnCancel = document.createElement('button');
+btnCancel.type = 'button';
+btnCancel.innerText = "Cancelar";
+btnCancel.className = 'uWbtn btn m-2';
+
+// -------------- Edición del nombre -------------------
 $uWbuttonEdit.addEventListener('click',()=>{
     var InputItem = document.createElement('input');
     InputItem.type = 'text';
@@ -46,19 +66,30 @@ $uWbuttonEdit.addEventListener('click',()=>{
     InputItem.className = 'uWborder uWinputSize mx-2';
     $inputName.appendChild(InputItem);
     $inputName.appendChild(btnGuardar);
+    $inputName.appendChild(btnCancel);
 
-    disableBtn("uWeditName");
+    disableBtn();
 
     btnGuardar.addEventListener('click',() => {
-        enableBtn("uWeditName");
         const inputValue = InputItem.value;
-        $Name.textContent = inputValue;
+        $Name.textContent = inputValue; 
+        removeItems();
+    })
+
+    btnCancel.addEventListener('click',()=>{
+        removeItems();
+    })
+
+// funcion para remover los items para editar el campo del nombre 
+    function removeItems(){
+        enableBtn();
         $inputName.removeChild(InputItem);
         $inputName.removeChild(btnGuardar);
-    })
+        $inputName.removeChild(btnCancel);
+    }
 })
 
-// Edición del usuario
+// --------------- Edición del usuario -------------------
 $uWbuttonEditUser.addEventListener('click',()=>{
     var InputItem = document.createElement('input');
     InputItem.type = 'text';
@@ -66,44 +97,76 @@ $uWbuttonEditUser.addEventListener('click',()=>{
     InputItem.className = 'uWborder uWinputSize mx-2';
     $inputUser.appendChild(InputItem);
     $inputUser.appendChild(btnGuardar);
+    $inputUser.appendChild(btnCancel);
 
-    disableBtn("uWeditUser");
+    disableBtn();
 
     btnGuardar.addEventListener('click',() => {
-        enableBtn("uWeditUser");
         const inputValue = InputItem.value;
         $User.textContent = inputValue;
+        removeItems();
+    })
+
+    btnCancel.addEventListener('click',()=>{
+        removeItems();
+    })
+
+    function removeItems(){
+        enableBtn();
         $inputUser.removeChild(InputItem);
         $inputUser.removeChild(btnGuardar);
-    })
+        $inputUser.removeChild(btnCancel);
+    }
 })
 
 // Edición del correo
 $uWbuttonEditEmail.addEventListener('click',()=>{
+    action = "NewEmail"
+    sessionStorage.setItem("typeEditData",action);
+    window.location.href = "/Front/03-verifyPassword.html";
+})
+
+let EditEmail = sessionStorage.getItem('verify');
+if(EditEmail === "verified"){
     var InputItem = document.createElement('input');
     InputItem.type = 'email';
     InputItem.placeholder = "Correo";
     InputItem.className = 'uWborder uWinputSize mx-2';
     $inputEmail.appendChild(InputItem);
     $inputEmail.appendChild(btnGuardar);
+    $inputEmail.appendChild(btnCancel);
 
-    disableBtn("uWeditEmail");
+    disableBtn();
 
     btnGuardar.addEventListener('click',() => {
-        enableBtn("uWeditEmail");
         const inputValue = InputItem.value;
         $Email.textContent = inputValue;
+        sessionStorage.removeItem('verify');
+        removeItems();
+    })
+
+    btnCancel.addEventListener('click',()=>{
+        removeItems();
+    })
+
+    function removeItems(){
+        enableBtn();
         $inputEmail.removeChild(InputItem);
         $inputEmail.removeChild(btnGuardar);
-    })
-})
+        $inputEmail.removeChild(btnCancel);
+    }
+}else{
+    EditEmail = "";
+}
 
 // Edición de la contraseña. Envia a la página correspondiente para la edicion: 03-verifyPassword
 $uWbuttonEditPassword.addEventListener('click',()=>{
+    action = "NewPassword"
+    sessionStorage.setItem("typeEditData",action);
     window.location.href = "/Front/03-verifyPassword.html";
 })
 
-// Edición de la region. Seleccion de una lista.
+//Edición de la region. Seleccion de una lista.
 $uWbuttonEditRegion.addEventListener('click',()=>{
     const desplegable = document.createElement('div');
     desplegable.innerHTML = `
@@ -115,14 +178,14 @@ $uWbuttonEditRegion.addEventListener('click',()=>{
       <option value="CHINA">CHINA</option>
     </select>`
     $inputRegion.appendChild(desplegable);
-    disableBtn("uWeditRegion");
+    disableBtn();
 
     const $seleccionPais = document.querySelector('#regiones');
 
     $seleccionPais.addEventListener('change', (e) => {
         let regionSeleccionada = e.target.value;
         $Region.textContent = regionSeleccionada;
-        enableBtn("uWeditRegion");
+        enableBtn();
         $inputRegion.removeChild(desplegable);
     })
 })
