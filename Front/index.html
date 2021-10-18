@@ -30,7 +30,7 @@
       <img src="./src/assets/images/nakamax.png" width="100" height="40" alt="" />
     </a>
     <nav class="navbar navbar-expand-lg">
-      
+
       <ul id="menu" class="nav-item nav-he">
         <li class="li-00-index">
           <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png" alt="CATEGORIAS"></a>
@@ -48,48 +48,49 @@
           </ul>
         </li>
       </ul>
-     
+
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#">ARTISTICOS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#artesanales">ARTISTICOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#promociones">PROMOCIONES<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="#">LO MAS VENDIDO</a>
+            <a class="nav-link nav-header" href="#lomasvendido">LO MAS VENDIDO</a>
           </li>
         </ul>
       </div>
-       <!-- Boton Login -->
-       <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
+      <!-- Boton Login -->
+      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
         <i class="far fa-user-circle"></i><strong>Iniciar</strong></a>
 
-        <div class="two columns u-pull-right">
-          <ul>
-              <li class="sub-menu li-00-index">
-                  <img src="./src/assets/images/pp-cards/cart.png" alt="">
-                  <div id="cart">
-                      <p class="vacio">carrito vacio</p>
-                      <table id="list-carrito" class="u-full-width">
-                          <thead>
-                              <tr>
-                                  <th>Imagen</th>
-                                  <th>Productos</th>
-                                  <th>Precio</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              
-                          </tbody>
-                      </table>
-                      <a href="#" id="vaciar-carrito"
-                      class="button u-full-width">vaciar carrito</a>
-                  </div>
-              </li>
-          </ul>
+      <div class="two columns u-pull-right">
+        <ul>
+          <li class="sub-menu li-00-index">
+            <img src="./src/assets/images/pp-cards/cart.png" alt="">
+            <div id="cart">
+              <p class="vacio">carrito vacio</p>
+              <table id="list-carrito" class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Productos</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+            </div>
+          </li>
+        </ul>
       </div>
       <!-- Boton Carrito 
       <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
@@ -97,8 +98,8 @@
           alt="" /><strong>Carrito</strong>
       </a>
       -->
-      
-      
+
+
     </nav>
   </header>
   <!-- HEADER -->
@@ -132,8 +133,8 @@
               </div>
               <div class="carousel-item">
                 <a href="#" target="_blanck">
-                  <img src="src/assets/images/pp-cards/camisetas-de-animejpg.jpg" class=" w-100" alt="..."
-                    width="620px" height="380px">
+                  <img src="src/assets/images/pp-cards/camisetas-de-animejpg.jpg" class=" w-100" alt="..." width="620px"
+                    height="380px">
                   <div class="carousel-caption c-text promo-carrusel">
                     <h5>OFERTON 2</h5>
                     <p>OTRA PROMOCION</p>
@@ -169,7 +170,7 @@
   <main class="container">
     <hr class="lineas-hr">
     <div id="boton-categoria" class="container">
-      <a class="btn bi" href="#">
+      <a class="btn bi" href="06-descripcion.html">
         <h1>Categorias</h1>
       </a>
       <br><br>
@@ -196,143 +197,162 @@
 
   <!-- cards articulos -->
   <main>
-    <div class="container" >
+    <div class="container" id="lista-productos">
       <hr class="lineas-hr">
       <div id="boton-categoria" class="container">
-        <a class="btn bi" href="#">
-          <h1>Lo mas vendido</h1>
+        <a class="btn bi" href="#lomasvendido">
+          <h1 id="lomasvendido">Lo mas vendido</h1>
         </a>
         <br><br>
       </div>
-      <div class="row" id="lista-productos" >
-        <div class="card-group">
-          <div class="card pp-card item">
-            <img src="./src/assets/images/pp-cards/iron-man.jpg" width="640" height="340" class="card-img-top item-imagen"
-              alt="Figura de colleccion Iron Man">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Iron Man</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+      <div class="row justify-content-around col-md-12 flex-wrap">
+        <div class="card-deck">
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/iron-man.jpg" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Iron Man</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart button" data-id="1">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id='1'>Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/figure-1.png" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-1.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Star Wars</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id='2'>Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/figure-2.png" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-2.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Man</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="3">Añadir al carrito</a>
+              </p>
+            </div>
+          </div>
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/star-wars.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Mascara Star Wars</h3>
+              <h5 class="card-title">$999</h5>
+              <p class="c-text">
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="4">Añadir al carrito</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck">
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-3.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Star</h3>
+              <h5 class="card-title">$999</h5>
+              <p class="c-text">
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="5">Añadir al carrito</a>
+              </p>
+            </div>
+          </div>
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/star-wars.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Star Wars</h3>
+              <h5 class="card-title">$999</h5>
+              <p class="c-text">
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="6">Añadir al carrito</a>
+              </p>
+            </div>
+          </div>
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/bb-yoda.jpg" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">BBY Yoda</h3>
+              <h5 class="card-title">$999</h5>
+              <p class="c-text">
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="7">Añadir al carrito</a>
+              </p>
+            </div>
+          </div>
+          <div class="card pp-card">
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-3.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Maestro Yoda</h3>
+              <h5 class="card-title">$999</h5>
+              <p class="c-text">
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="8">Añadir al carrito</a>
               </p>
             </div>
           </div>
 
         </div>
-        <div class="card-group">
+        <div class="card-deck">
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/figure-3.png" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-1.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Star</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="9">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/star-wars.png" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/iron-man.jpg" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Iron</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="10">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/bb-yoda.jpg" width="640" height="340" class="card-img-top" alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/figure-2.png" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">SW</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
-              </p>
-            </div>
-          </div>
-
-        </div>
-        <div class="card-group">
-          <div class="card pp-card">
-            <img src="src/assets/images/pp-cards/funko.jpg" width="640" height="340" class="card-img-top" alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Coleccionable</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="11">Añadir al carrito</a>
               </p>
             </div>
           </div>
           <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/iron-man.jpg" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Iron Man</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+            <div class="card text-center">
+              <img src="./src/assets/images/pp-cards/funko.jpg" width="200" height="200" class="card-img-top"
+                alt="Figura de colleccion Iron Man">
+              <h3 class="card-title">Coleccionable ej</h3>
+              <h5 class="card-title">$999</h5>
               <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart"><a href="10-carritoWindow.html">Añadir al carrito</a></button>
-              </p>
-            </div>
-          </div>
-          <div class="card pp-card">
-            <img src="./src/assets/images/pp-cards/figure-1.png" width="640" height="340" class="card-img-top"
-              alt="Figura de colleccion">
-            <div class="card-body text-center">
-              <h3 class="card-title item-titulo">Star Wars</h3>
-              <h5 class="card-title item-price">$999</h5>
-              <p class="c-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="c-text">
-                <button class="boton-02-cards-pp m-3">Comprar ahora</button>
-                <button class="boton-02-cards-pp addToCart">Añadir al carrito</button>
+                <a href="#" class="boton-02-cards-pp m-3 btn">Comprar ahora</a>
+                <a href="#" class="boton-02-cards-pp agregar-carrito btn" data-id="12">Añadir al carrito</a>
               </p>
             </div>
           </div>
@@ -349,8 +369,8 @@
   <div class="container">
     <hr class="lineas-hr">
     <div id="boton-categoria" class="container">
-      <a class="btn bi" href="#">
-        <h1>Artesanales</h1>
+      <a class="btn bi" href="06-descripcion.html">
+        <h1 id="artesanales">Artesanales</h1>
       </a>
       <br><br>
     </div>
@@ -367,8 +387,8 @@
     <div class="jumbotron">
       <div id="boton-categoria" class="container">
         <hr>
-        <a class="btn bi" href="#">
-          <h1>Promociones</h1>
+        <a class="btn bi" href="06-descripcion.html">
+          <h1 id="promociones">Promociones</h1>
         </a>
         <br><br>
       </div>
@@ -459,11 +479,6 @@
   </main>
   <br>
   <!-- Termina Carrousel de abajo -->
-  <!-- Script de prueba <script src="src/assets/js/main.js"></script>
-  <script src="./src/assets/js/cards-cat.js"></script>-->
-
-
-
 
   <!-- Footer -->
   <footer class="container-fluid bg-dark subtitulos">
@@ -504,8 +519,8 @@
       </div>
     </div>
   </footer>
-  <script src="./src/assets/js/carritov2.js"></script>
-  
+  <script src="./src/assets/js/carritoo.js"></script>
+
 
 
   <!-- Scripts de Bootstrap -->
@@ -518,7 +533,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
