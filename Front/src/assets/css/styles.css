@@ -979,6 +979,14 @@ footer{
   .seccion-01login{
     width: 90vw;
   }
+  .div-01log{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-01log a{
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -1004,14 +1012,6 @@ footer{
   }
   .seccion-01login{
     width: 90vw;
-  }
-  .div-01log{
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .div-01log a{
-    flex-direction: column;
-    margin: 0 auto;
   }
   .form-01log input{
     font-size: 1rem;
