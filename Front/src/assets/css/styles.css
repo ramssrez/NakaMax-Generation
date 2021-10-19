@@ -967,6 +967,13 @@ footer{
     padding: 0;
     width: 100%;
   }
+  .th-00-index{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-menu #cart{
+    width: 85vw;
+  }
 }
 
 @media only screen and (max-width: 650px){
@@ -976,7 +983,9 @@ footer{
   .register-02register, .loginWord-02register{
     font-size: 1.7rem;
   }
-  
+  .seccion-01login{
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -989,6 +998,9 @@ footer{
   #label-02register{
     padding: 0.45rem 0;
   }
+  .seccion-01login{
+    width: 90vw;
+  }
 }
 @media only screen and (max-width: 400px){
   #label-02register{
@@ -997,21 +1009,19 @@ footer{
   .navbar-brand img{
     width: 180px;
   }
-}
-
-/* Media querries */
-/*
-@media (max-width:1000px){
-  .login-01log{
-    background-color: aquamarine;
-    width: 100vh;
-    height: 50vw;
+  .seccion-01login{
+    width: 90vw;
   }
-  #log01{
-    font-size: 150px;
-    width: 100vh;
-    height: 90vw;
+  .div-01log{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-01log a{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .form-01log input{
+    font-size: 1rem;
   }
 }
-*/
 /* termina media registro */
