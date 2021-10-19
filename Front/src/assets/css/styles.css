@@ -139,9 +139,10 @@ ul {
 .circulo{
   border: solid #cc2424 1px;
   background-color:#F2A516;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  border-radius: 50%;
+  width: 8vw;
+  height: 8vw;
+  margin: 5vh auto;
 }
 
 
