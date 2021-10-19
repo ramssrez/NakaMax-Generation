@@ -123,7 +123,8 @@ $uWbuttonEditUser.addEventListener('click',()=>{
 $uWbuttonEditEmail.addEventListener('click',()=>{
     action = "NewEmail"
     sessionStorage.setItem("typeEditData",action);
-    window.location.href = "./03-verifyPassword.html";
+    //window.location.href = "./03-verifyPassword.html";
+    window.location.href = "/03-verifyPassword.html"
 })
 
 let EditEmail = sessionStorage.getItem('verify');
