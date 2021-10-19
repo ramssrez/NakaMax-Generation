@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
@@ -32,7 +33,7 @@
   </div>
   <!-- HEADER -->
   <header class="container-fluid">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand d-flex justify-content-center" href="index.html">
       <img src="./src/assets/images/nakamax.png" width="100" height="40" alt="" />
     </a>
     <nav class="navbar navbar-expand-lg">
@@ -66,7 +67,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#artesanales">ARTISTICOS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="#artesanales">ARTÍSTICOS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link nav-header" href="#promociones">PROMOCIONES<span class="sr-only">(current)</span></a>
@@ -178,7 +179,11 @@
   </main>
   <!-- Categorias -->
   <main class="container">
-    <hr class="lineas-hr">
+    <div class="row d-flex flex-nowrap align-items-center my-5">
+      <hr class="lineas-hr col-5">
+      <div class="container-fluid "><div class="circulo"></div></div>
+      <hr class="lineas-hr col-5">
+    </div>
     <div id="boton-categoria" class="container">
       <a class="btn bi" href="06-descripcion.html">
         <h1>Categorias</h1>
@@ -211,7 +216,11 @@
   <!-- cards articulos -->
   <main>
     <div class="container" id="lista-productos">
-      <hr class="lineas-hr">
+      <div class="row d-flex flex-nowrap align-items-center my-5">
+        <hr class="lineas-hr col-5">
+        <div class="container-fluid"><div class="circulo"></div></div>
+        <hr class="lineas-hr col-5">
+      </div>
       <div id="boton-categoria" class="container">
         <a class="btn bi" href="#lomasvendido">
           <h1 id="lomasvendido">Lo mas vendido</h1>

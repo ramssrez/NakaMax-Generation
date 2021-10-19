@@ -62,11 +62,8 @@ header {
     
 }
 ul {
-    font-family: 'Gamja Flower', cursive;
-    font-size: 28px;
-}
-.dropdown-item{
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
 }
 .nav-he {
    
@@ -120,7 +117,7 @@ ul {
 }    
 .c-text{
     color: black;
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .item-price{
     font-family: 'Quintessential', cursive;
@@ -139,6 +136,15 @@ ul {
 
 }
 /* Categorias circulos*/
+.circulo{
+  border: solid #cc2424 1px;
+  background-color:#F2A516;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+
 #cat-1{
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
     background-color:#F2A516;
@@ -247,7 +253,7 @@ footer{
 }
 
 .subtitulos{
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subtitulosBG{
