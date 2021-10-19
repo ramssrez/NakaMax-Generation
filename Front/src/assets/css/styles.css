@@ -397,8 +397,7 @@ footer{
 
 /*  Inicio Sección del login */
 .login-01log{
-    margin-top: 2%;
-    margin-bottom: 2%;  
+  margin: auto;  
 }
 .login-01log img{
     width: 25%;
@@ -409,8 +408,7 @@ footer{
 .seccion-01login{
     border: solid 0.1rem #02569C;
     border-radius: 2rem;
-    width: 45%;
-    height: 100%;
+    width: 100vh;
     box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
     background: rgba(2, 87, 156, 0.199)
 }
@@ -580,6 +578,7 @@ footer{
 /* Finalizacion de la descripción */
 
 /* Seccion de la página de registro */
+
 .fieldset-02register {
   border: solid 1px #02569C;
   border-radius: 2rem;
@@ -952,6 +951,8 @@ footer{
 
 /* Media de Registro */
 
+/* 
+ */
 @media only screen and (max-width: 800px) {
   .fieldset-02register {
     width: 70vw;
@@ -992,4 +993,19 @@ footer{
   }
 }
 
+/* Media querries */
+/*
+@media (max-width:1000px){
+  .login-01log{
+    background-color: aquamarine;
+    width: 100vh;
+    height: 50vw;
+  }
+  #log01{
+    font-size: 150px;
+    width: 100vh;
+    height: 90vw;
+  }
+}
+*/
 /* termina media registro */
