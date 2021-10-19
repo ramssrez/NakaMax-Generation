@@ -997,21 +997,41 @@ footer{
   .navbar-brand img{
     width: 180px;
   }
+  .seccion-01login{
+    width: 90vw;
+  }
+  .div-01log{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-01log a{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .form-01log input{
+    font-size: 1rem;
+  }
 }
 
 /* Media querries */
-/*
-@media (max-width:1000px){
-  .login-01log{
-    background-color: aquamarine;
-    width: 100vh;
-    height: 50vw;
-  }
+
+/* @media (max-width:500px){
   #log01{
-    font-size: 150px;
-    width: 100vh;
-    height: 90vw;
+    width: 100vw;
+    background-color: aqua;
   }
-}
-*/
+  .seccion-01login{
+    width: 90vw;
+    background-color: tomato;
+  }
+  .div-01log{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-01log a{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+} */
+
 /* termina media registro */
