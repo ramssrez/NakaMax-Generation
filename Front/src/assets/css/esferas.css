@@ -1,66 +1,66 @@
 /* Esferas */
-.burbuja{
+.esfera{
     border-radius: 50%;
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
     
     opacity: .4;
     position:fixed;
     bottom: -150; 
-    animation: burbujas 3s linear infinite;
+    animation: esferas 3s linear infinite;
     
     /*
     */
 }
-.burbuja:nth-child(1){
+.esfera:nth-child(1){
     width: 80px;
     height: 80px;
     left: 5%;
     animation-duration: 3s;
     animation-delay: 3s;
 }
-.burbuja:nth-child(2){
+.esfera:nth-child(2){
     width: 100px;
     height: 100px;
     left: 35%;
     animation-duration: 3s;
     animation-delay: 5s;
 }
-.burbuja:nth-child(3){
+.esfera:nth-child(3){
     width: 20px;
     height: 20px;
     left: 15%;
     animation-duration: 7s;
     animation-delay: 2s;
 }
-.burbuja:nth-child(4){
+.esfera:nth-child(4){
     width: 80px;
     height: 80px;
     left: 45%;
     animation-duration: 8s;
     animation-delay: 4s;
 }
-.burbuja:nth-child(5){
+.esfera:nth-child(5){
     width: 30px;
     height: 30px;
     left: 65%;
     animation-duration: 3s;
     animation-delay: 3s;
 }
-.burbuja:nth-child(6){
+.esfera:nth-child(6){
     width: 50px;
     height: 50px;
     left: 75%;
     animation-duration: 4s;
     animation-delay: 4s;
 }
-.burbuja:nth-child(7){
+.esfera:nth-child(7){
     width: 100px;
     height: 100px;
     left: 85%;
     animation-duration: 6s;
     animation-delay: 5s;
 }
-@keyframes burbujas {
+@keyframes esferas {
     0%{
         bottom: 0;
         opacity: 0;
