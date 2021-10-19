@@ -138,6 +138,14 @@ ul {
 
 }
 /* Categorias circulos*/
+.circulo{
+  border: solid #F2A516 2px;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+
 #cat-1{
     background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
     background-color:#F2A516;
