@@ -53,7 +53,7 @@ function leerDatosProducto(producto) {
         imagen: producto.querySelector('img').src,
         titulo: producto.querySelector('h3').textContent,
         precio: producto.querySelector('h5').textContent,
-        id: producto.querySelector('a').getAttribute('data-id'),
+        id: producto.querySelector('button').getAttribute('data-id'),
         cantidad: 1
     }
     //console.log(infoProducto);
@@ -101,8 +101,10 @@ function carritoHTML() {
         <td>${cantidad}</td>
         <td>
         <a href="#" class="borrar-producto" data-id="${id}"> X </a>
-        </td>
+        </td> 
         `;
+        /*
+        */
 
         // Agrega el html del carrito en el body.
         contenerdorCarrito.appendChild(row);
