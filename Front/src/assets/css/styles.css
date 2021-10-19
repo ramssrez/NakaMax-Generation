@@ -976,7 +976,9 @@ footer{
   .register-02register, .loginWord-02register{
     font-size: 1.7rem;
   }
-  
+  .seccion-01login{
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -988,6 +990,9 @@ footer{
   }
   #label-02register{
     padding: 0.45rem 0;
+  }
+  .seccion-01login{
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 400px){
@@ -1012,26 +1017,4 @@ footer{
     font-size: 1rem;
   }
 }
-
-/* Media querries */
-
-/* @media (max-width:500px){
-  #log01{
-    width: 100vw;
-    background-color: aqua;
-  }
-  .seccion-01login{
-    width: 90vw;
-    background-color: tomato;
-  }
-  .div-01log{
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .div-01log a{
-    flex-direction: column;
-    margin: 0 auto;
-  }
-} */
-
 /* termina media registro */
