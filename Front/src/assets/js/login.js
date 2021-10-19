@@ -1,4 +1,3 @@
-import Swal from 'sweetalert2'
 const $email = document.querySelector("#inputEmailLogin");
 const $password = document.querySelector("#inputPasswordLogin");
 const $btnLogin = document.querySelector("#btnLogin");
@@ -12,9 +11,3 @@ $btnLogin.addEventListener('click', () =>{
     }
   });
  
-  Swal.fire({
-    icon: 'error',
-    title: 'Oops...',
-    text: 'Something went wrong!',
-    footer: '<a href="">Why do I have this issue?</a>'
-  })
