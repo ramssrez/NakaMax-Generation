@@ -17,14 +17,8 @@ header {
 .sub-menu {
   position: relative;
 }
-.th-00-index{
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  
-}
 .sub-menu #cart{
   display: none;
-  width: 85vw;
 }
 .sub-menu:hover #cart{
   display: block;
@@ -972,6 +966,13 @@ footer{
   #fNac{
     padding: 0;
     width: 100%;
+  }
+  .th-00-index{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-menu #cart{
+    width: 85vw;
   }
 }
 
