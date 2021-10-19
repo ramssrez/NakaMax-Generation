@@ -1,0 +1,48 @@
+.card-pp{
+    background: #343a40;
+    width: 320px;
+    height: 420;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #F2A516 #02569C;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+  }
+  .card-pp::before{
+      background: #02569C;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      top: -50%;
+      transform: skewY(345deg);
+      transition: 2s ease-in;
+  }
+  .card-pp:hover::before{
+      top: -70%;
+      transform: skewY(390deg);
+  }
+  .imagen-pp{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .imagen-pp img{
+      max-width: 110%;
+      transition: 2s ease-in;
+  }
+  .card-pp:hover .imagen-pp img{
+      width: 60%;
+  }
+  .card-pp:hover .about-producto-01{
+      bottom: 20px !important;
+  }
+  .about-producto-01{
+      position: absolute;
+      bottom: -50px !important;
+      left: auto;
+      text-align: center;
+      color: azure;
+  }
