@@ -959,6 +959,14 @@ footer{
 
 /* 
  */
+ @media only screen and (max-width: 1000px) {
+  .div-lista-06descrip{
+    display: none;
+  }
+  .div-cards-06descrip{
+    width: 90vw;
+  }
+ }
 @media only screen and (max-width: 800px) {
   .fieldset-02register {
     width: 70vw;
