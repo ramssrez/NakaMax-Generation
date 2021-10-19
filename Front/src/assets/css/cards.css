@@ -1,4 +1,4 @@
-.card-pp{
+.card-pp-01{
     background: #343a40;
     width: 320px;
     height: 420;
@@ -10,7 +10,7 @@
     cursor: pointer;
     text-align: center !important;
   }
-  .card-pp::before{
+  .card-pp-01::before{
       background: #02569C;
       position: absolute;
       width: 100%;
@@ -20,25 +20,26 @@
       transform: skewY(345deg);
       transition: 2s ease-in;
   }
-  .card-pp:hover::before{
+  .card-pp-01:hover::before{
       top: -70%;
       transform: skewY(390deg);
   }
-  .imagen-pp{
+  .imagen-pp-01{
       width: 100%;
       display: flex;
       justify-content: center;
   }
-  .imagen-pp img{
+  .imagen-pp-01 img{
       max-width: 110%;
       transition: 2s ease-in;
   }
-  .card-pp:hover .imagen-pp img{
+  .card-pp-01:hover .imagen-pp-01 img{
       width: 60%;
   }
-  .card-pp:hover .about-producto-01{
+  .card-pp-01:hover .about-producto-01{
       bottom: 20px !important;
   }
+  
   .about-producto-01{
       position: absolute;
       bottom: -50px !important;
