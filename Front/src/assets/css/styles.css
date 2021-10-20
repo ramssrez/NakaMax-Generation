@@ -448,7 +448,7 @@ footer{
     display: block;
     margin: 0 auto;
     font-size: 25px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
     border-radius: 0.5rem;
 }
 .btn-01log:hover{
@@ -797,7 +797,7 @@ footer{
   justify-content: space-between;
 }
 .div-11payHijoUno{
-  width: 100vw;
+  width: 100vh;
   padding: 2rem;
   border: solid 1px black;
 }
@@ -981,6 +981,42 @@ footer{
 
 /* 
  */
+ @media only screen and (max-width: 1400px) {
+  .div-11payHijoUno{
+    width: 100vh;
+  }
+  .div-11payHijoDos{
+    width: 30vw;
+  }
+  .div-11payHijoDos label{
+    font-size: 20px;
+  }
+  .div-11payHijoDos h2{
+    font-size: 30px;
+  }
+  .div-11payHijoDos h3{
+    font-size: 30px;
+  }
+  .div-11payHijoUno h2{
+    font-size: 30px;
+  }
+  .div-11payHijoUno h4{
+    font-size: 20px;
+  }
+  .btn-11pay{
+    font-size: 15px;
+  }
+
+ }
+ @media only screen and (max-width: 1200px) {
+  .div-11payHijoUno{
+    width: 80vh;
+  }
+  .div-11payHijoDos{
+    width: 30vw;
+  }
+ }
+
  @media only screen and (max-width: 1000px) {
   .div-lista-06descrip{
     display: none;
@@ -1004,6 +1040,18 @@ footer{
   .sub-menu #cart{
     width: 85vw;
   }
+  .div-11payPadre{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-11payHijoUno{
+    width: 70vw;
+    margin: 10px;
+  }
+  .div-11payHijoDos{
+    width: 70vw;
+  }
+
 }
 
 @media only screen and (max-width: 650px){
