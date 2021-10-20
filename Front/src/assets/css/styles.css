@@ -394,6 +394,7 @@ footer{
     color: #fff;
     background-color: #02569C;
     cursor: pointer;
+    font-family:'Quintessential', cursive;
 }
    
 .btn-12crud:hover{
@@ -766,7 +767,7 @@ footer{
   text-align: center;
   display: block; 
   font-size: 25px;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Quintessential', cursive;
   border-radius: 0.5rem;
 }
 .btn-11pay:hover{
