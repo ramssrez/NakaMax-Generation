@@ -770,25 +770,36 @@ footer{
 }
 .div-11payDecription h2{
   font-family: 'Gamja Flower', cursive;
-  font-size: 40px;
+  margin-bottom: 2rem;
+  font-size: 60px;
 }
 .div-11payDecription h3{
   font-family: 'Gamja Flower', cursive;
-  font-size: 30px;
+  font-size: 50px;
 }
 .div-11payDecription span,p {
   font-family: 'Gamja Flower', cursive;
   font-size: 20px;
 }
-.div-11payPadre{
+.div-11payDecription h4{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 1rem;
+}
+.div-11payPadr{
   display: flex;
   justify-content: space-between;
 }
 .div-11payHijoUno{
-  width: 70%;
+  width: 100vw;
+  background-color: aqua;
+  padding: 2rem;
 }
 .div-11payHijoDos{
-  width: 30%;
+  width: 100vw;
+  background-color: chartreuse;
+  padding: 100px;
 }
 /* Finalización sección de pago */
 
