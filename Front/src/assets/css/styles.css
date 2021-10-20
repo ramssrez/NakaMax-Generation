@@ -745,21 +745,19 @@ footer{
   margin: 1%;
 }
 .check-11pay img{
-  width: 5%;
+  width: 15%;
   margin-left: 1%;
-  margin-right: 1%;
+  margin-right: 3%;
 }
 .check-11pay label{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Gamja Flower', cursive;
 }
 .btn-11pay{
   background: #02569C;
   color: white;
   text-align: center;
-  display: block;
-/*     margin: 0 auto;
- */    
+  display: block; 
   font-size: 25px;
   font-family: 'Gamja Flower', cursive;
   border-radius: 0.5rem;
@@ -770,25 +768,44 @@ footer{
 }
 .div-11payDecription h2{
   font-family: 'Gamja Flower', cursive;
-  font-size: 40px;
+  margin-bottom: 2rem;
+  font-size: 60px;
 }
 .div-11payDecription h3{
   font-family: 'Gamja Flower', cursive;
-  font-size: 30px;
+  font-size: 50px;
 }
-.div-11payDecription span,p {
+.div-11payDecription h4{
   font-family: 'Gamja Flower', cursive;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 1rem;
+}
+.div-img-11pay img{
+  width: 90%;
+}
+.divFater-img-11pay{
+  display: flex;
+  justify-content: space-between;
 }
 .div-11payPadre{
   display: flex;
   justify-content: space-between;
 }
 .div-11payHijoUno{
-  width: 70%;
+  width: 100vw;
+  padding: 2rem;
+  border: solid 1px black;
 }
 .div-11payHijoDos{
-  width: 30%;
+  width: 30vw;
+  padding: 2rem;
+  border: solid 1px black;
+}
+.div-11payHijoDos h5{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 /* Finalización sección de pago */
 
@@ -960,6 +977,14 @@ footer{
 
 /* 
  */
+ @media only screen and (max-width: 1000px) {
+  .div-lista-06descrip{
+    display: none;
+  }
+  .div-cards-06descrip{
+    width: 90vw;
+  }
+ }
 @media only screen and (max-width: 800px) {
   .fieldset-02register {
     width: 70vw;
@@ -987,6 +1012,14 @@ footer{
   .seccion-01login{
     width: 90vw;
   }
+  .div-01log{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .div-01log a{
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -1012,14 +1045,6 @@ footer{
   }
   .seccion-01login{
     width: 90vw;
-  }
-  .div-01log{
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .div-01log a{
-    flex-direction: column;
-    margin: 0 auto;
   }
   .form-01log input{
     font-size: 1rem;
