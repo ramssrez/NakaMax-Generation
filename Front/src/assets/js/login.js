@@ -1,4 +1,3 @@
-import Swal from 'sweetalert2';
 const $email = document.querySelector("#inputEmailLogin");
 const $password = document.querySelector("#inputPasswordLogin");
 const $btnLogin = document.querySelector("#btnLogin");
