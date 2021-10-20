@@ -23,7 +23,7 @@
     height: 100px;
     left: 35%;
     animation-duration: 3s;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 .esfera:nth-child(3){
     width: 20px;
@@ -58,7 +58,7 @@
     height: 100px;
     left: 85%;
     animation-duration: 6s;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 @keyframes esferas {
     0%{
