@@ -204,6 +204,7 @@ h1 {
 .uWbtn{
     background-color: #dc3545;
     color: white;
+    font-family: 'Quintessential', cursive;
 }
 .uWbtn:hover{
     background-color: #F2A516;
@@ -272,10 +273,8 @@ footer{
 
 
 /* ---- 10-starWindow ----*/
-/* Solo modifica de aquí Valeria */
 .carrito-compra {
     font-family: 'Architects Daughter', cursive;
-
 }
 
 .precio {
@@ -305,14 +304,17 @@ footer{
 
 .btn-eliminar {
     background-color: #02569C;
+    font-family: 'Quintessential', cursive;
 }
 
 .btn-pago {
     background-color: #cc2424;
+    font-family: 'Quintessential', cursive;
 }
 
 .btn-productos {
     background-color: #4edf4e;
+    font-family: 'Quintessential', cursive;
 }
 .subtotales{
     position: relative;
@@ -392,6 +394,7 @@ footer{
     color: #fff;
     background-color: #02569C;
     cursor: pointer;
+    font-family:'Quintessential', cursive;
 }
    
 .btn-12crud:hover{
@@ -530,7 +533,7 @@ footer{
 .btn-06descrip{
     background: #F2A516;
     color: white;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
     font-size: 20px;
     display: block;
     border: solid 1px white;
@@ -764,7 +767,7 @@ footer{
   text-align: center;
   display: block; 
   font-size: 25px;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Quintessential', cursive;
   border-radius: 0.5rem;
 }
 .btn-11pay:hover{
@@ -971,7 +974,7 @@ footer{
   color: whitesmoke;
   height: 60px;
   width: 200px;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Quintessential', cursive;
   font-size: xx-large;
   background-color: #02569c;
 }
