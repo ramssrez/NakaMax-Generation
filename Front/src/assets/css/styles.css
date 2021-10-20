@@ -745,21 +745,19 @@ footer{
   margin: 1%;
 }
 .check-11pay img{
-  width: 5%;
+  width: 15%;
   margin-left: 1%;
-  margin-right: 1%;
+  margin-right: 3%;
 }
 .check-11pay label{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Gamja Flower', cursive;
 }
 .btn-11pay{
   background: #02569C;
   color: white;
   text-align: center;
-  display: block;
-/*     margin: 0 auto;
- */    
+  display: block; 
   font-size: 25px;
   font-family: 'Gamja Flower', cursive;
   border-radius: 0.5rem;
@@ -777,10 +775,6 @@ footer{
   font-family: 'Gamja Flower', cursive;
   font-size: 50px;
 }
-/* .div-11payDecription span,p {
-  font-family: 'Gamja Flower', cursive;
-  font-size: 20px;
-} */
 .div-11payDecription h4{
   font-family: 'Gamja Flower', cursive;
   font-size: 25px;
@@ -807,6 +801,11 @@ footer{
   width: 30vw;
   padding: 2rem;
   border: solid 1px black;
+}
+.div-11payHijoDos h5{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 /* Finalización sección de pago */
 
