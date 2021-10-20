@@ -794,19 +794,19 @@ footer{
   display: flex;
   justify-content: space-between;
 }
-.div-11payPadr{
+.div-11payPadre{
   display: flex;
   justify-content: space-between;
 }
 .div-11payHijoUno{
   width: 100vw;
-  background-color: aqua;
   padding: 2rem;
+  border: solid 1px black;
 }
 .div-11payHijoDos{
-  width: 100vw;
-  background-color: chartreuse;
-  padding: 100px;
+  width: 30vw;
+  padding: 2rem;
+  border: solid 1px black;
 }
 /* Finalización sección de pago */
 
