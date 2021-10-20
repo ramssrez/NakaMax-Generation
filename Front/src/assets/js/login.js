@@ -1,4 +1,4 @@
-//import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 const $email = document.querySelector("#inputEmailLogin");
 const $password = document.querySelector("#inputPasswordLogin");
 const $btnLogin = document.querySelector("#btnLogin");
@@ -10,7 +10,7 @@ $btnLogin.addEventListener('click', () =>{
       console.log("Los campos estan llenos");
     }
   });
-
+  
   function errorVacios(){
     Swal.fire({
       icon: 'error',
@@ -18,3 +18,4 @@ $btnLogin.addEventListener('click', () =>{
       text: 'Los campos están vacios'
     });
   }
+
