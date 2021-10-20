@@ -639,6 +639,7 @@ footer{
   margin: 0 20%;
   height: auto;
   padding: 1.5%;
+  font-family: 'Quintessential', cursive;
 }
 .btn-02register:hover{
   transition: all .4s;
@@ -816,7 +817,7 @@ footer{
 /* Comienza sección acerca de nosotros */
 
 .title-adn {
-  font-family: "Gamja Flower", cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: 60px;
   text-align: center;
   margin: 20px;
@@ -825,7 +826,7 @@ footer{
 .subtitle-adn {
   color: white;
   background-color: #02569c;
-  font-family: "Gamja Flower", cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: xx-large;
   width: 150px;
   height: 70px;
