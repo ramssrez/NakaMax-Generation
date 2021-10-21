@@ -36,6 +36,7 @@ $savePassword.addEventListener('click', ()=>{
 
 // cancelar nueva contraseña
 $cancelNewPassword.addEventListener('click', ()=>{
+    localStorage.setItem('cancel','cancel');
     window.location.href = "./09-userWindow.html";
 })
 

@@ -119,16 +119,24 @@ $uWbuttonEditUser.addEventListener('click',()=>{
     }
 })
 
-// Edición del correo
+//-------------------- Edición del correo --------------------
+
+let EditEmail = sessionStorage.getItem('verify');
+let newPasswordCancel;
+var actualEmail;
 $uWbuttonEditEmail.addEventListener('click',()=>{
     action = "NewEmail"
     sessionStorage.setItem("typeEditData",action);
     //window.location.href = "./03-verifyPassword.html";
-    window.location.href = "/03-verifyPassword.html"
+    window.location.href = "./03-verifyPassword.html"
 })
-
-let EditEmail = sessionStorage.getItem('verify');
+//localStorage.removeItem('newEmail');
+//localStorage.removeItem('EmailLogPassword');
+//sessionStorage.removeItem('newEmail');
+// obteniendo dato de sessionStorage para continuar con procedimiento de cambio de correo
 if(EditEmail === "verified"){
+    actualEmail = $Email.value;
+    console.log(actualEmail);
     var InputItem = document.createElement('input');
     InputItem.type = 'email';
     InputItem.placeholder = "Correo";
@@ -136,14 +144,14 @@ if(EditEmail === "verified"){
     $inputEmail.appendChild(InputItem);
     $inputEmail.appendChild(btnGuardar);
     $inputEmail.appendChild(btnCancel);
-
     disableBtn();
 
     btnGuardar.addEventListener('click',() => {
-        const inputValue = InputItem.value;
-        $Email.textContent = inputValue;
+        $Email.textContent = InputItem.value;
+        //$Email.textContent = inputValue;
         sessionStorage.removeItem('verify');
         removeItems();
+        window.location.href = "./04-newPassword.html"
     })
 
     btnCancel.addEventListener('click',()=>{
@@ -158,6 +166,14 @@ if(EditEmail === "verified"){
     }
 }else{
     EditEmail = "";
+}
+newPasswordCancel = localStorage.getItem('cancel');
+if(newPasswordCancel === 'cancel')
+{
+    console.log(actualEmail);
+    $Email.textContent = actualEmail;
+    localStorage.removeItem('cancel');
+    actualEmail = "";
 }
 
 // Edición de la contraseña. Envia a la página correspondiente para la edicion: 03-verifyPassword
@@ -175,7 +191,7 @@ $uWbuttonEditRegion.addEventListener('click',()=>{
       <option value="">PAÍS</option>
       <option value="MÉXICO">MÉXICO</option>
       <option value="EUA">EUA</option>
-      <option value="CANADA">CANADA</option>
+      <option value="CANADÁ">CANADA</option>
       <option value="CHINA">CHINA</option>
     </select>`
     $inputRegion.appendChild(desplegable);
