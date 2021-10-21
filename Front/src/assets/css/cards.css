@@ -12,13 +12,13 @@
   }
   .card-efectoAzul-01::before{
       background: #02569C;
-      position: absolute;
+      position: relative;
       width: 100%;
       height: 100%;
       content: "";
-      top: -50%;
+      top: -15%;
       transform: skewY(345deg);
-      transition: 2s ease-in;
+      transition: 1s ease-in;
   }
   .card-efectoAzul-01:hover::before{
       top: -70%;
