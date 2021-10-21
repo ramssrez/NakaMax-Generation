@@ -198,6 +198,7 @@ h1 {
     background-color: #F1ECE9;
 }
 .uWbtn{
+    border-radius: 15px;
     background-color: #dc3545;
     color: white;
     font-family: 'Quintessential', cursive;
