@@ -185,6 +185,9 @@ h1 {
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
 }
+.card-title{
+  font-family: 'Architects Daughter', cursive;
+}
 /* Carrusel de abajo pagina principal */
 .pp-card{
     transform: 1s;
