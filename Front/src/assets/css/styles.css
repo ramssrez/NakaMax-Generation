@@ -87,7 +87,7 @@ ul {
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
-    font-family: 'Quintessential', cursive;
+    font-family: 'Architects Daughter', cursive;
     border-radius: 32px;
 }
 .bt-carrito {
@@ -153,6 +153,7 @@ ul {
     width: 200px;
     height: 200px;
     border: none;
+    font-family: 'Architects Daughter', cursive;
 }
 #boton-categoria{
     text-align: center;
