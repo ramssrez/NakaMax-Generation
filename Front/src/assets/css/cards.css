@@ -39,7 +39,10 @@
   .card-efectoAzul-01:hover .about-producto-01{
       bottom: 20px !important;
   }
-  
+  .cabeceraCards{
+    position: relative;
+    top: 0;
+  }
   .about-producto-01{
       position: absolute;
       bottom: -60px !important;
