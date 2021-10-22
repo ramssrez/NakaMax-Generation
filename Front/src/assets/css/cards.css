@@ -30,7 +30,7 @@
       justify-content: center;
   }
   .imagen-efectoAzul-01 img{
-      max-width: 110%;
+      max-width: 100%;
       transition: 2s ease-in;
   }
   .card-efectoAzul-01:hover .imagen-efectoAzul-01 img{
