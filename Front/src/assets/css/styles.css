@@ -351,7 +351,7 @@ footer{
 .formulario-alta-producto {
     display: block;
     margin: 0 auto;
-    width: 55%;
+    width: 80vh;
     margin-bottom: 50px;
     font-family: 'Architects Daughter', cursive;
     background: rgba(2, 87, 156, 0.199);
@@ -364,29 +364,9 @@ footer{
     border: solid 0.1rem #02569C;
 }
 
-#ingresa-datos {
+.ingresa-datos {
     margin-top: 50px;
     font-family: 'Architects Daughter', cursive;
-}
-
-.inp-datos {
-    width: 400px;
-    text-align: center;
-    color: #02569C;
-    border: none;
-    border-radius: 1rem;
-    border: 0.1rem solid #02569B;
-    font-size: 25px;
-}
-
-.descripcion{
-    display: block;
-    margin: auto;
-    width:400px;
-    height:100px;
-    border: none;
-    font-size: 25px;
-    border: .1rem solid #02569C
 }
 
 /* ---- 12 crudProducto (subir imagen) ----*/
@@ -397,6 +377,8 @@ footer{
 .btn-12crud{
     display: block;
     margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
     border: none;
     color: #fff;
     background-color: #02569C;
@@ -408,9 +390,20 @@ footer{
     transition: all .4s;
     background-color: #F2A516;
 }
-/* Hasta aquí Valeria */
-
-
+.form-12crud input{
+  font-size: 25px;
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+  border-radius: 1rem;
+  border: solid 0.1rem #02569C;
+}
+.form-12crud textarea{
+  font-size: 25px;
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+  border-radius: 1rem;
+  border: solid 0.1rem #02569C;
+}
 
 /*  Inicio Sección del login */
 .login-01log{
@@ -465,7 +458,7 @@ footer{
     transition: all .4s;
     background-color: #F2A516;
 }
-.form-01log input{
+.form-01log input, textarea{
     font-size: 25px;
     font-family: 'Architects Daughter', cursive;
     text-align: center;
@@ -1062,6 +1055,9 @@ footer{
   .div-11payHijoDos{
     width: 70vw;
   }
+  .formulario-alta-producto {
+    width: 70vh;
+  }
 
 }
 
@@ -1095,8 +1091,17 @@ footer{
   #label-02register{
     padding: 0.45rem 0;
   }
-  .seccion-01login{
-    width: 90vw;
+  .formulario-alta-producto {
+    width: 50vh;
+  }
+  .ingresa-datos {
+    font-size: 20px;
+  }
+  .form-12crud input {
+    font-size: 15px;
+  }
+  .form-12crud textarea {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 400px){
