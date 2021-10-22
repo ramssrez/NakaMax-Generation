@@ -364,7 +364,7 @@ footer{
     border: solid 0.1rem #02569C;
 }
 
-#ingresa-datos {
+.ingresa-datos {
     margin-top: 50px;
     font-family: 'Architects Daughter', cursive;
 }
@@ -377,6 +377,8 @@ footer{
 .btn-12crud{
     display: block;
     margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
     border: none;
     color: #fff;
     background-color: #02569C;
@@ -1053,6 +1055,9 @@ footer{
   .div-11payHijoDos{
     width: 70vw;
   }
+  .formulario-alta-producto {
+    width: 70vh;
+  }
 
 }
 
@@ -1086,8 +1091,17 @@ footer{
   #label-02register{
     padding: 0.45rem 0;
   }
-  .seccion-01login{
-    width: 90vw;
+  .formulario-alta-producto {
+    width: 50vh;
+  }
+  .ingresa-datos {
+    font-size: 20px;
+  }
+  .form-12crud input {
+    font-size: 15px;
+  }
+  .form-12crud textarea {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 400px){
