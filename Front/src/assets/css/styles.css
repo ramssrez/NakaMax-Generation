@@ -47,7 +47,6 @@ header {
   text-decoration: none;
   color:rgb(206, 186, 186);
   font-weight: bold;
-
 }
 .button {
   background-color: #F2A516;
@@ -67,14 +66,12 @@ header {
 ul {
     font-family: 'Architects Daughter', cursive;
     font-size: 22px;
+    font-variant: small-caps;
 }
 .nav-he {
-   
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    
-
 }
 .lineas-hr {
     height: 1px;
@@ -90,7 +87,7 @@ ul {
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
     border-radius: 32px;
 }
 .bt-carrito {
