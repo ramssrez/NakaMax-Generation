@@ -577,7 +577,7 @@ footer{
     width: 100%;
 }
 .div-cards-06descrip{
-    width: 80%;
+    width: 80vw;
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -1129,6 +1129,10 @@ footer{
   .form-01log input{
     font-size: 1rem;
   }
+/*   .div-padre-06descrip{
+    flex-direction: column;
+    width: 80vh;
+} */
 
 }
 /* termina media registro */
