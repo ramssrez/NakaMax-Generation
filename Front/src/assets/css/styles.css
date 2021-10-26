@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&family=Quintessential&family=Material+Icons&display=swap");
+
 /* ---- header ---- */
 body{
     margin: 0;
@@ -12,7 +14,10 @@ header {
     height: 120px;
     left: 0px;
     top: 0px;
-    z-index: 100;
+    z-index: 200;
+}
+i{
+  font-size: 30px;
 }
 .tutorial{
   box-shadow: 10px 10px 15px #94939855;
