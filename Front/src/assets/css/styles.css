@@ -574,7 +574,7 @@ footer{
     width: 100%;
 }
 .div-cards-06descrip{
-    width: 80%;
+    width: 80vw;
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -1076,6 +1076,12 @@ footer{
     flex-direction: column;
     margin: 0 auto;
   }
+  .precio {
+    margin-left: 84%;
+  }
+  .separador {
+    margin-top: 27px;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -1100,6 +1106,12 @@ footer{
   .form-12crud textarea {
     font-size: 15px;
   }
+  .img-10carrito{
+    width: 50%;
+  }
+  .precio {
+    margin-left: 80%;
+}
 }
 @media only screen and (max-width: 400px){
   #label-02register{
@@ -1114,5 +1126,10 @@ footer{
   .form-01log input{
     font-size: 1rem;
   }
+/*   .div-padre-06descrip{
+    flex-direction: column;
+    width: 80vh;
+} */
+
 }
 /* termina media registro */
