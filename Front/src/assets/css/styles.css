@@ -129,7 +129,8 @@ ul {
 }
 .jumbotron{
     background-color: #F07A0D;
-    
+    margin: 0;
+    padding: 1vh 0;
 }
 .promo-carrusel{
     transform: 1s;
