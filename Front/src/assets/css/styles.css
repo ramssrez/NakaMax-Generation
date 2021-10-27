@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&family=Quintessential&family=Material+Icons&display=swap");
+
 /* ---- header ---- */
 body{
     margin: 0;
@@ -12,7 +14,10 @@ header {
     height: 120px;
     left: 0px;
     top: 0px;
-    z-index: 100;
+    z-index: 200;
+}
+i{
+  font-size: 30px;
 }
 .tutorial{
   box-shadow: 10px 10px 15px #94939855;
@@ -48,7 +53,6 @@ header {
   text-decoration: none;
   color:rgb(206, 186, 186);
   font-weight: bold;
-
 }
 .button {
   background-color: #F2A516;
@@ -68,14 +72,12 @@ header {
 ul {
     font-family: 'Architects Daughter', cursive;
     font-size: 22px;
+    font-variant: small-caps;
 }
 .nav-he {
-   
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    
-
 }
 .lineas-hr {
     height: 1px;
@@ -91,7 +93,7 @@ ul {
     top: 13px;
     background-color: #F2A516;
     color: #F1ECE9;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
     border-radius: 32px;
 }
 .bt-carrito {
@@ -128,7 +130,8 @@ ul {
 }
 .jumbotron{
     background-color: #F07A0D;
-    
+    margin: 0;
+    padding: 1vh 0;
 }
 .promo-carrusel{
     transform: 1s;
