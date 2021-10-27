@@ -22,6 +22,7 @@ header {
 }
 .sub-menu #cart{
   display: none;
+  width: 150vh;
 }
 .sub-menu:hover #cart{
   display: block;
