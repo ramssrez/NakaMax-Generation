@@ -31,6 +31,14 @@ INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALU
 INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALUES ('Me marca una compra de un precio elevado que no corresponde a la cantidad de productos seleccionados en el carrito', '1', '0');
 INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALUES ('No se completa la carga de algunos elementos, no aparece la imagen', '1', '1');
 
+/* Insertando admins */
+INSERT INTO administradores VALUES (NULL,'Francisco', 'Bañuelos ', 'Valadez ', 'franciscobanuelosvaladez@gmail.com', 'Bvfr012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/fcovaldz', 'https://github.com/Fcovaldz');
+INSERT INTO administradores VALUES (NULL,'Carlos Alberto', 'Chavarria ', 'Ortiz ', 'carlosalberto.chavarriao@gmail.com', 'Chco012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/carlos-a-chavarria-ortiz', 'https://github.com/CarlosAChavarria');
+INSERT INTO administradores VALUES (NULL,'Paula', 'Cid del Prado ', 'Soto ', 'paula.ciddelprado@gmail.com', 'Cips012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/paulaciddelprado', 'https://github.com/paulaciddelprado');
+INSERT INTO administradores VALUES (NULL,'Luis Angel', 'Durán ', 'López ', 'luisadl591@gmail.com', 'Dull012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/luis-angel-duran', 'https://github.com/LuisAngelBonCorpse');
+INSERT INTO administradores VALUES (NULL,'Raúl', 'Ramírez ', 'Pérez ', 'raulramirezperez1992@gmail.com', 'Rarp012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-p%C3%A9rez-738aa9115/', 'https://github.com/ramssrez');
+
+/* Se insertan personalizables */
 
 /* Inserciones de productos */
 

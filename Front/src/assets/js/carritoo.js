@@ -5,7 +5,7 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const listaCards = document.querySelector('#lista-productos');
 let articulosCarrito = [];
 
-cargarEventListeners()
+cargarEventListeners();
 
 function cargarEventListeners() {
     // Cuando agregas un producto presionando "Agregar al Carrito".
@@ -39,7 +39,7 @@ function agregarProducto(e) {
 
 // Eliminar producto del carrito.
 function eliminarProducto(e) {
-    console.log(e.target.classList);
+    //console.log(e.target.classList);
     if (e.target.classList.contains('borrar-producto')) {
         const productoId = e.target.getAttribute('data-id');
 
@@ -134,41 +134,65 @@ function limmpiarHTML() {
         contenerdorCarrito.removeChild(contenerdorCarrito.firstChild);
     }
 }
-/*
-leerDatosProducto() {
-    let productoSeleccionado;
-    productoSeleccionado = this.sincronizarStorage();
-    productoSeleccionado.forEach(function(producto){
-        const { imagen, titulo, precio, cantidad, id } = producto;
-        const row = document.createElement('tr');
-        row.innerHTML = `
-        <td>
-        <img src="${imagen}" width="100">
-        </td>
-        <td>&nbsp &nbsp${titulo}</td>
-        <td>&nbsp &nbsp${precio}</td>
-        <td>&nbsp &nbsp${cantidad}</td>
-        <td>
-        <a href="#" class="borrar-producto" data-id="${id}"> X </a>
-        </td> 
-        `;
-        contenerdorCarrito.appendChild(row);
-    });
-}
-vaciarLocalStorage(){
-    localStorage.clear();
-}
-procesarPedido(e){
-    e.preventDefault();
-    if(this.sincronizarStorage().length === 0){
-        Swal.fire({
-            icon: 'info',
-            title: 'Oops...',
-            text: 'Carrito vacio',
-            footer: '<a href="">Why do I have this issue?</a>'
-          });
-    }else{
-        location.href = "10-carritoWindow.html"
+
+class Carrito {
+    leerLocalStorage() {
+        let productos;
+        productos = this.sincronizarStorage();
+        productos.forEach(function(producto){
+            const { imagen, titulo, precio, cantidad, id } = producto;
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>
+            <img src="${imagen}" width="100">
+            </td>
+            <td>&nbsp &nbsp${titulo}</td>
+            <td>&nbsp &nbsp${precio}</td>
+            <td>&nbsp &nbsp${cantidad}</td>
+            <td>
+            <a href="#" class="borrar-producto" data-id="${id}"> X </a>
+            </td> 
+            `;
+            listaCarrito.appendChild(row);
+        });
+    }
+    leerLocalStorageCompra() {
+        let productoLS;
+        productoLS = this.sincronizarStorage();
+        productoLS.forEach(function(producto){
+            const { imagen, titulo, precio, cantidad, id } = producto;
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>
+            <img src="${imagen}" width="100">
+            </td>
+            <td>&nbsp &nbsp${producto.titulo}</td>
+            <td>&nbsp &nbsp${producto.precio}</td>
+            <td>
+            <input type="number" class="form-control" min="1" value=${producto.cantidad}>
+            </td>
+            <td>${producto.precio * producto.cantidad}</td>
+            <td>
+            <a href="#" class="borrar-producto" data-id="${producto.id}"> X </a>
+            </td> 
+            `;
+            listaCompra.appendChild(row);
+        });
+    }
+    vaciarLocalStorage(){
+        localStorage.clear();
+    }
+     procesarPedido(e){
+        e.preventDefault();
+        if(this.sincronizarStorage().length === 0){
+            Swal.fire({
+                icon: 'info',
+                title: 'Oops...',
+                text: 'Carrito vacio',
+                footer: '<a href="">Why do I have this issue?</a>'
+              });
+        }else{
+            location.href = "10-carritoWindow.html"
+        }
     }
 }
-*/
