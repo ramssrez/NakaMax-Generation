@@ -27,7 +27,7 @@ i{
 }
 .sub-menu #cart{
   display: none;
-  width: 150vh;
+  width: 120vh;
 }
 .sub-menu:hover #cart{
   display: block;
@@ -1030,6 +1030,9 @@ footer{
   .div-cards-06descrip{
     width: 90vw;
   }
+  .sub-menu #cart{
+    width: 120vh;
+  }
  }
 @media only screen and (max-width: 800px) {
   .bt-login{
@@ -1048,9 +1051,6 @@ footer{
   .th-00-index{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-  }
-  .sub-menu #cart{
-    width: 85vw;
   }
   .div-11payPadre{
     flex-direction: column;
@@ -1137,6 +1137,8 @@ footer{
   .form-01log input{
     font-size: 1rem;
   }
-
+  .sub-menu #cart{
+    width: 100vw;
+  }
 }
 /* termina media registro */
