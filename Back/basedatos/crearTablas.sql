@@ -11,4 +11,9 @@ CREATE TABLE cometarios_contac_us (
   PRIMARY KEY (id_comentario))
 ENGINE = InnoDB;
 
-/*  */
+/* Tabla de categorias*/
+CREATE TABLE categorias (
+  id_categoria INT NOT NULL AUTO_INCREMENT,
+  descrpcion VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id_categoria))
+ENGINE = InnoDB;
