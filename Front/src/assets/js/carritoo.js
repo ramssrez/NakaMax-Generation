@@ -134,3 +134,41 @@ function limmpiarHTML() {
         contenerdorCarrito.removeChild(contenerdorCarrito.firstChild);
     }
 }
+/*
+leerDatosProducto() {
+    let productoSeleccionado;
+    productoSeleccionado = this.sincronizarStorage();
+    productoSeleccionado.forEach(function(producto){
+        const { imagen, titulo, precio, cantidad, id } = producto;
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>
+        <img src="${imagen}" width="100">
+        </td>
+        <td>&nbsp &nbsp${titulo}</td>
+        <td>&nbsp &nbsp${precio}</td>
+        <td>&nbsp &nbsp${cantidad}</td>
+        <td>
+        <a href="#" class="borrar-producto" data-id="${id}"> X </a>
+        </td> 
+        `;
+        contenerdorCarrito.appendChild(row);
+    });
+}
+vaciarLocalStorage(){
+    localStorage.clear();
+}
+procesarPedido(e){
+    e.preventDefault();
+    if(this.sincronizarStorage().length === 0){
+        Swal.fire({
+            icon: 'info',
+            title: 'Oops...',
+            text: 'Carrito vacio',
+            footer: '<a href="">Why do I have this issue?</a>'
+          });
+    }else{
+        location.href = "10-carritoWindow.html"
+    }
+}
+*/
