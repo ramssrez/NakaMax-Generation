@@ -33,16 +33,14 @@ CREATE TABLE nakamax.colores (
   id_color INT NOT NULL AUTO_INCREMENT,
   color VARCHAR(25) NOT NULL,
   precio FLOAT NOT NULL,
-  PRIMARY KEY (id_color))
-ENGINE = InnoDB
+  PRIMARY KEY (id_color));
 
 /* Tabla Material */
 CREATE TABLE nakamax.materiales (
   id_material INT NOT NULL AUTO_INCREMENT,
   material VARCHAR(25) NOT NULL,
   precio FLOAT NOT NULL,
-  PRIMARY KEY (id_material))
-ENGINE = InnoDB
+  PRIMARY KEY (id_material));
 
 /* Tabla de personalizables */
 CREATE TABLE personalizables (
