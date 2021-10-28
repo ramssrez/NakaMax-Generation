@@ -51,15 +51,32 @@ CREATE TABLE categorias (
 
 /* Tabla reportes producto */
 
-#codigo
 
-/* Tabla reportes pagina */
+CREATE TABLE reportes_producto (
+  id_reporte INT NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(255) NOT NULL,
+<<<<<<< HEAD
+  is_llego TINYINT(1) NULL,
+  is_danger TINYINT(1) NULL,
+  is_tardio TINYINT(1) NULL,
+  id_compra INT NOT NULL,
+  PRIMARY KEY (id_reporte),
+  INDEX fk_reportes_producto_compra_idx (id_compra ASC) VISIBLE,
+  CONSTRAINT fk_reportes_producto_compra
+    FOREIGN KEY (id_compra)
+    REFERENCES nakamax.compra (id_compra)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+  /* Tabla reportes pagina */
 CREATE TABLE reportes_pagina (
   id_reporte_pag INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
   is_general TINYINT(1) NULL,
   is_link_down VARCHAR(45) NULL,
-  PRIMARY KEY (id_reporte_pag))
+  PRIMARY KEY (id_reporte_pag));
 
 
 /* Tabla de Contactanos */
@@ -231,3 +248,4 @@ CREATE TABLE nakamax.piv_vend_repro (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 );
+>>>>>>> 3d78fefdcc4c58be25cb0f236fab2622d8894416

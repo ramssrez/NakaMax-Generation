@@ -31,6 +31,12 @@ INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALU
 INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALUES ('Me marca una compra de un precio elevado que no corresponde a la cantidad de productos seleccionados en el carrito', '1', '0');
 INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALUES ('No se completa la carga de algunos elementos, no aparece la imagen', '1', '1');
 
+/* Insertar compradores */
+INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Paula', 'Cid', '1352YNM', 'ecchi', 'ejemplo@ejemplo.com', '123456', '2020-01-01');
+INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Mariana', 'Gómez', '1246UMHM', 'josei', 'ejemplo@ejemplo.com', 'abcdf', '2019-01-01');
+INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Héctor', 'Soto', '9865HMHAY', 'seinen', 'ejemplo@ejemplo.com', 'contraseña', '1994-01-01');
+INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Eva', 'Benitez', '220369EUYN', 'moe', 'ejemplo@ejemplo.com', '987654', '1999-01-01');
+INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Dulce', 'Reyes', '690747MJOQ', 'yaoi', 'ejemplo@ejemplo.com', 'pass123', '1996-01-01');
 /* Insertando admins */
 INSERT INTO administradores VALUES (NULL,'Francisco', 'Bañuelos ', 'Valadez ', 'franciscobanuelosvaladez@gmail.com', 'Bvfr012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/fcovaldz', 'https://github.com/Fcovaldz');
 INSERT INTO administradores VALUES (NULL,'Carlos Alberto', 'Chavarria ', 'Ortiz ', 'carlosalberto.chavarriao@gmail.com', 'Chco012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/carlos-a-chavarria-ortiz', 'https://github.com/CarlosAChavarria');
@@ -40,3 +46,9 @@ INSERT INTO administradores VALUES (NULL,'Raúl', 'Ramírez ', 'Pérez ', 'raulr
 
 /* Se insertan personalizables */
 
+/* DEJAR HASTA EL FINAL DEL CÓDIGO Insertar Reportes Producto */
+INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('no llegó mi producto, lleva seis meses en proceso de envío', '0', '0', '1', '1');
+INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('mi nombre no viene bien escrito en la playera que pedí, tiene errores ortográficos', '0', '1', '0', '2');
+INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('la colección crochet de One Piece le faltan dos personajes, está incompleta', '0', '1', '0', '3');
+INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('el color de mi funko era verde, no rosa, porque es un regalo para mi sobrino y es niño', '0', '1', '0', '4');
+INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('mi figura de madera viene rota de la base', '0', '1', '0', '5');
