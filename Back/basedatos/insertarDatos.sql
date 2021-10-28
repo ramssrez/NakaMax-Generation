@@ -10,11 +10,11 @@ INSERT INTO categorias (descripcion) VALUES ('Peluches');
 INSERT INTO categorias (descripcion) VALUES ('Funkos');
 
 /* Inserta  comentarios contactanos*/
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
-INSERT INTO comentarios_contac_us (`correo`,`comentario`) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Rogelio Luna', 'rlh@gmail.com', '5555555589', 'Vender productos como Katanas');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Ernesto Rodriguez', 'erg@gmail.com', '5555555571', 'Como me puedo dar de alta');
+INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
+INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
+INSERT INTO comentarios_contac_us (correo,comentario) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
+INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Rogelio Luna', 'rlh@gmail.com', '5555555589', 'Vender productos como Katanas');
+INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Ernesto Rodriguez', 'erg@gmail.com', '5555555571', 'Como me puedo dar de alta');
 
 
 /* Insertar vendedores */
@@ -38,5 +38,18 @@ INSERT INTO administradores VALUES (NULL,'Paula', 'Cid del Prado ', 'Soto ', 'pa
 INSERT INTO administradores VALUES (NULL,'Luis Angel', 'Durán ', 'López ', 'luisadl591@gmail.com', 'Dull012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/luis-angel-duran', 'https://github.com/LuisAngelBonCorpse');
 INSERT INTO administradores VALUES (NULL,'Raúl', 'Ramírez ', 'Pérez ', 'raulramirezperez1992@gmail.com', 'Rarp012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-p%C3%A9rez-738aa9115/', 'https://github.com/ramssrez');
 
-/* Se insertan personalizables */
+/* Se insertan colores */
+INSERT INTO nakamax.colores (color, precio) VALUES ('Café', '50');
+INSERT INTO nakamax.colores (color, precio) VALUES ('Plata', '100');
+INSERT INTO nakamax.colores (color, precio) VALUES ('Dorado', '150');
+
+/* Se insertar tamaños */
+INSERT INTO nakamax.sizes (size, precio) VALUES ('Pequeño', '50');
+INSERT INTO nakamax.sizes (size, precio) VALUES ('Mediano', '150');
+INSERT INTO nakamax.sizes (size, precio) VALUES ('Grande', '200');
+
+/* Se insertan Materiales*/
+INSERT INTO nakamax.materiales (material, precio) VALUES ('Madera', '500');
+INSERT INTO nakamax.materiales (material, precio) VALUES ('Metal', '1500');
+INSERT INTO nakamax.materiales (material, precio) VALUES ('Plastico', '700');
 
