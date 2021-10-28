@@ -37,6 +37,14 @@ INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito
 INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Héctor', 'Soto', '9865HMHAY', 'seinen', 'ejemplo@ejemplo.com', 'contraseña', '1994-01-01');
 INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Eva', 'Benitez', '220369EUYN', 'moe', 'ejemplo@ejemplo.com', '987654', '1999-01-01');
 INSERT INTO nakamax.campradores (nombre, apellidos, usuario_tag, genero_favorito, correo, password, fecha_nacimiento) VALUES ('Dulce', 'Reyes', '690747MJOQ', 'yaoi', 'ejemplo@ejemplo.com', 'pass123', '1996-01-01');
+/* Insertando admins */
+INSERT INTO administradores VALUES (NULL,'Francisco', 'Bañuelos ', 'Valadez ', 'franciscobanuelosvaladez@gmail.com', 'Bvfr012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/fcovaldz', 'https://github.com/Fcovaldz');
+INSERT INTO administradores VALUES (NULL,'Carlos Alberto', 'Chavarria ', 'Ortiz ', 'carlosalberto.chavarriao@gmail.com', 'Chco012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/carlos-a-chavarria-ortiz', 'https://github.com/CarlosAChavarria');
+INSERT INTO administradores VALUES (NULL,'Paula', 'Cid del Prado ', 'Soto ', 'paula.ciddelprado@gmail.com', 'Cips012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/paulaciddelprado', 'https://github.com/paulaciddelprado');
+INSERT INTO administradores VALUES (NULL,'Luis Angel', 'Durán ', 'López ', 'luisadl591@gmail.com', 'Dull012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/luis-angel-duran', 'https://github.com/LuisAngelBonCorpse');
+INSERT INTO administradores VALUES (NULL,'Raúl', 'Ramírez ', 'Pérez ', 'raulramirezperez1992@gmail.com', 'Rarp012345', 'URL DE IMAGEN', 'https://www.linkedin.com/in/ra%C3%BAl-ram%C3%ADrez-p%C3%A9rez-738aa9115/', 'https://github.com/ramssrez');
+
+/* Se insertan personalizables */
 
 /* DEJAR HASTA EL FINAL DEL CÓDIGO Insertar Reportes Producto */
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('no llegó mi producto, lleva seis meses en proceso de envío', '0', '0', '1', '1');
