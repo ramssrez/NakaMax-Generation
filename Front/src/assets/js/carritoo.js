@@ -77,7 +77,7 @@ function leerDatosProducto(producto) {
     }
 
 
-    console.log(articulosCarrito);
+  //  console.log(articulosCarrito);
 
     carritoHTML();
 }
@@ -96,9 +96,9 @@ function carritoHTML() {
         <td>
         <img src="${imagen}" width="100">
         </td>
-        <td>${titulo}</td>
-        <td>${precio}</td>
-        <td>${cantidad}</td>
+        <td>&nbsp &nbsp${titulo}</td>
+        <td>&nbsp &nbsp${precio}</td>
+        <td>&nbsp &nbsp${cantidad}</td>
         <td>
         <a href="#" class="borrar-producto" data-id="${id}"> X </a>
         </td> 
