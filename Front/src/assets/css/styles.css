@@ -27,7 +27,7 @@ i{
 }
 .sub-menu #cart{
   display: none;
-  width: 150vh;
+  width: 120vh;
 }
 .sub-menu:hover #cart{
   display: block;
@@ -95,6 +95,8 @@ ul {
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .bt-carrito {
     position: absolute;
@@ -106,6 +108,7 @@ ul {
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+    font-size: 22px;
 }
 #carrito-icon {
     position: absolute;
@@ -1029,8 +1032,18 @@ footer{
   .div-cards-06descrip{
     width: 90vw;
   }
+  .sub-menu #cart{
+    width: 120vh;
+  }
  }
 @media only screen and (max-width: 800px) {
+  .bt-login{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    top: 10px;
+  }
+
   .fieldset-02register {
     width: 70vw;
   }
@@ -1041,9 +1054,6 @@ footer{
   .th-00-index{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-  }
-  .sub-menu #cart{
-    width: 85vw;
   }
   .div-11payPadre{
     flex-direction: column;
@@ -1089,6 +1099,9 @@ footer{
 }
 
 @media only screen and (max-width: 500px){
+  .bt-login{
+    top: 6px;
+  }
   .fieldset-02register {
     width: 90vw;
   }
@@ -1130,6 +1143,8 @@ footer{
   .form-01log input{
     font-size: 1rem;
   }
-
+  .sub-menu #cart{
+    width: 100vw;
+  }
 }
 /* termina media registro */
