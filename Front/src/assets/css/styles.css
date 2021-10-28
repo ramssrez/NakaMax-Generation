@@ -95,6 +95,8 @@ ul {
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .bt-carrito {
     position: absolute;
@@ -1038,7 +1040,8 @@ footer{
   .bt-login{
     width: 120px;
     height: 40px;
-    top: 6px;
+    font-size: 14px;
+    top: 10px;
   }
 
   .fieldset-02register {
@@ -1096,6 +1099,9 @@ footer{
 }
 
 @media only screen and (max-width: 500px){
+  .bt-login{
+    top: 6px;
+  }
   .fieldset-02register {
     width: 90vw;
   }
