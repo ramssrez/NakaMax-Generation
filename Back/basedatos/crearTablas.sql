@@ -1,7 +1,26 @@
--- -----------------------------------------------------
--- Table `nakamax`.`vendedores`
--- -----------------------------------------------------
+/* Creación de la base de datos */
+CREATE DATABASE nakamax;
+/* Uso de la base de datos */
+USE nakamax;
 
+/* Tabla de Contactanos */
+CREATE TABLE cometarios_contac_us (
+  id_comentario INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NULL,
+  correo VARCHAR(255) NOT NULL,
+  telefono VARCHAR(255) NULL,
+  comentario VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id_comentario))
+ENGINE = InnoDB;
+
+/* Tabla de categorias*/
+CREATE TABLE categorias (
+  id_categoria INT NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id_categoria))
+ENGINE = InnoDB;
+
+/* Tabla Vendedores */
 CREATE TABLE vendedores (
   id_vendedor INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NOT NULL,
@@ -14,10 +33,7 @@ CREATE TABLE vendedores (
   PRIMARY KEY (id_vendedor))
 ENGINE = InnoDB;
 
--- -----------------------------------------------------
--- Table `nakamax`.`reportes_pagina`
--- -----------------------------------------------------
-
+/* Tabla reportes pagina */
 CREATE TABLE reportes_pagina (
   id_reporte_pag INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
