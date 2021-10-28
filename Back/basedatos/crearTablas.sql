@@ -14,6 +14,6 @@ ENGINE = InnoDB;
 /* Tabla de categorias*/
 CREATE TABLE categorias (
   id_categoria INT NOT NULL AUTO_INCREMENT,
-  descrpcion VARCHAR(255) NOT NULL,
+  descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (id_categoria))
 ENGINE = InnoDB;
