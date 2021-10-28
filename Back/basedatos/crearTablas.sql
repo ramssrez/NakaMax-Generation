@@ -1,4 +1,6 @@
+/* Creación de la base de datos */
 CREATE DATABASE nakamax;
+/* Uso de la base de datos */
 USE nakamax;
 
 /* Tabla de Contactanos */
