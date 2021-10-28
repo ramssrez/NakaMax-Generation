@@ -5,7 +5,7 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const listaCards = document.querySelector('#lista-productos');
 let articulosCarrito = [];
 
-cargarEventListeners()
+cargarEventListeners();
 
 function cargarEventListeners() {
     // Cuando agregas un producto presionando "Agregar al Carrito".
