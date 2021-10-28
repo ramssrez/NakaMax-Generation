@@ -40,7 +40,7 @@ INSERT INTO administradores VALUES (NULL,'Raúl', 'Ramírez ', 'Pérez ', 'raulr
 
 /* Se insertan personalizables */
 
-/* Inserciones de productos */
+/* Inserciones de productos por categoria */
 
 /* cat metal */ 
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shusui Sword Roronoa Zoro - One piece", 1650.99, "Espada de metal", "url", 4, NULL, 1);
