@@ -43,11 +43,8 @@ CREATE TABLE nakamax.materiales (
   PRIMARY KEY (id_material));
 
 /* Tabla de personalizables */
-CREATE TABLE personalizables (
+CREATE TABLE nakamax.personalizables (
   id_personalizable INT NOT NULL AUTO_INCREMENT,
-  size VARCHAR(255) NOT NULL,
-  color VARCHAR(255) NOT NULL,
-  material VARCHAR(255) NOT NULL,
   costo_extra FLOAT NOT NULL,
   descripcion VARCHAR(255) NULL,
   id_color INT NULL,
