@@ -106,6 +106,7 @@ ul {
     color: #F1ECE9;
     font-family: 'Quintessential', cursive;
     border-radius: 32px;
+    font-size: 22px;
 }
 #carrito-icon {
     position: absolute;
@@ -1031,6 +1032,12 @@ footer{
   }
  }
 @media only screen and (max-width: 800px) {
+  .bt-login{
+    width: 120px;
+    height: 40px;
+    top: 6px;
+  }
+
   .fieldset-02register {
     width: 70vw;
   }
