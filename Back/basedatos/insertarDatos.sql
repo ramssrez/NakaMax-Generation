@@ -10,11 +10,11 @@ INSERT INTO categorias (descripcion) VALUES ('Peluches');
 INSERT INTO categorias (descripcion) VALUES ('Funkos');
 
 /* Inserta  comentarios contactanos*/
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
-INSERT INTO comentarios_contac_us (`correo`,`comentario`) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Rogelio Luna', 'rlh@gmail.com', '5555555589', 'Vender productos como Katanas');
-INSERT INTO comentarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Ernesto Rodriguez', 'erg@gmail.com', '5555555571', 'Como me puedo dar de alta');
+INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
+INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
+INSERT INTO cometarios_contac_us (`correo`,`comentario`) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
+INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Rogelio Luna', 'rlh@gmail.com', '5555555589', 'Vender productos como Katanas');
+INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Ernesto Rodriguez', 'erg@gmail.com', '5555555571', 'Como me puedo dar de alta');
 
 
 /* Insertar vendedores */
@@ -32,7 +32,67 @@ INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALU
 INSERT INTO nakamax.reportes_pagina (descripcion, is_general, is_link_down) VALUES ('No se completa la carga de algunos elementos, no aparece la imagen', '1', '1');
 
 
--- Inserciones de productos
+/* Inserciones de productos */
 
-INSERT INTO productos VALUES(NULL, "Shusui Sword Roronoa Zoro - One piece", 1650.99, "Espada de metal", "url", 4, 0,0,1);
-INSERT INTO `nakamax`.`productos` (`nombre`, `costo`, `descripcion`, `imagen`, `stock`, `personalizable`) VALUES ('Shusui Sword Roronoa Zoro - One piece', '1650.99', 'Espada de metal', 'URL', '4', '0');
+/* cat metal */ 
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shusui Sword Roronoa Zoro - One piece", 1650.99, "Espada de metal", "url", 4, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Rita - Escanor", 1850.60, "Hacha metal dorada", "url", 3, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Medalla ", 750.50, "Medalla the witcher", "url", 8, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Daga dragon", 1150.30, "Daga señor de los anillos", "url", 4, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Escudo", 1500, "Espado Seven deadly sings", "url", 4, NULL, 3);
+
+/* cat madera */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Groot", 350, "Groot guardian galaxia", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Luffy gear 4", 1650.99, "Muñeco Luffy roble", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shirohige", 1500, "Barbablanca One piece", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Naruto hg1", 850, "Naruto resengan", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shirohige", 1650.99, "Barbablanca One piece", "url", 2, NULL, 5);
+
+/* cat serigrafia */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Cuadro goku", 350, "kakaroto", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Playera death note", 1650.99, "otra playera", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Taza power ranger", 1500, "ku chao", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Playera verde baki", 850, "es verde", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Otra playera", 1650.99, "no se que sea", "url", 2, NULL, 5);
+
+/* cat poster y cuadros */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("goku fase 4", 350, "la mejor fase", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Doramon", 1650.99, "es azul", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("La niña de abuelito dime tu", 1500, "el aguelo", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Candy candy", 850, "candy", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Seilor moon", 1650.99, "seilor escarlata", "url", 2, NULL, 5);
+
+/* cat ropa */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("pantalon goku", 350, "bombacho", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Capa pikoro", 1650.99, "de algodon", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("baston maestro roshi", 1500, "es de pino y roble", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("vestido bulma", 850, "es azul", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("blusa de sailor", 1650.99, "rosita", "url", 2, NULL, 5);
+
+/* cat escolar */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Lapicera", 350, "pa la escuela", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("mochila", 1650.99, "contra agua", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Maleta", 1500, "anti gandalla", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Gorra", 850, "de chaca", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Tenis", 1650.99, "Fosfo fosfo", "url", 2, NULL, 5);
+
+/* cat manga */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Groot", 350, "Groot guardian galaxia", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Luffy gear 4", 1650.99, "Muñeco Luffy roble", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shirohige", 1500, "Barbablanca One piece", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Naruto hg1", 850, "Naruto resengan", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Shirohige", 1650.99, "Barbablanca One piece", "url", 2, NULL, 5);
+
+/* cat peluche */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Picachu", 350, "felpa", "url", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Bulbasaur", 1650.99, "felpa", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Charmander", 1500, "felpa", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Squirtle", 850, "felpa", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Wartortle", 1650.99, "felpa", "url", 2, NULL, 5);
+
+/* cat funko */
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Picachu", 350, "felpa", "edicion especial", 2, NULL, 1);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Bulbasaur", 1650.99, "edicion especial", "url", 6, NULL, 2);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Charmander", 1500, "edicion especial", "url", 2, NULL, 5);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Squirtle", 850, "edicion especial", "url", 4, NULL, 4);
+INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Wartortle", 1650.99, "edicion especial", "url", 2, NULL, 5);
