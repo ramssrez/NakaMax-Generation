@@ -1,9 +1,7 @@
 // cancelar boton back navegador
-window.onload = function(){
-    window.location.hash="no-back-button";
-    window.location.hash="Again-No-back-button";//esta linea es necesaria para chrome
-    window.onhashchange=function(){window.location.hash="no-back-button";}
-}
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//esta linea es necesaria para chrome
+window.onhashchange=function(){window.location.hash="no-back-button";}
 
 // Enlace HTML y JS
 const $inputPassword = document.getElementById('Vpassword');
@@ -42,10 +40,16 @@ $buttonVerify.addEventListener('click', ()=>{
 
         }else{
             $inputPassword.value = "";
-            alert('Contraseña incorrecta');
+            Swal.fire({
+                icon: 'error',
+                title: 'Contraseña incorrecta',
+            })
         }
     }else{
-        alert('Introduzca su contraseña')
+        Swal.fire({
+            icon: 'info',
+            title: 'Introduzca su contraseña',
+        })
     }
 })
 
