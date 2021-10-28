@@ -21,9 +21,31 @@ CREATE TABLE vendedores (
   telefono VARCHAR(255) NOT NULL,
   PRIMARY KEY (id_vendedor));
 
+/* Tabla size */
+CREATE TABLE nakamax.size (
+  id_size INT NOT NULL AUTO_INCREMENT,
+  size VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_size));
+
+ /* Tabla color */
+CREATE TABLE nakamax.color (
+  id_color INT NOT NULL AUTO_INCREMENT,
+  color VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_color))
+ENGINE = InnoDB
+
+/* Tabla Material */
+CREATE TABLE nakamax.material (
+  id_material INT NOT NULL AUTO_INCREMENT,
+  material VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_material))
+ENGINE = InnoDB
 
 /* Tabla de personalizables */
-CREATE TABLE IF NOT EXISTS personalizables (
+CREATE TABLE personalizables (
   id_personalizable INT NOT NULL AUTO_INCREMENT,
   size VARCHAR(255) NOT NULL,
   color VARCHAR(255) NOT NULL,
