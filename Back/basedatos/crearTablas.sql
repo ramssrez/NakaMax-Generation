@@ -4,7 +4,7 @@ CREATE DATABASE nakamax;
 USE nakamax;
 
 /* Tabla de Contactanos */
-CREATE TABLE cometarios_contac_us (
+CREATE TABLE comentarios_contac_us (
   id_comentario INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NULL,
   correo VARCHAR(255) NOT NULL,
