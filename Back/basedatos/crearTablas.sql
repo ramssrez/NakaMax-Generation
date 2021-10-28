@@ -6,11 +6,19 @@ CREATE SCHEMA nakamax DEFAULT CHARACTER SET utf8 ;
 USE nakamax ;
 
 /* Tabla compradores */
-
-#codigo
+CREATE TABLE nakamax.campradores (
+  id_comprador INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  apellidos VARCHAR(255) NOT NULL,
+  usuario_tag VARCHAR(255) NOT NULL,
+  genero_favorito VARCHAR(255) NOT NULL,
+  correo VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  fecha_nacimiento DATE NOT NULL,
+  PRIMARY KEY (id_comprador));
 
 /* Tabla Vendedores */
-CREATE TABLE vendedores (
+CREATE TABLE nakamax.vendedores (
   id_vendedor INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NOT NULL,
   apellidos VARCHAR(255) NOT NULL,
@@ -75,7 +83,7 @@ CREATE TABLE nakamax.personalizables (
 #codigo
 
 /* Tabla de categorias*/
-CREATE TABLE categorias (
+CREATE TABLE nakamax.categorias (
   id_categoria INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (id_categoria));
@@ -86,11 +94,24 @@ CREATE TABLE categorias (
 #codigo
 
 /* Tabla reportes producto */
+CREATE TABLE nakamax.reportes_producto (
+  id_reporte INT NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(255) NOT NULL,
+  is_llego TINYINT(1) NULL,
+  is_danger TINYINT(1) NULL,
+  is_tardio TINYINT(1) NULL,
+  id_compra INT NOT NULL,
+  PRIMARY KEY (id_reporte),
+  INDEX fk_reportes_producto_compra_idx (id_compra ASC) VISIBLE,
+  CONSTRAINT fk_reportes_producto_compra
+    FOREIGN KEY (id_compra)
+    REFERENCES nakamax.compra (id_compra)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
 
-#codigo
 
-/* Tabla reportes pagina */
-CREATE TABLE reportes_pagina (
+  /* Tabla reportes pagina */
+CREATE TABLE nakamax.reportes_pagina (
   id_reporte_pag INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
   is_general TINYINT(1) NULL,
@@ -99,7 +120,7 @@ CREATE TABLE reportes_pagina (
 
 
 /* Tabla de Contactanos */
-CREATE TABLE comentarios_contac_us (
+CREATE TABLE nakamax.comentarios_contac_us (
   id_comentario INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NULL,
   correo VARCHAR(255) NOT NULL,
@@ -258,3 +279,4 @@ CREATE TABLE nakamax.piv_vend_repro (
     REFERENCES nakamax.vendedores (id_vendedor)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
