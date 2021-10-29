@@ -6,11 +6,20 @@ CREATE SCHEMA nakamax DEFAULT CHARACTER SET utf8 ;
 USE nakamax ;
 
 /* Tabla compradores */
-
-#codigo
+CREATE TABLE nakamax.campradores (
+  id_comprador INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  apellidos VARCHAR(255) NOT NULL,
+  usuario_tag VARCHAR(255) NOT NULL,
+  genero_favorito VARCHAR(255) NOT NULL,
+  correo VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  fecha_nacimiento DATE NOT NULL,
+  PRIMARY KEY (id_comprador)
+);
 
 /* Tabla Vendedores */
-CREATE TABLE vendedores (
+CREATE TABLE nakamax.vendedores (
   id_vendedor INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NOT NULL,
   apellidos VARCHAR(255) NOT NULL,
@@ -19,74 +28,59 @@ CREATE TABLE vendedores (
   password VARCHAR(255) NOT NULL,
   fecha_nacimiento DATE NOT NULL,
   telefono VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id_vendedor))
+  PRIMARY KEY (id_vendedor)
+);
 
+/* Tabla sizes */
+CREATE TABLE nakamax.sizes (
+  id_size INT NOT NULL AUTO_INCREMENT,
+  size VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_size)
+);
 
-/* Tabla de personalizables */
+ /* Tabla colores */
+CREATE TABLE nakamax.colores (
+  id_color INT NOT NULL AUTO_INCREMENT,
+  color VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_color)
+);
 
-/* CREATE TABLE nakamax.personalizables (
-  id_personalizable INT NOT NULL AUTO_INCREMENT,
-  id_size INT NOT NULL,
-  id_color INT NOT NULL,
-  id_material INT NOT NULL,
-  costo_extra FLOAT NOT NULL,
-  descripcion VARCHAR(255) NULL,
-  PRIMARY KEY (id_personalizable)
-); */
+/* Tabla Material */
+CREATE TABLE nakamax.materiales (
+  id_material INT NOT NULL AUTO_INCREMENT,
+  material VARCHAR(25) NOT NULL,
+  precio FLOAT NOT NULL,
+  PRIMARY KEY (id_material)
+);
 
-/* Tabla productos */
-
-#codigo
-
-/* Tabla de categorias*/
-CREATE TABLE categorias (
+  /* Tabla de categorias*/
+CREATE TABLE nakamax.categorias (
   id_categoria INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id_categoria))
-
-
-/* Tabla de compras*/
-
-#codigo
-
-/* Tabla reportes producto */
-
-
-CREATE TABLE reportes_producto (
-  id_reporte INT NOT NULL AUTO_INCREMENT,
-  descripcion VARCHAR(255) NOT NULL,
-<<<<<<< HEAD
-  is_llego TINYINT(1) NULL,
-  is_danger TINYINT(1) NULL,
-  is_tardio TINYINT(1) NULL,
-  id_compra INT NOT NULL,
-  PRIMARY KEY (id_reporte),
-  INDEX fk_reportes_producto_compra_idx (id_compra ASC) VISIBLE,
-  CONSTRAINT fk_reportes_producto_compra
-    FOREIGN KEY (id_compra)
-    REFERENCES nakamax.compra (id_compra)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
+  PRIMARY KEY (id_categoria)
+);
 
   /* Tabla reportes pagina */
-CREATE TABLE reportes_pagina (
+CREATE TABLE nakamax.reportes_pagina (
   id_reporte_pag INT NOT NULL AUTO_INCREMENT,
   descripcion VARCHAR(255) NOT NULL,
   is_general TINYINT(1) NULL,
   is_link_down VARCHAR(45) NULL,
-  PRIMARY KEY (id_reporte_pag));
+  PRIMARY KEY (id_reporte_pag)
+);
 
 
 /* Tabla de Contactanos */
-CREATE TABLE comentarios_contac_us (
+CREATE TABLE nakamax.comentarios_contac_us (
   id_comentario INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(255) NULL,
   correo VARCHAR(255) NOT NULL,
   telefono VARCHAR(255) NULL,
   comentario VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id_comentario))
+  PRIMARY KEY (id_comentario)
+);
 
 
 /* Tabla de Administradores */
@@ -101,6 +95,92 @@ CREATE TABLE nakamax.administradores (
   github VARCHAR(255) NOT NULL,
   linkedin VARCHAR(255) NOT NULL,
   PRIMARY KEY (id_admin)
+);
+
+/* Tabla de personalizables */
+CREATE TABLE nakamax.personalizables (
+  id_personalizable INT NOT NULL AUTO_INCREMENT,
+  costo_extra FLOAT NOT NULL,
+  descripcion VARCHAR(255) NULL,
+  id_color INT NULL,
+  id_size INT NULL,
+  id_material INT NULL,
+  PRIMARY KEY (id_personalizable),
+  INDEX fk_personalizables_color_idx (id_color ASC) VISIBLE,
+  INDEX fk_personalizables_size_idx (id_size ASC) VISIBLE,
+  INDEX fk_personalizables_material_idx (id_material ASC) VISIBLE,
+  CONSTRAINT fk_personalizables_color
+    FOREIGN KEY (id_color)
+    REFERENCES nakamax.colores (id_color)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_personalizables_size
+    FOREIGN KEY (id_size)
+    REFERENCES nakamax.sizes (id_size)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_personalizables_material
+    FOREIGN KEY (id_material)
+    REFERENCES nakamax.materiales (id_material)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+/* Tabla productos */
+CREATE TABLE nakamax.productos (
+  id_producto INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  costo FLOAT NOT NULL,
+  descripcion VARCHAR(255) NOT NULL,
+  imagen VARCHAR(255) NOT NULL,
+  stock INT NULL,
+  personalizable TINYINT(1) NULL,
+  id_vendedor INT NOT NULL,
+  id_personalizable INT NULL,
+  PRIMARY KEY (id_producto),
+  INDEX fk_productos_vendedores_idx (id_vendedor ASC) INVISIBLE,
+  INDEX fk_productos_personalizables_idx (id_personalizable ASC) VISIBLE,
+  CONSTRAINT fk_productos_vendedores
+    FOREIGN KEY (id_vendedor)
+    REFERENCES nakamax.vendedores (id_vendedor)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_productos_personalizables
+    FOREIGN KEY (id_personalizable)
+    REFERENCES nakamax.personalizables (id_personalizable)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+/* Tabla de compras*/
+CREATE TABLE nakamax.compra (
+  id_compra INT NOT NULL AUTO_INCREMENT,
+  fecha_compra TIMESTAMP NOT NULL,
+  id_comprador INT NOT NULL,
+  PRIMARY KEY (id_compra),
+  INDEX fk_compra_campradores_idx (id_comprador ASC) VISIBLE,
+  CONSTRAINT fk_compra_campradores
+    FOREIGN KEY (id_comprador)
+    REFERENCES nakamax.campradores (id_comprador)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+/* Tabla reportes producto */
+CREATE TABLE nakamax.reportes_producto (
+  id_reporte INT NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(255) NOT NULL,
+  is_llego TINYINT(1) NULL,
+  is_danger TINYINT(1) NULL,
+  is_tardio TINYINT(1) NULL,
+  id_compra INT NOT NULL,
+  PRIMARY KEY (id_reporte),
+  INDEX fk_reportes_producto_compra_idx (id_compra ASC) VISIBLE,
+  CONSTRAINT fk_reportes_producto_compra
+    FOREIGN KEY (id_compra)
+    REFERENCES nakamax.compra (id_compra)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
 );
 
 /* Tablas pivote */
@@ -203,7 +283,7 @@ CREATE TABLE nakamax.piv_conus_admin (
   INDEX fk_piv_conus_admin_administradores_idx (id_admin ASC) VISIBLE,
   CONSTRAINT fk_piv_conus_admin_cometarios_contac_us
     FOREIGN KEY (id_comentario)
-    REFERENCES nakamax.cometarios_contac_us (id_comentario)
+    REFERENCES nakamax.comentarios_contac_us (id_comentario)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_piv_conus_admin_administradores
@@ -248,4 +328,4 @@ CREATE TABLE nakamax.piv_vend_repro (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 );
->>>>>>> 3d78fefdcc4c58be25cb0f236fab2622d8894416
+
