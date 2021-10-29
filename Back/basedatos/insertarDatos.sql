@@ -129,6 +129,13 @@ INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Squirtle", 850, "edicion especial", "url", 4, NULL, 4);
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Wartortle", 1650.99, "edicion especial", "url", 2, NULL, 5);
 
+/* INSERTAR COMPRAS */
+INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 1);
+INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 2);
+INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 3);
+INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 4);
+INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 5);
+
 /* DEJAR HASTA EL FINAL DEL CÓDIGO Insertar Reportes Producto */
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('no llegó mi producto, lleva seis meses en proceso de envío', '0', '0', '1', '1');
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('mi nombre no viene bien escrito en la playera que pedí, tiene errores ortográficos', '0', '1', '0', '2');
