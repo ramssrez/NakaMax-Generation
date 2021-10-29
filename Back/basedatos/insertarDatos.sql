@@ -129,7 +129,7 @@ INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Squirtle", 850, "edicion especial", "url", 4, NULL, 4);
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Wartortle", 1650.99, "edicion especial", "url", 2, NULL, 5);
 
-/* INSERTAR COMPRAS */
+/* INSERTAR COMPRAS  con fecha actual del sistem operativo */
 INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 1);
 INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 2);
 INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 3);
