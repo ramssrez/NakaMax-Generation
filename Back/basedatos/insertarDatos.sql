@@ -10,12 +10,6 @@ INSERT INTO categorias (descripcion) VALUES ('Peluches');
 INSERT INTO categorias (descripcion) VALUES ('Funkos');
 
 /* Inserta  comentarios contactanos*/
-INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
-INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
-INSERT INTO cometarios_contac_us (`correo`,`comentario`) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
-INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Rogelio Luna', 'rlh@gmail.com', '5555555589', 'Vender productos como Katanas');
-INSERT INTO cometarios_contac_us (`nombre`, `correo`, `telefono`, `comentario`) VALUES ('Ernesto Rodriguez', 'erg@gmail.com', '5555555571', 'Como me puedo dar de alta');
-=======
 INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Jose Sanchez Hernandez', 'jsh@gmail.com', '55555551413', 'Esta es la mejor pagina para encontrar productos');
 INSERT INTO comentarios_contac_us (nombre, correo, telefono, comentario) VALUES ('Sandra', 'srh@gmail.com', '5555555557', 'A que se dedica la pagina');
 INSERT INTO comentarios_contac_us (correo,comentario) VALUES ('rrp@gmail.com', 'La pagina puede mejorar');
@@ -129,6 +123,7 @@ INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Squirtle", 850, "edicion especial", "url", 4, NULL, 4);
 INSERT INTO productos (nombre, costo, descripcion, imagen, stock, personalizable, id_vendedor) VALUES ("Wartortle", 1650.99, "edicion especial", "url", 2, NULL, 5);
 
+/*Sección de compras*/
 /* INSERTAR COMPRAS  con fecha actual del sistem operativo */
 INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 1);
 INSERT INTO compra VALUES (NULL, CURRENT_TIMESTAMP, 2);
