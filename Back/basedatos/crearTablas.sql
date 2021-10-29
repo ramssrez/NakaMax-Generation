@@ -111,17 +111,17 @@ CREATE TABLE nakamax.personalizables (
   INDEX fk_personalizables_material_idx (id_material ASC) VISIBLE,
   CONSTRAINT fk_personalizables_color
     FOREIGN KEY (id_color)
-    REFERENCES nakamax.color (id_color)
+    REFERENCES nakamax.colores (id_color)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_personalizables_size
     FOREIGN KEY (id_size)
-    REFERENCES nakamax.size (id_size)
+    REFERENCES nakamax.sizes (id_size)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_personalizables_material
     FOREIGN KEY (id_material)
-    REFERENCES nakamax.material (id_material)
+    REFERENCES nakamax.materiales (id_material)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 );
@@ -283,7 +283,7 @@ CREATE TABLE nakamax.piv_conus_admin (
   INDEX fk_piv_conus_admin_administradores_idx (id_admin ASC) VISIBLE,
   CONSTRAINT fk_piv_conus_admin_cometarios_contac_us
     FOREIGN KEY (id_comentario)
-    REFERENCES nakamax.cometarios_contac_us (id_comentario)
+    REFERENCES nakamax.comentarios_contac_us (id_comentario)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_piv_conus_admin_administradores
