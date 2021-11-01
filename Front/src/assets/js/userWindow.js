@@ -130,9 +130,7 @@ $uWbuttonEditEmail.addEventListener('click',()=>{
     //window.location.href = "./03-verifyPassword.html";
     window.location.href = "./03-verifyPassword.html"
 })
-//localStorage.removeItem('newEmail');
-//localStorage.removeItem('EmailLogPassword');
-//sessionStorage.removeItem('newEmail');
+
 // obteniendo dato de sessionStorage para continuar con procedimiento de cambio de correo
 if(EditEmail === "verified"){
     actualEmail = $Email.value;
