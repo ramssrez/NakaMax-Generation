@@ -78,12 +78,12 @@ $guardarPerzonalizacion.addEventListener('click', ()=>{
     })
     // delay agregado para ver el efecto de la alerta de personalización guardada
     let time = setTimeout(function(){
-        window.location.href = "/Front/10-carritoWindow.html";
+        window.location.href = "./10-carritoWindow.html";
     },1800);
 })
 
 $cancelarPerzonalizacion.addEventListener('click', ()=>{
-    window.location.href = "/Front/10-carritoWindow.html";
+    window.location.href = "./10-carritoWindow.html";
 })
 
 const personalizado = true;
@@ -98,7 +98,7 @@ if(personalizado == true){
             timer: 1500
         })
         let time = setTimeout(function(){
-            window.location.href = "/Front/10-carritoWindow.html";
+            window.location.href = "./10-carritoWindow.html";
         },1800);
     })
 }else{

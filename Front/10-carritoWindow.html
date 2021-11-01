@@ -100,21 +100,13 @@
               </li>
             </ul>
           </div>
-          <!-- Boton Carrito 
-          <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
-            <img id="carrito-icon" src="./src/assets/images/carro-de-la-compra.png" width="30" height="30"
-              alt="" /><strong>Carrito</strong>
-          </a>
-          -->
-    
-    
         </nav>
       </header>
     <!-- HEADER -->
 
     <div class="container carrito-compra" id="carritoItemsContenedor">
 
-        <div class="row prodcuto ">
+        <div class="row producto">
             <!-- Carrito Compras -->
             <div class="col-xl-8 col-sm-12 ">
                 <h2 class="m-3">Carrito de Compras</h2>
@@ -131,11 +123,14 @@
                     </div>
 
                     <!-- Descripcion de la compra -->
-                    <div class="col-xl-6 col-sm-12">
+                    <div class="col-xl-6 col-sm-12" id="seccionPersonalizable">
                         <p class="nombre-producto">Shusui Sword Roronoa Zoro - One piece</p>
                         <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"></p>
                         <button class="btn-eliminar all-btn">ELIMINAR</button>
+                        <div id="datosP"></div>
                     </div>
+
+                    <div id="datosPersonalizacion"></div>
                 </div>
 
                 <div class="subtotales">
