@@ -828,6 +828,7 @@ footer{
   font-size: 60px;
   text-align: center;
   margin: 20px;
+  color: #02569c;
 }
 
 .subtitle-adn {
@@ -861,7 +862,7 @@ footer{
 
 } */
 
-.quien-adn {
+/* .quien-adn {
   color: black; 
   background-color: #f1ece9;
   justify-content:space-between;
@@ -872,7 +873,7 @@ footer{
   width: 400px;
   height: 300px;
   text-align:right;
-}
+} */
 /*{
   color: black;
   background-color: #f1ece9;
@@ -890,20 +891,21 @@ footer{
   display: block;
   margin: auto;
   height: auto;
-  width: 400px;
+  width: 450px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
   background: rgba(1, 7, 66, 0.199);
-  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 37%);
-  backdrop-filter: blur( 3px );
+  box-shadow: 10px 10px 32px 0 rgb(24 37 206 / 40%);
+  backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 3px );
   border-radius: 2rem;
   border: 1px solid #f1ece9;
   margin-top: 50px;
-  border: solid 1px #02569C;
+  border: solid 1.5px #02569C;
 }
 
-.rol-adn {
+/* .rol-adn {
   display: block;
   margin: auto;
   height: auto;
@@ -916,24 +918,24 @@ footer{
   -webkit-backdrop-filter: blur( 3px );
   border-radius: 2rem;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  /*margin-top: 50px;*/
+  margin-top: 50px;
   border: solid 1px #02569C;
   justify-content:space-around;
-}
+} */
 
-.imagen-adn 
+/* .imagen-adn 
 {
 text-align: center;
-}
+} */
 
-.d-block-adn
+/* .d-block-adn
 {
-  /*margin-right: 20px;*/
+  margin-right: 20px;
   margin: auto;
   padding: auto;
   max-height: 1000px;
   max-width: 500px;
-}
+} */
 
 /* .d-block-fran-adn {
   margin: auto;
