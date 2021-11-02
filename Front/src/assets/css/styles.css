@@ -315,6 +315,10 @@ footer{
 
 }
 
+.all-btn:hover{
+  color: white;
+}
+
 .btn-eliminar {
     background-color: #02569C;
     font-family: 'Quintessential', cursive;
@@ -522,7 +526,7 @@ footer{
 
 #menu ul li {
   float:none;
-  width: 195%;
+  width: 220%;
 }
 
 #menu ul a {
