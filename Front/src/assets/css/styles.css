@@ -132,7 +132,9 @@ ul {
     font-family: 'Quintessential', cursive;
 }
 .jumbotron{
-    background-color: #F07A0D;
+    background: -webkit-linear-gradient(#F2A516, pink);
+    background: -moz-linear-gradient(#F2A516, pink);
+    background: -o-linear-gradient(#F2A516, pink);
     margin: 0;
     padding: 1vh 0;
 }
