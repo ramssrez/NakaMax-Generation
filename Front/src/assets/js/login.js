@@ -25,5 +25,6 @@ function succesful() {
     showConfirmButton: false,
     timer: 1500
   });
+  document.location.href = "./09-userWindow.html";
 }
 
