@@ -858,8 +858,8 @@ footer{
   font-size: large;
   padding: 20px;
   margin: 20px;
-  width: 1200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   text-align: justify;
 }
 
