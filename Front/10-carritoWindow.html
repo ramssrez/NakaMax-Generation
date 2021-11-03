@@ -124,12 +124,11 @@
                     <!-- Descripcion de la compra -->
                     <div class="col-xl-6 col-sm-12" id="seccionPersonalizable">
                         <p class="nombre-producto">Shusui Sword Roronoa Zoro - One piece</p>
-                        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"> <a class="btn-eliminar all-btn px-3" href="./16-personalizar.html">PERSONALIZAR</a></p>
+                        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"> </p>
+                        <button class="btn-eliminar all-btn" id="btnPersonalizar">PERSONALIZAR</button>
                         <button class="btn-eliminar all-btn">ELIMINAR</button>
                         <div id="datosP"></div>
                     </div>
-
-                    <div id="datosPersonalizacion"></div>
                 </div>
 
                 <div class="subtotales">
@@ -137,7 +136,8 @@
                             class="precio_total compraTotal">$1650.00</span></p>
                 </div>
                 <hr class="separador">
-
+                
+                <div id="ListaProdutos"></div>
             </div>
 
             <!-- Compra -->
@@ -356,9 +356,11 @@
     </footer>
 
 
-    <script src="./src/assets/js/carritoo.js"></script>
+    <!-- <script src="./src/assets/js/carritoo.js"></script> -->
     <script src="./src/assets/js/compra.js"></script>
-  
+
+    <!-- CDN sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
