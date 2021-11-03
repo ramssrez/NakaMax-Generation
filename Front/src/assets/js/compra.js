@@ -1,5 +1,6 @@
 // Elementos para la seccion de personalización de producto
-const $listaProdutos = document.querySelector('#ListaProdutos');
+/*const $listaProdutos = document.querySelector('#ListaProdutos');
+let cardProducto = "";
 
 const $seccionPersonalizable = document.querySelector('#seccionPersonalizable');
 const $btnPersonalizar = document.querySelector('#btnPersonalizar');
@@ -16,11 +17,53 @@ cargarEventListeners();
 
 function cargarEventListeners(){
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
-}*/
+}
+
+//simulando objeto
+
+// ---------------- funcion para los cards ----------------------------------------
+
+const agregarProductos = (precio, imagen, nombre) => {
+    cardProducto = cardProducto + `
+<span class="precio numero item-precio">${precio}</span>
+
+<!-- Producto -->
+<div class="row p-2">
+
+    <!-- Imagen del producto -->
+    <div class="col-xl-6 col-sm-12 carritoItems">
+        <img src="${imagen}" alt="" class="imagen-producto item-imagen img-10carrito">
+    </div>
+
+    <!-- Descripcion de la compra -->
+    <div class="col-xl-6 col-sm-12" id="seccionPersonalizable">
+        <p class="nombre-producto">${nombre}</p>
+        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"> </p>
+        <button class="btn-eliminar all-btn" id="btnPersonalizar">PERSONALIZAR</button>
+        <button class="btn-eliminar all-btn">ELIMINAR</button>
+        <div class="datosP"></div>
+    </div>
+
+    <div id="datosPersonalizacion"></div>
+</div>
+
+<div class="subtotales">
+    <p class=" subtotal">subtotal (<span class="cantidad">1</span> producto): <span
+            class="precio_total compraTotal">$1650.00</span></p>
+</div>
+<hr class="separador">`
+$listaProdutos.innerHTML = cardProducto;
+}
+
+for(let i = 0; i<2; i++){
+    let precio = datosDeProductos[i].precio;
+    let imagen = datosDeProductos[i].imagen;
+    let nombre = datosDeProductos[i].nombre;
+    agregarProductos(precio, imagen, nombre);
+}
 
 // ---------------- Agregando card de productos --------------------------------------
 
-let cardProducto = "";
 cardProducto = `
 <span class="precio numero item-precio">$1,650.99</span>
 
@@ -75,6 +118,7 @@ function datosPersonalizacion(){
     $datosP.appendChild(datos);  
 }
 
+
 // preguntar si ya fue personalizado
 
 fuePersonalizado = true;
@@ -98,3 +142,51 @@ if(fuePersonalizado == true){
         }   
     })
 }
+*/
+
+let $cartas = document.querySelector('#cartas');
+let carta = "";
+
+const creaCartas = (albumId, url, title) => {
+  carta = carta + `
+  <span class="precio numero item-precio">${albumId}</span>
+
+<!-- Producto -->
+<div class="row p-2">
+
+    <!-- Imagen del producto -->
+    <div class="col-xl-6 col-sm-12 carritoItems">
+        <img src="${url}" alt="" class="imagen-producto item-imagen img-10carrito">
+    </div>
+
+    <!-- Descripcion de la compra -->
+    <div class="col-xl-6 col-sm-12" id="seccionPersonalizable">
+        <p class="nombre-producto">${title}</p>
+        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"> </p>
+        <button class="btn-eliminar all-btn" id="btnPersonalizar">PERSONALIZAR</button>
+        <button class="btn-eliminar all-btn">ELIMINAR</button>
+        <div class="datosP"></div>
+    </div>
+
+    <div id="datosPersonalizacion"></div>
+</div>
+
+<div class="subtotales">
+    <p class=" subtotal">subtotal (<span class="cantidad">1</span> producto): <span
+            class="precio_total compraTotal">$1650.00</span></p>
+</div>
+<hr class="separador">
+  `;
+  $cartas.innerHTML = carta;
+};
+
+for(let i = 0; i<5 ; i++){
+  fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+  .then(resp => resp.json())
+  .then(data => {
+  let albumID = data[i].albumID;
+  let url = data[i].url;
+  let title = data[i].title;
+  creaCartas(albumID, url, title);
+  });
+};
