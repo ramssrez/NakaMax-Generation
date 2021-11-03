@@ -9,15 +9,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-  <!-- Google fonts -->
-  <!-- Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- Architects -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&family=Quintessential&display=swap" rel="stylesheet">
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/ed5625f24b.js" crossorigin="anonymous"></script>
         
@@ -28,19 +19,18 @@
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="container-fluid">
     <a class="d-flex justify-content-center my-0 pt-1" href="index.html">
       <img src="./src/assets/images/nakamax.png" width="125" height="50" alt="logo nakamas" />
     </a>
     <nav class="navbar navbar-expand-lg">
+
       <ul id="menu" class="nav-item nav-he">
         <li class="li-00-index">
           <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png" alt="CATEGORIAS"></a>
           <ul>
             <li><a href="./06-descripcion.html"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo">
-                De madera</a>
-            </li>
+                A. Madera</a></li>
             <li><a href="./06-descripcion.html"><img src="./src/assets/images/pinturas.png" width="55" alt="logo">
                 Pósters y cuadros</a>
             </li>
@@ -60,45 +50,47 @@
         </li>
       </ul>
 
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#artesanales">ARTISTAS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#artesanales"> Creadores<span class="sr-only"> </span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#promociones">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#promociones"> Promociones<span class="sr-only"> </span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="#lomasvendido">LO MÁS VENDIDO</a>
+            <a class="nav-link nav-header" href="./index.html#lomasvendido"> Lo más vendido</a>
           </li>
         </ul>
       </div>
-
       <!-- Boton Login -->
-      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
-        <i class="far fa-user-circle"></i><strong> Iniciar</strong>
-      </a>
+      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0 d-flex justify-content-center align-items-center">
+        <i class="far fa-user-circle mr-2"></i><strong> Iniciar</strong></a>
 
       <div class="two columns u-pull-right">
         <ul>
           <li class="sub-menu li-00-index">
             <img src="./src/assets/images/pp-cards/cart.png" alt="">
             <div id="cart">
-              <a href="11-payWindow.html">
+              <a href="10-carritoWindow.html">
                 <p class="pagar">Pagar ahora</p>
               </a>
               <table id="list-carrito" class="u-full-width">
                 <thead>
                   <tr>
-                    <th class="th-00-index">|Imagen </th>
-                    <th class="th-00-index">|Productos</th>
-                    <th class="th-00-index"> |Precio</th>
-                    <th class="th-00-index"> |Cantidad|</th>
+                    <th class="th-00-index">| Imagen</th>
+                    <th class="th-00-index">&nbsp &nbsp| Productos</th>
+                    <th class="th-00-index">&nbsp &nbsp| Precio</th>
+                    <th class="th-00-index">&nbsp &nbsp| Cantidad |</th>
                     <th></th>
                   </tr>
                 </thead>
+                <tbody>
+                </tbody>
               </table>
-              <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+            
+              <a href="#" id="vaciar-carrito" class="button u-full-width"> Vaciar carrito</a>
             </div>
           </li>
         </ul>
@@ -169,7 +161,7 @@
             <a class="text-white" href="07-acerca-de-nosotros.html">ACERCA DE NOSOTROS</a>
           </div>
           <div class="col py-2">
-            <a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a>
+            <a class="text-white" href="./05-contactUS.html#FAQs">PREGUNTAS Y RESPUESTAS</a>
           </div>
           <div class="col py-2">
             <a class="text-white" href="05-contactUS.html">CONTACTO</a>

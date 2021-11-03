@@ -1,9 +1,13 @@
 // Elementos para la seccion de personalización de producto
+const $listaProdutos = document.querySelector('#ListaProdutos');
+
 const $seccionPersonalizable = document.querySelector('#seccionPersonalizable');
-const $datosP = document.querySelector('#datosP');
+const $btnPersonalizar = document.querySelector('#btnPersonalizar');
+const $datosP = document.querySelector("#datosP");
+
 let esPersonalizable;
 let fuePersonalizado;
-let fueDespersonalizado;
+let datos;
 
 /*const compra = new Carrito();
 const listaCompra = document.querySelector('#list-carrito tbody');
@@ -14,64 +18,43 @@ function cargarEventListeners(){
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
 }*/
 
+// ---------------- Agregando card de productos --------------------------------------
 
+let cardProducto = "";
+cardProducto = `
+<span class="precio numero item-precio">$1,650.99</span>
+
+<!-- Producto -->
+<div class="row p-2">
+
+    <!-- Imagen del producto -->
+    <div class="col-xl-6 col-sm-12 carritoItems">
+        <img src="src/assets/images/imagen-producto.png" alt="" class="imagen-producto item-imagen img-10carrito">
+    </div>
+
+    <!-- Descripcion de la compra -->
+    <div class="col-xl-6 col-sm-12" id="seccionPersonalizable">
+        <p class="nombre-producto">Shusui Sword Roronoa Zoro - One piece</p>
+        <p><input type="number" placeholder="CANTIDAD" class="inp-cantidad"> </p>
+        <button class="btn-eliminar all-btn" id="btnPersonalizar">PERSONALIZAR</button>
+        <button class="btn-eliminar all-btn">ELIMINAR</button>
+        <div class="datosP"></div>
+    </div>
+
+    <div id="datosPersonalizacion"></div>
+</div>
+
+<div class="subtotales">
+    <p class=" subtotal">subtotal (<span class="cantidad">1</span> producto): <span
+            class="precio_total compraTotal">$1650.00</span></p>
+</div>
+<hr class="separador">`
+$listaProdutos.innerHTML = cardProducto;
 
 // ---------------- funciones para producto personalizable ---------------------------
 
-// Preguntamos si es personalizable
-isPersonalizable();
-if(esPersonalizable == true){
-    // Preguntamos si ha sido personalizado
-    isFuePersonalizado();
-    if(fuePersonalizado == false){
-        //agregamos el boton
-        irApersonalizar();
-    }else{
-        //agregamos la descripcion pero antes
-        // preguntamos si fue despersonalizado
-        fuePersonalizado();
-        if(fueDespersonalizado == false){
-            // Agregamos la info 
-            datosPersonalizacion();
-        }else{
-            // borramos los compos
-
-        }
-
-    }
-}
 
 // Funcion agregar el boton personalizar si el producto es personalizable
-function isPersonalizable (){
-    // verificamos si el producto es personalizable, guardamos en variable el valor traido desde la Base de datos
-    esPersonalizable = true;
-}
-
-// Funcion para saber si fue personalizado el producto
-function isFuePersonalizado (){
-    // Obtenemos los datos del backend
-    fuePersonalizado = false;
-}
-
-function irApersonalizar(){
-    //creamos el boton para llevarlo al apartado de personalizacion
-    const btnPersonalizar = document.createElement('button');
-    btnPersonalizar.type = 'button';
-    btnPersonalizar.innerText = "Personalizar";
-    btnPersonalizar.className = 'btn-eliminar all-btn';
-
-    $seccionPersonalizable.appendChild(btnPersonalizar); 
-
-    // Funcion para mandar a la seccion de personalizar
-    btnPersonalizar.addEventListener('click', () => {
-        window.location.href = "./16-personalizar.html";
-    })
-}
-
-function fueDespersonalizado(){
-    // obtenemos el dato
-    fuePersonalizado = false;
-}
 
 function datosPersonalizacion(){
     //obtenemos los datos
@@ -81,14 +64,37 @@ function datosPersonalizacion(){
     const personalizacionExtra = 'Este es el texto que escribio el comprador';
 
     // mostrando datos de personalización
-    const datos = document.createElement('div');
+    datos = document.createElement('div');
     datos.innerHTML = `
-        <p>Material: ${materialProducto}</p>
         <br>
-        <p>Tamaño: ${tamañoProducto}</p>
-        <br>
-        <p>Color: ${colorProducto}</p>
-        <br>
-        <p>Personalizacion extra: ${personalizacionExtra}</p>`;
+        <h6><strong>Personalización agregada : </strong></h6> 
+        <p><strong>Material:</strong> ${materialProducto}</p>
+        <p><strong>Tamaño:</strong> ${tamañoProducto}</p>
+        <p><strong>Color:</strong> ${colorProducto}</p>
+        <p><strong>Personalizacion extra:</strong> ${personalizacionExtra}</p>`;
     $datosP.appendChild(datos);  
+}
+
+// preguntar si ya fue personalizado
+
+fuePersonalizado = true;
+esPersonalizable = false;
+
+if(fuePersonalizado == true){
+    datosPersonalizacion();
+    $btnPersonalizar.addEventListener('click', ()=>{
+        if(esPersonalizable == true){
+            var timer = setTimeout(function(){
+                document.location.href = ('./16-personalizar.html');
+            },1800);
+        }else{
+            Swal.fire({
+                position: 'center',
+                icon: 'info',
+                title: 'Este producto no es personalizable',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }   
+    })
 }

@@ -1,7 +1,7 @@
 /* Esferas */
 .esfera{
     border-radius: 50%;
-    background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red);
+    /* background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red); */
     
     opacity: .4;
     position:fixed;

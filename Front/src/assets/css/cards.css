@@ -48,18 +48,16 @@
   .cabeceraCards{
     position: relative;
     top: 0;
-    border: 1px solid #cc2424;
     background: #F2A516;
     border-radius: 1px 20px 1px 20px;
     margin-bottom: .5rem;
-    transform: skew(30deg);  
+    width: 30%;
+    margin-left: 60%;
   }
-  .cabeceraCards-texto{
-    margin: 0;
+  .cabeceraCards-img{
+    margin:  0;
     padding: 0;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 18px;
-    letter-spacing: 2px;
+    filter: brightness(0.1);
   }
   .about-producto-01{
       position: absolute;
