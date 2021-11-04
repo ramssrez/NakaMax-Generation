@@ -93,6 +93,7 @@ function leerDatosProducto (producto){
         }
     }
 
+    console.log(esPersonalizable);
     if(esPersonalizable == true){
         document.location.href = ('./16-personalizar.html');
     }else{
