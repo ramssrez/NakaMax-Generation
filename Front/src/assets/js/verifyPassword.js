@@ -57,4 +57,4 @@ $buttonVerify.addEventListener('click', ()=>{
 $cancel.addEventListener('click', ()=>{
     sessionStorage.removeItem('typeEditData');
     window.location.href = "./09-userWindow.html";
-})
+});
