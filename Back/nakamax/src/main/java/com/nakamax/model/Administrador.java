@@ -6,10 +6,9 @@ import javax.persistence.*;
 public class Administrador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_admin")
     private Integer id;
 
-    @Column(name = "nombre")
+    @Column(name = "nombres")
     private String nombre;
 
     @Column(name = "apellido_paterno")
@@ -26,10 +25,6 @@ public class Administrador {
 
     public Administrador() {
 
-    }
-
-    public Administrador(Integer id) {
-        this.id = id;
     }
 
     public Administrador(Integer id, String nombre, String apellidoPaterno, String apellidoMaterno, String correo, String github, String linkedin) {

@@ -16,6 +16,6 @@ public class AdministradorServiceImpl implements AdministradorService{
 
     @Override
     public ArrayList<Administrador> findAll() {
-        return null;
+        return administradorRepository.findAll();
     }
 }
