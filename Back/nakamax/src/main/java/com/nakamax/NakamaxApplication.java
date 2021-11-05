@@ -1,4 +1,4 @@
-package com.nakamax.nakamax;
+package com.nakamax;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
