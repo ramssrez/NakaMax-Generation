@@ -10,10 +10,9 @@ function cargarEventListeners(){
 // variables para crear todas las cards
 let $cartas = document.querySelector('#cartas');
 let carta = "";
-let esPersonalizable;
 
 // arreglo que simula los datos de que producto es personalizable y que producto no lo es
-let ides = ["true", "false", "true"];
+let ides = ["1", "0", "1"];
 
 // variables y elementos para el boton personalizar
 const $btnsPersonalizar = document.querySelector('#btnsPersonalizar');
@@ -80,21 +79,22 @@ function btnIrApersonalizar(e) {
         leerDatosProducto(productoSeleccionado);
     }
 }
-
+//localStorage.removeItem("idProductoPersonalizable");
 function leerDatosProducto (producto){
     let iDProducto = parseInt(producto.querySelector('button').getAttribute('data-id'));
     // preguntar si ya fue personalizado
     // variables para almacenar datos de los ciclos
+    let esPersonalizable;
 
     for(let i = 0; i<ides.length; i++){
         if(i == iDProducto){
-            esPersonalizable = ides[i];
-            console.log(esPersonalizable);
+            esPersonalizable = parseInt(ides[i]);
         }
     }
 
-    console.log(esPersonalizable);
-    if(esPersonalizable == true){
+    if(esPersonalizable == 1){
+        localStorage.setItem("idProductoPersonalizable", iDProducto);
+        esPersonalizable = 0;
         document.location.href = ('./16-personalizar.html');
     }else{
         Swal.fire({
@@ -104,9 +104,14 @@ function leerDatosProducto (producto){
             showConfirmButton: false,
             timer: 1500
         })
-        esPersonalizable = "";
+        esPersonalizable = 0;
     } 
+    
 }
+
+const datosDePersonalizados = localStorage.getItem("todosLosPersonalizados");
+console.log(datosDePersonalizados);
+// localStorage.removeItem("todosLosPersonalizados");
 
 // Funcion agregar el boton personalizar si el producto es personalizable
 
