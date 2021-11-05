@@ -6,6 +6,7 @@ import javax.persistence.*;
 public class Administrador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_admin")
     private Integer id;
 
     @Column(name = "nombres")
