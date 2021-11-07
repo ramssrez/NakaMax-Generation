@@ -81,7 +81,7 @@ $guardarPerzonalizacion.addEventListener('click', ()=>{
     })
     // delay agregado para ver el efecto de la alerta de personalización guardada
     let time = setTimeout(function(){
-        //window.location.href = "./10-carritoWindow.html";
+        window.location.href = "./10-carritoWindow.html";
     },1800);
 })
 

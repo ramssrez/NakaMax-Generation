@@ -111,7 +111,7 @@ function leerDatosProducto (producto){
 
 const datosDePersonalizados = localStorage.getItem("todosLosPersonalizados");
 console.log(datosDePersonalizados);
-// localStorage.removeItem("todosLosPersonalizados");
+//localStorage.removeItem("todosLosPersonalizados");
 
 // Funcion agregar el boton personalizar si el producto es personalizable
 
