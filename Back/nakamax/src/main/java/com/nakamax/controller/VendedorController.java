@@ -1,11 +1,9 @@
 package com.nakamax.controller;
 
 import com.nakamax.model.Vendedor;
-import com.nakamax.repository.VendedorRepository;
+import com.nakamax.service.VendedorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -13,19 +11,24 @@ import java.util.Optional;
 @RestController
 public class VendedorController {
 
-    private final VendedorRepository vendedorRepository;
+    private final VendedorService vendedorService;
 
-    public VendedorController(@Autowired VendedorRepository vendedorRepository) {
-        this.vendedorRepository = vendedorRepository;
+    public VendedorController(@Autowired VendedorService vendedorService) {
+        this.vendedorService = vendedorService;
     }
 
-    @GetMapping("/Vendedores")
+    @GetMapping("/vendedores")
     public ArrayList<Vendedor> getAll(){
-        return vendedorRepository.findAll();
+        return vendedorService.findAll();
     }
 
-    @GetMapping("/Vendedor/{id}")
+    @GetMapping("/vendedor/{id}")
     public Optional<Vendedor> getById(@PathVariable Integer id){
-        return vendedorRepository.findById(id);
+        return vendedorService.findById(id);
+    }
+
+    @PostMapping("/vendedor")
+    public void save(@RequestBody Vendedor vendedor){
+        vendedorService.saveVendedor(vendedor);
     }
 }
