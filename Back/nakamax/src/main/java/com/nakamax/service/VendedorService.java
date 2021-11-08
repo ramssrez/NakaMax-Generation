@@ -9,4 +9,8 @@ public interface VendedorService {
     ArrayList<Vendedor> findAll();
 
     Optional<Vendedor> findById(Integer id);
+
+    void saveVendedor(Vendedor vendedor);
+
+    void delete(Integer id);
 }

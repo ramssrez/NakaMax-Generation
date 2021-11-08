@@ -1,7 +1,6 @@
 package com.nakamax.service;
 
 import com.nakamax.model.Vendedor;
-import com.nakamax.repository.AdministradorRepository;
 import com.nakamax.repository.VendedorRepository;
 import org.springframework.stereotype.Service;
 
@@ -27,4 +26,13 @@ public class VendedorServiceImpl implements VendedorService {
         return vendedorRepository.findById(id);
     }
 
+    @Override
+    public void saveVendedor(Vendedor vendedor) {
+        vendedorRepository.save(vendedor);
+    }
+
+    @Override
+    public void delete(Integer id) {
+        vendedorRepository.deleteById(id);
+    }
 }

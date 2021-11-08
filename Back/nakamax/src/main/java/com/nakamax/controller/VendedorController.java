@@ -31,4 +31,16 @@ public class VendedorController {
     public void save(@RequestBody Vendedor vendedor){
         vendedorService.saveVendedor(vendedor);
     }
+
+    @PutMapping("/vendedor")
+    public void update(@RequestBody Vendedor student)
+    {
+        vendedorService.saveVendedor(student);
+    }
+
+    @DeleteMapping("/vendedor/{id}")
+    public void delete(@PathVariable Integer id)
+    {
+        vendedorService.delete(id);
+    }
 }
