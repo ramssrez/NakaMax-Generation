@@ -7,4 +7,5 @@ import java.util.ArrayList;
 
 public interface AdministradorRepository extends CrudRepository<Administrador, Integer> {
     ArrayList<Administrador> findAll();
+    ArrayList<Administrador> findByName();
 }
