@@ -3,10 +3,7 @@ package com.nakamax.controller;
 import com.nakamax.model.Administrador;
 import com.nakamax.service.AdministradorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
@@ -30,6 +27,12 @@ public class AdministradorController {
     @GetMapping("/admin/{id}")
     public Administrador getAdministrador(@PathVariable Integer id){
         return administradorService.getAdministrador(id);
+    }
+
+    //Implementación de la ruta para que se cree un nuevo administrador
+    @PostMapping("/admin")
+    public Administrador save(@RequestBody Administrador administrador){
+        return administradorService.save(administrador);
     }
 
     @GetMapping( "/user" )
