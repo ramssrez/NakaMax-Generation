@@ -12,8 +12,6 @@ const $guardarPerzonalizacion = document.querySelector('#guardarPerzonalizacion'
 const $cancelarPerzonalizacion = document.querySelector('#cancelarPerzonalizacion');
 const $modificarPerzonalizacion = document.querySelector('#modificarPerzonalizacion');
 
-let productosPersonalizados = [];
-
 // Despliqgue de campos de opciones de personalización
 // Opciones de tamaño
 $catTamanio.addEventListener('change', () => {
@@ -35,7 +33,7 @@ $catMaterial.addEventListener('change', () => {
     if($catMaterial.checked == true){
         $addCatMaterial.innerHTML = `
         <select name="" id="material" class="uWborder uWinputSize">
-            <option value="">MATERIALES</option>
+            <option value="null">MATERIALES</option>
             <option value="METAL">METAL</option>
             <option value="MADERA">MADERA</option>
             <option value="PLASTICO">PLASTICO</option>
@@ -50,7 +48,7 @@ $catColor.addEventListener('change', () => {
     if($catColor.checked == true){
         $addCatColor.innerHTML = `
         <select name="" id="color" class="uWborder uWinputSize">
-            <option value="">COLORES</option>
+            <option value="null">COLORES</option>
             <option value="PLATA">PLATA</option>
             <option value="DORADO">DORADO</option>
             <option value="CAFE">CAFE</option>
@@ -116,24 +114,44 @@ function agregarPersonalizacion(){
     const dataIdProducto = localStorage.getItem("idProductoPersonalizable")
 
     // obtenemos los valores de los elementos
-    const valTamanio = document.getElementById('tamanio').value;
-    const valMaterial = document.getElementById('material').value;
-    const valColor = document.getElementById('color').value;
+    let valTamanio = "No especificado";
+    let valMaterial = "No especificado";
+    let valColor = "No especificado";
+    let valExtra = "No especificado";
+    if($catTamanio.checked == true){
+        valTamanio = document.getElementById('tamanio').value;
+    }
+    if($catMaterial.checked == true){
+        valMaterial = document.getElementById('material').value;
+    }
+    if($catColor.checked == true){
+        valColor = document.getElementById('color').value;
+    }
+    if($textExtra.checked == true){
+        valExtra = document.getElementById('personalizacionExtra').value;
+    }
 
     const producto = {
         id: dataIdProducto,
         tamanio: valTamanio,
         material: valMaterial,
         color: valColor,
-        fuePersonalizado: 1
+        extra: valExtra
     }
-    console.log(producto.id);
-    console.log(producto.tamanio);
-    console.log(producto.fuePersonalizado);
 
-    productosPersonalizados.push(producto);
-    console.log(productosPersonalizados);
-    localStorage.setItem("todosLosPersonalizados", productosPersonalizados);
+    // Creando arreglo para guardar los objetos, si existe solo lo recupera, almacena el siguiente objeto y lo manda a la pagina de carrito
+    if(localStorage.getItem("todosLosPersonalizados") === null){
+        //console.log("No existe")
+        let productosPersonalizados = [];
+        productosPersonalizados.push(producto);
+        localStorage.setItem("todosLosPersonalizados", JSON.stringify(productosPersonalizados));
+    }else{
+        //console.log("existe")
+        let productosPersonalizados = JSON.parse(localStorage.getItem("todosLosPersonalizados"));
+        productosPersonalizados.push(producto);
+        //localStorage.removeItem("todosLosPersonalizados");
+        localStorage.setItem("todosLosPersonalizados", productosPersonalizados); 
+    }
     localStorage.removeItem("idProductoPersonalizable");
 }
 
