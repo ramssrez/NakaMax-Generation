@@ -28,18 +28,21 @@ public class AdministradorServiceImpl implements AdministradorService{
         return administrador.orElse(null);
     }
 
+    //Método que cambia los elementos o campos de un administrador
     @Override
     public Administrador save(Administrador administrador) {
-        return null;
+        return administradorRepository.save(administrador);
     }
 
+    //Método que elimina a un administrador por medio del id
     @Override
     public void delete(Integer id) {
-
+        administradorRepository.deleteById(id);
     }
 
+    //Método que retorno a una lista de administradores con el mismo nombre
     @Override
     public ArrayList<Administrador> findByName(String name) {
-        return null;
+        return administradorRepository.findByName();
     }
 }
