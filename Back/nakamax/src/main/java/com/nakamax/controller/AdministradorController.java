@@ -35,6 +35,13 @@ public class AdministradorController {
         return administradorService.save(administrador);
     }
 
+    //Implementación de la ruta para que se elimine un administrador de la base de datos
+    @DeleteMapping("/admin/{id}")
+    public void delete(@PathVariable Integer id)
+    {
+        administradorService.delete(id);
+    }
+
     @GetMapping( "/user" )
     public String saludo() {
         return "Hola";

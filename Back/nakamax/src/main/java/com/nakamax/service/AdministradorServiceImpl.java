@@ -15,7 +15,7 @@ public class AdministradorServiceImpl implements AdministradorService{
         this.administradorRepository = administradorRepository;
     }
 
-    //Método que obtienenla lista de administradores
+    //Método que obtienen la lista de administradores
     @Override
     public ArrayList<Administrador> findAll() {
         return administradorRepository.findAll();
@@ -28,7 +28,7 @@ public class AdministradorServiceImpl implements AdministradorService{
         return administrador.orElse(null);
     }
 
-    //Método que cambia los elementos o campos de un administrador
+    //Método que guarda un nuevo administrador
     @Override
     public Administrador save(Administrador administrador) {
         return administradorRepository.save(administrador);
