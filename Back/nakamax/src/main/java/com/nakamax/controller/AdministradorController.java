@@ -26,6 +26,7 @@ public class AdministradorController {
         return administradorService.findAll();
     }
 
+    //Implementación de la ruta que obtiene los datos de usuario
     @GetMapping("/admin/{id}")
     public Administrador getAdministrador(@PathVariable Integer id){
         return administradorService.getAdministrador(id);

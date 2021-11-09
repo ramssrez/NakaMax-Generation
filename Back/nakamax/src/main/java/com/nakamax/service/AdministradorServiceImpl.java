@@ -40,9 +40,4 @@ public class AdministradorServiceImpl implements AdministradorService{
         administradorRepository.deleteById(id);
     }
 
-    //Método que retorno a una lista de administradores con el mismo nombre
-    @Override
-    public ArrayList<Administrador> findByName(String name) {
-        return administradorRepository.findByName();
-    }
 }

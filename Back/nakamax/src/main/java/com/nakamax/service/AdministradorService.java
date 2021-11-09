@@ -11,6 +11,4 @@ public interface AdministradorService {
     Administrador save( Administrador administrador);
 
     void delete( Integer id );
-
-    ArrayList<Administrador> findByName(String name);
 }
