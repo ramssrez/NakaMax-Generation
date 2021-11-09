@@ -4,7 +4,7 @@ import com.nakamax.model.ReportesPagina;
 import com.nakamax.repository.ReportesPaginaRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Optional;
 
 @Service
@@ -21,14 +21,14 @@ public class ReportesPaginaServiceImpl implements ReportesPaginaService{
     }
 
     @Override
-    public List<ReportesPagina> getReportes() {
-        return (List<ReportesPagina>) reportesPaginaRepository.findAll();
+    public ArrayList<ReportesPagina> findAll() {
+        return reportesPaginaRepository.findAll();
     }
 
     @Override
-    public ReportesPagina getReportePagina(Integer id) {
+    public Optional<ReportesPagina> findById(Integer id) {
         Optional<ReportesPagina> reportesPagina = reportesPaginaRepository.findById(id);
-        return reportesPagina.orElse(null);
+        return ;
     }
 
     @Override

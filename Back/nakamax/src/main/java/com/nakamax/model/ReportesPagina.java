@@ -2,8 +2,7 @@ package com.nakamax.model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "reportes_pagina")
+@Entity(name = "reportes_pagina")
 public class ReportesPagina {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +17,9 @@ public class ReportesPagina {
 
     @Column(name = "is_link_down", nullable = true)
     private int esLinkCaido;
+
+    public ReportesPagina(){
+    }
 
     public ReportesPagina(Integer id, String descripcion, int esGeneral, int esLinkCaido){
         this.id = id;

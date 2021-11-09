@@ -5,10 +5,10 @@ import com.nakamax.service.ReportesPaginaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @RestController
-@RequestMapping("api/reportes/pagina")
+@RequestMapping("api/reporte/pagina")
 public class ReportesPaginaController {
     private final  ReportesPaginaService reportesPaginaService;
 
@@ -16,15 +16,20 @@ public class ReportesPaginaController {
         this.reportesPaginaService = reportesPaginaService;
     }
 
-    @PostMapping("/nuevo/reporte")
+    @PostMapping("/nuevo")
     public ReportesPagina reportesPagina(@RequestBody ReportesPagina reportesPagina){
         return reportesPaginaService.save(reportesPagina);
     }
 
     @GetMapping("/reportes")
-    public List<ReportesPagina> reportes(){
-        return reportesPaginaService.getReportes();
+    public ArrayList<ReportesPagina> reportes(){
+        return reportesPaginaService.findAll();
     }
+
+    /*@GetMapping("/{id}")
+    public ReportesPagina getReporte(@PathVariable Integer id){
+        return reportesPaginaService.findById(id);
+    }*/
 
     @GetMapping( "/reporte" )
     public String saludo() {
