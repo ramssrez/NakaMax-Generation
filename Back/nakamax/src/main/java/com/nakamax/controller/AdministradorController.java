@@ -1,6 +1,7 @@
 package com.nakamax.controller;
 
 import com.nakamax.model.Administrador;
+import com.nakamax.model.Comprador;
 import com.nakamax.service.AdministradorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,13 +38,12 @@ public class AdministradorController {
 
     //Implementación de la ruta para que se elimine un administrador de la base de datos
     @DeleteMapping("/admin/{id}")
-    public void delete(@PathVariable Integer id)
-    {
+    public void delete(@PathVariable Integer id) {
         administradorService.delete(id);
     }
 
-    @GetMapping( "/user" )
-    public String saludo() {
-        return "Hola";
+    @PutMapping("/admin")
+    public void update(@RequestBody Administrador administrador) {
+        administradorService.save(administrador);
     }
 }
