@@ -2,7 +2,6 @@ package com.nakamax.controller;
 
 
 import com.nakamax.model.Comprador;
-import com.nakamax.model.Vendedor;
 import com.nakamax.service.CompradorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Optional;
 
+@RestController
+@RequestMapping("api/compradores")
 public class CompradorController {
     private final CompradorService compradorService;
 
