@@ -1,6 +1,17 @@
 package com.nakamax.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity (name="materiales")
+
+
 public class Material {
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
 
     private Integer id_material;
 
