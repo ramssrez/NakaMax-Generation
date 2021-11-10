@@ -1,21 +1,28 @@
 package com.nakamax.model;
 
+import javax.persistence.*;
+
+@Entity(name = "comentarios_contac_us")
 public class ContactUs {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_comentario")
     private Integer idComentario;
     private String nombre;
     private String correo;
-    private String telefono;
+    @Column(name = "telefono")
+    private String phone;
     private String comentario;
 
     public ContactUs() {
 
     }
 
-    public ContactUs(Integer idComentario, String nombre, String correo, String telefono, String comentario) {
+    public ContactUs(Integer idComentario, String nombre, String correo, String phone, String comentario) {
         this.idComentario = idComentario;
         this.nombre = nombre;
         this.correo = correo;
-        this.telefono = telefono;
+        this.phone = phone;
         this.comentario = comentario;
     }
 
@@ -43,12 +50,12 @@ public class ContactUs {
         this.correo = correo;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getComentario() {
