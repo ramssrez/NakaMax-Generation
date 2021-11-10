@@ -10,7 +10,7 @@ public interface ContactUsService {
 
     Optional<ContactUs> findById(Integer id);
 
-    void saveVendedor(ContactUs contactUs);
+    void saveContactUs(ContactUs contactUs);
 
     void delete(Integer id);
 }
