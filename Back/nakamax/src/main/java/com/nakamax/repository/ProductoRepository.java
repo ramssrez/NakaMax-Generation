@@ -7,5 +7,4 @@ import java.util.ArrayList;
 
 public interface ProductoRepository extends CrudRepository <Producto, Integer> {
     ArrayList <Producto> findAll();
-
 }
