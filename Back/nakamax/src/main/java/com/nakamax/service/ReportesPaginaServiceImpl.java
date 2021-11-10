@@ -27,8 +27,7 @@ public class ReportesPaginaServiceImpl implements ReportesPaginaService{
 
     @Override
     public Optional<ReportesPagina> findById(Integer id) {
-        Optional<ReportesPagina> reportesPagina = reportesPaginaRepository.findById(id);
-        return ;
+        return reportesPaginaRepository.findById(id);
     }
 
     @Override

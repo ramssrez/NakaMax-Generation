@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/reporte/pagina")
@@ -26,13 +27,19 @@ public class ReportesPaginaController {
         return reportesPaginaService.findAll();
     }
 
-    /*@GetMapping("/{id}")
-    public ReportesPagina getReporte(@PathVariable Integer id){
+    @GetMapping("/{id}")
+    public Optional<ReportesPagina> findReporte(@PathVariable Integer id){
         return reportesPaginaService.findById(id);
-    }*/
+    }
 
-    @GetMapping( "/reporte" )
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable Integer id){
+        reportesPaginaService.delete(id);
+        return "Borrado";
+    }
+
+    @GetMapping( "/hola" )
     public String saludo() {
-        return "Hola";
+        return "Hola desde reportes de pagina";
     }
 }

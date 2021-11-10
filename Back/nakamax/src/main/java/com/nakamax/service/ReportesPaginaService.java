@@ -3,7 +3,6 @@ package com.nakamax.service;
 import com.nakamax.model.ReportesPagina;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 public interface ReportesPaginaService {
