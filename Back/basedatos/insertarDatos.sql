@@ -1,4 +1,5 @@
 /* Insertar categorias */
+USE nakamas;
 INSERT INTO categorias (descripcion) VALUES ('Personalizable madera');
 INSERT INTO categorias (descripcion) VALUES ('Personalizable metal');
 INSERT INTO categorias (descripcion) VALUES ('Serigrafía');
