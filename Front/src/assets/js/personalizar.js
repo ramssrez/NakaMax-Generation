@@ -11,6 +11,8 @@ const $addCatColor = document.querySelector('#addCatColor');
 const $guardarPerzonalizacion = document.querySelector('#guardarPerzonalizacion');
 const $cancelarPerzonalizacion = document.querySelector('#cancelarPerzonalizacion');
 const $modificarPerzonalizacion = document.querySelector('#modificarPerzonalizacion');
+// primero obtenemos el valor del data-id del producto y lo guardamos en el objeto junto con los demas datos
+const dataIdProducto = localStorage.getItem("idProductoPersonalizable")
 
 // Despliqgue de campos de opciones de personalización
 // Opciones de tamaño
@@ -88,10 +90,12 @@ $cancelarPerzonalizacion.addEventListener('click', ()=>{
     localStorage.removeItem("idProductoPersonalizable");
 })
 
-const personalizado = true;
-if(personalizado == true){
+const nombreExistente = "producto" + dataIdProducto;
+if(localStorage.getItem(nombreExistente)){
     $modificarPerzonalizacion.disabled = false;
+    $guardarPerzonalizacion.disabled = true;
     $modificarPerzonalizacion.addEventListener('click', ()=>{
+        agregarPersonalizacion()
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -109,10 +113,6 @@ if(personalizado == true){
 
 // almacenar datos en objeto para mandarlo a carrito
 function agregarPersonalizacion(){
-    console.log("obteniendo los datos de personalizacion")
-    // primero obtenemos el valor del data-id del producto y lo guardamos en el objeto junto con los demas datos
-    const dataIdProducto = localStorage.getItem("idProductoPersonalizable")
-
     // obtenemos los valores de los elementos
     let valTamanio = "No especificado";
     let valMaterial = "No especificado";
@@ -139,19 +139,9 @@ function agregarPersonalizacion(){
         extra: valExtra
     }
 
-    // Creando arreglo para guardar los objetos, si existe solo lo recupera, almacena el siguiente objeto y lo manda a la pagina de carrito
-    if(localStorage.getItem("todosLosPersonalizados") === null){
-        //console.log("No existe")
-        let productosPersonalizados = [];
-        productosPersonalizados.push(producto);
-        localStorage.setItem("todosLosPersonalizados", JSON.stringify(productosPersonalizados));
-    }else{
-        //console.log("existe")
-        let productosPersonalizados = JSON.parse(localStorage.getItem("todosLosPersonalizados"));
-        productosPersonalizados.push(producto);
-        //localStorage.removeItem("todosLosPersonalizados");
-        localStorage.setItem("todosLosPersonalizados", productosPersonalizados); 
-    }
+    // Creamos el identificador para el local storage
+    const nombre = "producto" + dataIdProducto;
+    localStorage.setItem(nombre, JSON.stringify(producto));
     localStorage.removeItem("idProductoPersonalizable");
 }
 

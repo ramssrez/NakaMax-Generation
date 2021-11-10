@@ -11,17 +11,18 @@ function cargarEventListeners(){
 let $cartas = document.querySelector('#cartas');
 let carta = "";
 // arreglo que simula los datos de que producto es personalizable y que producto no lo es
-let ides = ["1", "0", "1"];
+let ides = ["1", "0", "1","1"];
 // variables y elementos para el boton personalizar
 const $btnsPersonalizar = document.querySelector('#btnsPersonalizar');
-let productosPersonalizados = null;
+//let productosPersonalizados = null;
 
+const cantidad = 4
 mostrarProductos(); // Inserion de productos 
 escucharBtnPersonalizar(); // verifica que productos es personalizable
 
 // ciclo para agregar todas los productos agregados al carrito
 function mostrarProductos(){
-    for(let i = 0; i<3 ; i++){
+    for(let i = 0; i<cantidad ; i++){
         fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
         .then(resp => resp.json())
         .then(data => {
@@ -79,7 +80,6 @@ function btnIrApersonalizar(e) {
     }
 }
 
-//localStorage.removeItem("idProductoPersonalizable");
 function leerDatosProducto (producto){
     let iDProducto = parseInt(producto.querySelector('button').getAttribute('data-id'));
     let esPersonalizable;
@@ -106,32 +106,69 @@ function leerDatosProducto (producto){
     } 
     
 }
-//localStorage.removeItem("todosLosPersonalizados");
+//agregarPersonalizacion(cantidad)
 
-function agregarPersonalizacion(i){
-    if(localStorage.getItem("todosLosPersonalizados") !== null){
-        productosPersonalizados = JSON.parse(localStorage.getItem("todosLosPersonalizados"));
-        console.log(productosPersonalizados);
-        for(let i = 0; i<productosPersonalizados.length; i++){
-            let idProducto = productosPersonalizados[i].id;
-            let tamañoProducto = productosPersonalizados[i].tamanio;
-            let materialProducto = productosPersonalizados[i].material;
-            let colorProducto = productosPersonalizados[i].color;
-            let extraProducto = productosPersonalizados[i].extra;
-            let indice = parseInt(idProducto);
-            if(idProducto == indice){
-                let idname = "#datosP"+idProducto;
-                console.log(idname)
-                const $datosP = document.querySelector(idname);
-                $datosP.innerHTML = `<br>
-                <h6><strong>Personalización agregada : </strong></h6> 
-                <p><strong>Material:</strong> ${materialProducto}</p>
-                <p><strong>Tamaño:</strong> ${tamañoProducto}</p>
-                <p><strong>Color:</strong> ${colorProducto}</p>
-                <p><strong>Personalización extra:</strong> ${extraProducto}</p>`;
-            }else{
-                id="";
-            }
-        } 
+function agregarPersonalizacion(contador){
+    // buscamos si existe objeto de personalizacion en local storage
+    const nombre = "producto" + contador.toString();
+    if(localStorage.getItem(nombre)){
+        console.log("existe" + nombre)
+        const personalizacion = JSON.parse(localStorage.getItem(nombre));
+        console.log(personalizacion);
+        let idProducto = personalizacion.id;
+        let tamañoProducto = personalizacion.tamanio;
+        let materialProducto = personalizacion.material;
+        let colorProducto = personalizacion.color;
+        let extraProducto = personalizacion.extra;
+
+        let idname = "datosP"+idProducto;
+        console.log(typeof(idname))
+        const $datosP = document.getElementById(idname);
+        $datosP.innerHTML = `<br>
+            <h6><strong>Personalización agregada : </strong></h6> 
+            <p><strong>Material:</strong> ${materialProducto}</p>
+            <p><strong>Tamaño:</strong> ${tamañoProducto}</p>
+            <p><strong>Color:</strong> ${colorProducto}</p>
+            <p><strong>Personalización extra:</strong> ${extraProducto}</p>
+        `;
+        const btnGuardar = document.createElement('button');
+        btnGuardar.type = 'button';
+        btnGuardar.innerText = "Guardar";
+        btnGuardar.className = 'uWbtn btn m-2';
+        $datosP.appendChild(btnGuardar);
     }
 }
+
+/*
+function agregarPersonalizacion(cantidad){
+    for(let contador = 0; contador<cantidad; i ++){
+        // buscamos si existe objeto de personalizacion en local storage
+    const nombre = "producto" + contador.toString();
+    if(localStorage.getItem(nombre)){
+        console.log("existe" + nombre)
+        const personalizacion = JSON.parse(localStorage.getItem(nombre));
+        console.log(personalizacion);
+        let idProducto = personalizacion.id;
+        let tamañoProducto = personalizacion.tamanio;
+        let materialProducto = personalizacion.material;
+        let colorProducto = personalizacion.color;
+        let extraProducto = personalizacion.extra;
+
+        let idname = "datosP"+idProducto;
+        console.log(idname)
+        const $datosP = document.getElementById(idname);
+        // $datosP.innerHTML = `<br>
+        //     <h6><strong>Personalización agregada : </strong></h6> 
+        //     <p><strong>Material:</strong> ${materialProducto}</p>
+        //     <p><strong>Tamaño:</strong> ${tamañoProducto}</p>
+        //     <p><strong>Color:</strong> ${colorProducto}</p>
+        //     <p><strong>Personalización extra:</strong> ${extraProducto}</p>
+        // `;
+        const btnGuardar = document.createElement('button');
+        btnGuardar.type = 'button';
+        btnGuardar.innerText = "Guardar";
+        btnGuardar.className = 'uWbtn btn m-2';
+        $datosP.appendChild(btnGuardar);
+    }
+    }
+}*/
