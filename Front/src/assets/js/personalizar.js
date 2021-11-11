@@ -11,8 +11,9 @@ const $addCatColor = document.querySelector('#addCatColor');
 const $guardarPerzonalizacion = document.querySelector('#guardarPerzonalizacion');
 const $cancelarPerzonalizacion = document.querySelector('#cancelarPerzonalizacion');
 const $modificarPerzonalizacion = document.querySelector('#modificarPerzonalizacion');
+const $eliminarPerzonalizacion = document.querySelector('#eliminarPerzonalizacion');
 // primero obtenemos el valor del data-id del producto y lo guardamos en el objeto junto con los demas datos
-const dataIdProducto = localStorage.getItem("idProductoPersonalizable")
+const dataIdProducto = localStorage.getItem("idProductoPersonalizable");
 
 // Despliqgue de campos de opciones de personalización
 // Opciones de tamaño
@@ -94,6 +95,7 @@ const nombreExistente = "producto" + dataIdProducto;
 if(localStorage.getItem(nombreExistente)){
     $modificarPerzonalizacion.disabled = false;
     $guardarPerzonalizacion.disabled = true;
+    $eliminarPerzonalizacion.disabled = false;
     $modificarPerzonalizacion.addEventListener('click', ()=>{
         agregarPersonalizacion()
         Swal.fire({
@@ -107,8 +109,29 @@ if(localStorage.getItem(nombreExistente)){
             window.location.href = "./10-carritoWindow.html";
         },1800);
     })
+
+    $eliminarPerzonalizacion.addEventListener('click', ()=>{
+        borrarPersonalizacion();
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Personalización eliminada',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        let time = setTimeout(function(){
+            window.location.href = "./10-carritoWindow.html";
+        },1800);
+    })
 }else{
     $modificarPerzonalizacion.disabled = true;
+    $eliminarPerzonalizacion.disabled = true;
+}
+
+function borrarPersonalizacion(){
+    const nombre = "producto" + dataIdProducto;
+    localStorage.removeItem(nombre);
+    localStorage.removeItem("idProductoPersonalizable");
 }
 
 // almacenar datos en objeto para mandarlo a carrito

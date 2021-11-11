@@ -19,6 +19,7 @@ const $btnsPersonalizar = document.querySelector('#btnsPersonalizar');
 const cantidad = 4
 mostrarProductos(); // Inserion de productos 
 escucharBtnPersonalizar(); // verifica que productos es personalizable
+//escucharBtnBorrarP();
 
 // ciclo para agregar todas los productos agregados al carrito
 function mostrarProductos(){
@@ -30,7 +31,9 @@ function mostrarProductos(){
         let url = data[i].url;
         let title = data[i].title;
         creaCartas(i, url, title);
-        agregarPersonalizacion(i);
+        let time = setTimeout(function(){
+            agregarPersonalizacion(i);
+        },1000);
         });
     };
 }
@@ -106,15 +109,13 @@ function leerDatosProducto (producto){
     } 
     
 }
-//agregarPersonalizacion(cantidad)
 
 function agregarPersonalizacion(contador){
+
     // buscamos si existe objeto de personalizacion en local storage
     const nombre = "producto" + contador.toString();
     if(localStorage.getItem(nombre)){
-        console.log("existe" + nombre)
         const personalizacion = JSON.parse(localStorage.getItem(nombre));
-        console.log(personalizacion);
         let idProducto = personalizacion.id;
         let tamañoProducto = personalizacion.tamanio;
         let materialProducto = personalizacion.material;
@@ -122,7 +123,6 @@ function agregarPersonalizacion(contador){
         let extraProducto = personalizacion.extra;
 
         let idname = "datosP"+idProducto;
-        console.log(typeof(idname))
         const $datosP = document.getElementById(idname);
         $datosP.innerHTML = `<br>
             <h6><strong>Personalización agregada : </strong></h6> 
@@ -131,44 +131,5 @@ function agregarPersonalizacion(contador){
             <p><strong>Color:</strong> ${colorProducto}</p>
             <p><strong>Personalización extra:</strong> ${extraProducto}</p>
         `;
-        const btnGuardar = document.createElement('button');
-        btnGuardar.type = 'button';
-        btnGuardar.innerText = "Guardar";
-        btnGuardar.className = 'uWbtn btn m-2';
-        $datosP.appendChild(btnGuardar);
     }
 }
-
-/*
-function agregarPersonalizacion(cantidad){
-    for(let contador = 0; contador<cantidad; i ++){
-        // buscamos si existe objeto de personalizacion en local storage
-    const nombre = "producto" + contador.toString();
-    if(localStorage.getItem(nombre)){
-        console.log("existe" + nombre)
-        const personalizacion = JSON.parse(localStorage.getItem(nombre));
-        console.log(personalizacion);
-        let idProducto = personalizacion.id;
-        let tamañoProducto = personalizacion.tamanio;
-        let materialProducto = personalizacion.material;
-        let colorProducto = personalizacion.color;
-        let extraProducto = personalizacion.extra;
-
-        let idname = "datosP"+idProducto;
-        console.log(idname)
-        const $datosP = document.getElementById(idname);
-        // $datosP.innerHTML = `<br>
-        //     <h6><strong>Personalización agregada : </strong></h6> 
-        //     <p><strong>Material:</strong> ${materialProducto}</p>
-        //     <p><strong>Tamaño:</strong> ${tamañoProducto}</p>
-        //     <p><strong>Color:</strong> ${colorProducto}</p>
-        //     <p><strong>Personalización extra:</strong> ${extraProducto}</p>
-        // `;
-        const btnGuardar = document.createElement('button');
-        btnGuardar.type = 'button';
-        btnGuardar.innerText = "Guardar";
-        btnGuardar.className = 'uWbtn btn m-2';
-        $datosP.appendChild(btnGuardar);
-    }
-    }
-}*/
