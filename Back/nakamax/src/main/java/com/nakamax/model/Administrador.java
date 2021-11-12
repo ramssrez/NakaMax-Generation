@@ -1,6 +1,8 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "administradores")
 public class Administrador {
@@ -23,6 +25,24 @@ public class Administrador {
     private String imagen;
     private String github;
     private String linkedin;
+
+
+    @JoinTable(
+            name = "rel_administradores_reportes_pag",
+            joinColumns = @JoinColumn(name = "fk_administrador", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_reporte_pagina", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ReportesPagina> reportes_pagina;
+
+    public void addReport(ReportesPagina reportePagina){
+        if(this.reportes_pagina == null){
+            this.reportes_pagina = new ArrayList<>();
+        }
+        this.reportes_pagina.add(reportePagina);
+    }
+
+
 
     public Administrador() {
 
