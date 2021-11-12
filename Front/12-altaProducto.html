@@ -33,18 +33,14 @@
 
 <body>
   <!-- HEADER -->
-  <header class="container-fluid">
-    <a class="d-flex justify-content-center my-0 pt-1" href="index.html">
-      <img src="./src/assets/images/nakamax.png" width="125" height="50" alt="logo nakamas" />
-    </a>
+  <header class="container-fluid" id="header-02register">
     <nav class="navbar navbar-expand-lg">
-
       <ul id="menu" class="nav-item nav-he">
         <li class="li-00-index">
           <a class="nav-link nav-header" href="#"><img src="./src/assets/images/icon_menu.png" alt="CATEGORIAS"></a>
           <ul>
             <li><a href="./06-descripcion.html"><img src="./src/assets/images/cincel 1.png" width="55" alt="logo">
-                Artesanales</a></li>
+                A. Madera</a></li>
             <li><a href="./06-descripcion.html"><img src="./src/assets/images/pinturas.png" width="55" alt="logo">
                 Pósters y cuadros</a>
             </li>
@@ -64,58 +60,23 @@
         </li>
       </ul>
 
-
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-he">
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#artesanales">ARTÍSTICOS<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#artesanales"> Creadores<span class="sr-only"> </span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-header" href="#promociones">PROMOCIONES<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="./index.html#promociones"> Promociones<span class="sr-only">
+              </span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-header" href="#lomasvendido">LO MÁS VENDIDO</a>
+            <a class="nav-link nav-header" href="./index.html#lomasvendido"> Lo más vendido</a>
           </li>
         </ul>
       </div>
-      <!-- Boton Login -->
-      <a href="01-log.html" class="btn btn-outline-success bt-login my-2 my-sm-0">
-        <i class="far fa-user-circle"></i><strong> Iniciar</strong></a>
-
-      <div class="two columns u-pull-right">
-        <ul>
-          <li class="sub-menu li-00-index">
-            <img src="./src/assets/images/pp-cards/cart.png" alt="">
-            <div id="cart">
-              <a href="11-payWindow.html">
-                <p class="pagar">Pagar ahora</p>
-              </a>
-              <table id="list-carrito" class="u-full-width">
-                <thead>
-                  <tr>
-                    <th class="th-00-index">|Imagen </th>
-                    <th class="th-00-index">|Productos</th>
-                    <th class="th-00-index"> |Precio</th>
-                    <th class="th-00-index"> |Cantidad|</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-              </table>
-              <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- Boton Carrito 
-      <a href="#" class="btn btn-outline-success btn-warning bt-carrito my-3 my-sm-0">
-        <img id="carrito-icon" src="./src/assets/images/carro-de-la-compra.png" width="30" height="30"
-          alt="" /><strong>Carrito</strong>
+      <a class="navbar-brand" href="./index.html">
+        <img src="./src/assets/images/nakamax.png" alt="" height="80" />
       </a>
-      -->
-
 
     </nav>
   </header>
@@ -130,9 +91,9 @@
       </div>
 
       <div class="text-center form-12crud">
-        <h1  class="m-5 ingresa-datos">Ingresa los Siguientes datos de producto</h1>
+        <h1  class="mx-5 ingresa-datos">Ingresa los Siguientes datos de producto</h1>
         <div class="m-5">
-          <input type="text" placeholder="Datos del producto" class="form-control">
+          <input type="text" placeholder="Nombre" class="form-control">
         </div>
         <div class="m-5">
           <input type="text" placeholder="Costo" class="form-control">
@@ -149,17 +110,17 @@
         <!-- Imagen -->
         <div>
           <p>Imagen del Producto</p>
-          <div id="preview" class="styleImage"></div>
-          <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg">
-          <button type="button" class="btn all-btn btn-12crud mb-3 mt-3"
-            onclick="document.getElementById('file').click()">IMAGEN</button>
+          <!-- <div id="user-photo" class="styleImage"></div> -->
+          <img id="user-photo" src="" alt="">
+          <!-- <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg"> -->
+          <button type="button" class="btn all-btn btn-12crud mb-3 mt-3" id="btn-foto">IMAGEN</button>
         </div>
 
       </div>
 
       <!-- fin de imagen -->
       <p>
-        <button class="btn all-btn btn-12crud">AGREGAR</button>
+        <button type="button" class="btn all-btn btn-12crud" id="agregarProducto">AGREGAR</button>
       </p>
     </form>
   </div>
@@ -167,43 +128,56 @@
 
   <!-- Footer -->
   <footer class="container-fluid bg-dark subtitulos">
-    <div class="row justify-content-between pt-2">
-      <div class="col-7">
-        <div class="row d-flex justify-content-around">
-          <div class="col-3"><a class="text-white" href="04-aboutUs">ACERCA DE NOSOTROS</a></div>
-          <div class="col-3"><a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a></div>
-          <div class="col-2"><a class="text-white" href="05-contactUS.html">CONTACTO</a></div>
+    <div class="row pt-2">
+      <div class="col">
+        <div class="row d-flex flex-wrap">
+          <div class="col py-2">
+            <a class="text-white" href="07-acerca-de-nosotros.html">ACERCA DE NOSOTROS</a>
+          </div>
+          <div class="col py-2">
+            <a class="text-white" href="05-contactUS.html">PREGUNTAS Y RESPUESTAS</a>
+          </div>
+          <div class="col py-2">
+            <a class="text-white" href="05-contactUS.html">CONTACTO</a>
+          </div>
         </div>
         <div class="row p-3">
-          <div class="col-2 mx-5">
-            <a href="#inicio"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png"
-                alt="Enlace logo Nakamas" width="150"></a>
+          <div class="col-sm-3 d-flex justify-content-center mx-5">
+            <a href="index.html"><img class="rounded-pill" src="./src/assets/images/logo-nakamas.png"
+                alt="Enlace logo Nakamas" width="150" /></a>
           </div>
         </div>
       </div>
-      <div class="col-2 mx-3">
+      <div class="col-sm-2 m-3">
         <div class="row d-flex justify-content-center">
           <p class="text-white">NUESTRAS REDES SOCIALES</p>
         </div>
         <div class="row d-flex justify-content-center">
           <a href="https://twitter.com/?lang=es" target="_blank"><img class="mx-1"
-              src="./src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30"></a>
+              src="./src/assets/images/logo-twitter.png" alt="Enlace twitter" width="30" height="30" /></a>
           <a href="https://www.facebook.com" target="_blank"><img class="mx-1"
-              src="./src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30"></a>
+              src="./src/assets/images/logo-facebook.png" alt="Enlace twitter" width="30" height="30" /></a>
           <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="mx-1"
-              src="./src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30"></a>
+              src="./src/assets/images/logo-instagram.png" alt="Enlace twitter" width="30" height="30" /></a>
         </div>
       </div>
     </div>
-    <div class="row pb-2">
-      <div class="col d-flex justify-content-end">
+    <div class="row mb-3">
+      <div class="col d-flex justify-content-center">
         <a class="text-white" href="13-termsPrivacy.html">TÉRMINOS Y CONDICIONES</a>
       </div>
       <div class="col">
-        <a class="text-white" href="13-termsPrivacy.html">AVISO DE PRIVACIDAD</a>
+        <a class="text-white" href="13-termsPrivacy.html">AVISO DE PRIVACIDA</a>
       </div>
     </div>
   </footer>
+
+  <!-- CDN sweetalert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Cloudinary -->
+  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+  <script src="./src/assets/js/cloudinary-cargar.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
