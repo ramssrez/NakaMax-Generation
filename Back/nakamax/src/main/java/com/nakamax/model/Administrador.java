@@ -11,7 +11,7 @@ public class Administrador {
     @Column(name = "id_admin")
     private Integer id;
 
-    @Column(name = "nombre")
+    @Column(name = "nombres")
     private String nombre;
 
     @Column(name = "apellido_paterno")

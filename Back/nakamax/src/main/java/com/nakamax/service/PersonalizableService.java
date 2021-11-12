@@ -1,16 +1,18 @@
 package com.nakamax.service;
 
+import com.nakamax.model.Material;
 import com.nakamax.model.Personalizable;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public interface PersonalizableService {
 
     ArrayList<Personalizable> findAll();
 
-    Personalizable getPersonalizable( Integer id );
+    Optional<Personalizable> findById(Integer id);
 
-    Personalizable save( Personalizable personalizable);
+    void save( Personalizable personalizable);
 
     void delete( Integer id );
 }

@@ -1,5 +1,5 @@
 /* Insertar categorias */
-USE nakamas;
+USE nakamax;
 INSERT INTO categorias (descripcion) VALUES ('Personalizable madera');
 INSERT INTO categorias (descripcion) VALUES ('Personalizable metal');
 INSERT INTO categorias (descripcion) VALUES ('Serigrafía');
@@ -138,3 +138,8 @@ INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tard
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('la colección crochet de One Piece le faltan dos personajes, está incompleta', '0', '1', '0', '3');
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('el color de mi funko era verde, no rosa, porque es un regalo para mi sobrino y es niño', '0', '1', '0', '4');
 INSERT INTO nakamax.reportes_producto (descripcion, is_llego, is_danger, is_tardio, id_compra) VALUES ('mi figura de madera viene rota de la base', '0', '1', '0', '5');
+
+INSERT INTO nakamax.personalizables (costo_extra, descripcion, id_material) VALUES ('1500', 'Figura hecha de metal', '2');
+INSERT INTO nakamax.personalizables (costo_extra, descripcion, id_material) VALUES ('2000', 'Figura de madera', '1');
+INSERT INTO nakamax.personalizables (costo_extra, descripcion, id_color) VALUES ('500', 'Figura pequeña de goku', '2');
+INSERT INTO nakamax.personalizables (costo_extra, descripcion, id_size) VALUES ('4000', 'Figura Luffy de resina', '3');

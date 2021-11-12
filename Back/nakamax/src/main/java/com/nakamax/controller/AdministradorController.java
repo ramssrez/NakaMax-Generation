@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
-@CrossOrigin( "*" )
 @RestController
 @RequestMapping("api/usuarios/administradores")
 public class AdministradorController {
