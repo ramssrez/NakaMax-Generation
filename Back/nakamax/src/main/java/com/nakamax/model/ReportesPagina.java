@@ -86,18 +86,20 @@ public class ReportesPagina {
     public void setVendedores(List<Vendedor> vendedores) {
         this.vendedores = vendedores;
     }
-
+  
     public List<Comprador> getCompradores() {
         return compradores;
     }
 
     public void setCompradores(List<Comprador> compradores) {
         this.compradores = compradores;
+
+    }
+  
+   public List<Administrador> getAdministradores () {
+            return administradores;
     }
 
-    public List<Administrador> getAdministradores() {
-        return administradores;
-    }
 
     public void setAdministradores(List<Administrador> administradores) {
         this.administradores = administradores;
