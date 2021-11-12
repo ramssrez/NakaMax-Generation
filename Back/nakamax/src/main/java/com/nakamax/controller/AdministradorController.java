@@ -46,4 +46,5 @@ public class AdministradorController {
     public void update(@RequestBody Administrador administrador) {
         administradorService.save(administrador);
     }
+    //spring.datasource.url=jdbc:mysql://sql337.main-hosting.eu:3306/u612037068_kiss?enabledTLSProtocols=TLSv1.2
 }
