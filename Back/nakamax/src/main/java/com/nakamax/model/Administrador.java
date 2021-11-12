@@ -9,7 +9,7 @@ public class Administrador {
     @Column(name = "id_admin")
     private Integer id;
 
-    @Column(name = "nombres")
+    @Column(name = "nombre")
     private String nombre;
 
     @Column(name = "apellido_paterno")
@@ -42,6 +42,10 @@ public class Administrador {
         return id;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -72,6 +76,10 @@ public class Administrador {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
