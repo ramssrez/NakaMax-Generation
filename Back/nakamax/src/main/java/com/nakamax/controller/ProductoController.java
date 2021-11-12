@@ -17,7 +17,7 @@ public class ProductoController {
     public ProductoController(@Autowired ProductoService productoService) {
         this.productoService = productoService;
     }
-    @GetMapping ("/productos")
+    @GetMapping ("/todos")
     public ArrayList <Producto> getAll() {
         return productoService.findAll();
     }
