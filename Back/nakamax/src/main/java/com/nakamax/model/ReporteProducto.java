@@ -3,6 +3,7 @@ package com.nakamax.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "reportes_producto")
@@ -27,12 +28,25 @@ public class ReporteProducto {
     @OneToOne(mappedBy = "reportes_producto")
     private Compra compras;
 
+
+    @ManyToMany(mappedBy = "reportes_producto")
+    private List<Vendedor> vendedores;
+
     public ReporteProducto(Integer id, String descripcion, int esLlego, int esDañado, int esTardio){
         this.id = id;
         this.descripcion = descripcion;
         this.esLlego = esLlego;
         this.esDañado = esDañado;
         this.esTardio = esTardio;
+    }
+    
+
+    public List<Vendedor> getVendedores() {
+        return vendedores;
+    }
+
+    public void setVendedores(List<Vendedor> vendedores) {
+        this.vendedores = vendedores;
     }
 
     public Integer getId() {

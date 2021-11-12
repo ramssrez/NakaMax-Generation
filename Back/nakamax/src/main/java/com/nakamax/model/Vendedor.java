@@ -27,6 +27,8 @@ public class Vendedor {
     private List<Producto> productos;
 
 
+    //tabla pivote vendedor - reportes página
+
     @JoinTable(
             name = "piv_repo_vend",
             joinColumns = @JoinColumn(name = "fk_vendedor", nullable = false),
@@ -42,6 +44,24 @@ public class Vendedor {
         this.reportes_pagina.add(reportePagina);
     }
 
+    //tabla pivote vendedor - reportes producto
+    @JoinTable(
+            name = "piv_vendedores_rep_producto",
+            joinColumns = @JoinColumn(name = "fk_vendedor", nullable = false),
+            inverseJoinColumns = @JoinColumn(name = "fk_reporte_producto", nullable = false)
+    )
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ReporteProducto> reportes_producto;
+
+    public  void  addReportProduct(ReporteProducto reporteProducto){
+        if(this.reportes_producto == null){
+            this.reportes_producto = new ArrayList<>();
+        }
+        this.reportes_producto.add(reporteProducto);
+    }
+
+    // constructor tabla vendedor
     public Vendedor(){
     }
 
@@ -55,6 +75,14 @@ public class Vendedor {
         this.fechaNacimiento = fechaNacimiento;
         this.telefono = telefono;
         this.reportes_pagina = reportesPaginas;
+    }
+
+    public List<ReporteProducto> getReportes_producto() {
+        return reportes_producto;
+    }
+
+    public void setReportes_producto(List<ReporteProducto> reportes_producto) {
+        this.reportes_producto = reportes_producto;
     }
 
     public Integer getId_vendedor() {
@@ -143,5 +171,13 @@ public class Vendedor {
 
     public void setReportes_pagina(List<ReportesPagina> reportes_pagina) {
         this.reportes_pagina = reportes_pagina;
+    }
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 }

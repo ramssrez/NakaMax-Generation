@@ -1,6 +1,8 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "administradores")
 public class Administrador {
@@ -9,7 +11,7 @@ public class Administrador {
     @Column(name = "id_admin")
     private Integer id;
 
-    @Column(name = "nombre")
+    @Column(name = "nombres")
     private String nombre;
 
     @Column(name = "apellido_paterno")
@@ -24,6 +26,37 @@ public class Administrador {
     private String github;
     private String linkedin;
 
+    @JoinTable(
+            name = "rel_administradores_reportes_pag",
+            joinColumns = @JoinColumn(name = "fk_administrador", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_reporte_pagina", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ReportesPagina> reportes_pagina;
+
+    public void addReport(ReportesPagina reportePagina){
+        if(this.reportes_pagina == null){
+            this.reportes_pagina = new ArrayList<>();
+        }
+        this.reportes_pagina.add(reportePagina);
+    }
+
+    //tabla pivote administrador - contactanos
+    @JoinTable(
+            name = "piv_admin_contactanos",
+            joinColumns = @JoinColumn(name = "fk_admin", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_comentario", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ContactUs> comentarios;
+
+    public void addReport(ContactUs contactUs){
+        if(this.comentarios == null){
+            this.comentarios = new ArrayList<>();
+        }
+        this.comentarios.add(contactUs);
+    }
+
     public Administrador() {
 
     }
@@ -36,6 +69,14 @@ public class Administrador {
         this.correo = correo;
         this.github = github;
         this.linkedin = linkedin;
+    }
+
+    public List<ContactUs> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<ContactUs> comentarios) {
+        this.comentarios = comentarios;
     }
 
     public Integer getId() {
