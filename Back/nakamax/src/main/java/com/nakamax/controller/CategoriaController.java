@@ -10,6 +10,7 @@ import java.util.Optional;
 
 
 @RestController
+@RequestMapping("api/categorias")
 public class CategoriaController {
         private final CategoriaService categoriaService;
 
@@ -18,13 +19,13 @@ public class CategoriaController {
         }
 
         //Obtener lista
-        @GetMapping("/categoria")
+        @GetMapping("/todas")
         public ArrayList<Categoria> getAll () {
             return categoriaService.findAll();
         }
 
         //Obtener por ID
-        @GetMapping ("/categoria/{id}")
+        @GetMapping ("/{id}")
         public Optional<Categoria> getById (@PathVariable Integer id) {
             return categoriaService.findById(id);
         }

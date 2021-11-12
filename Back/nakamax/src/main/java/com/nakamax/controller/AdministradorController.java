@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
-@CrossOrigin( "*" )
 @RestController
-@RequestMapping("api/usuarios/administradores")
+@RequestMapping("api/usuarios/administrador")
 public class AdministradorController {
     private final AdministradorService administradorService;
 
@@ -26,7 +25,7 @@ public class AdministradorController {
     }
 
     //Implementación de la ruta que obtiene los datos de usuario
-    @GetMapping("/admin/{id}")
+    @GetMapping("/{id}")
     public Administrador getAdministrador(@PathVariable Integer id){
         return administradorService.getAdministrador(id);
     }
