@@ -11,7 +11,6 @@ import javax.persistence.Id;
 public class Color {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-
     private Integer id_color;
 
     private String color;
