@@ -1,6 +1,7 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "personalizables")
 public class Personalizable {
@@ -9,10 +10,18 @@ public class Personalizable {
     private Integer id_personalizable;
     private Float costo_extra;
     private String descripcion;
-    private Integer id_color;
-    private Integer id_material;
-    private Integer id_size;
 
+    @OneToMany(mappedBy = "personalizables")
+    private List<Producto> productos;
+
+    @ManyToOne
+    private Color colores;
+
+    @ManyToOne
+    private Material materiales;
+
+    @ManyToOne
+    private Size sizes;
 
     public Integer getId_personalizable() {
         return id_personalizable;
@@ -38,27 +47,35 @@ public class Personalizable {
         this.descripcion = descripcion;
     }
 
-    public Integer getId_color() {
-        return id_color;
+    public List<Producto> getProductos() {
+        return productos;
     }
 
-    public void setId_color(Integer id_color) {
-        this.id_color = id_color;
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 
-    public Integer getId_material() {
-        return id_material;
+    public Color getColores() {
+        return colores;
     }
 
-    public void setId_material(Integer id_material) {
-        this.id_material = id_material;
+    public void setColores(Color colores) {
+        this.colores = colores;
     }
 
-    public Integer getId_size() {
-        return id_size;
+    public Material getMateriales() {
+        return materiales;
     }
 
-    public void setId_size(Integer id_size) {
-        this.id_size = id_size;
+    public void setMateriales(Material materiales) {
+        this.materiales = materiales;
+    }
+
+    public Size getSizes() {
+        return sizes;
+    }
+
+    public void setSizes(Size sizes) {
+        this.sizes = sizes;
     }
 }
