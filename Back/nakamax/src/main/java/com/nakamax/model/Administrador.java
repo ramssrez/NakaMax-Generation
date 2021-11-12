@@ -40,7 +40,7 @@ public class Administrador {
         }
         this.reportes_pagina.add(reportePagina);
     }
-    
+
     //tabla pivote administrador - contactanos
     @JoinTable(
             name = "piv_admin_contactanos",
