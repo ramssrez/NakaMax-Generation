@@ -1,6 +1,7 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "vendedores")
@@ -22,13 +23,25 @@ public class Vendedor {
 
     private String telefono;
 
-    @ManyToMany
-    private List<ReportesPagina> ids;
+    @JoinTable(
+            name = "rel_vendedores_reportes",
+            joinColumns = @JoinColumn(name = "fk_vendedor", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_reporte", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ReportesPagina> reportes_pagina;
+
+    public void addReport(ReportesPagina reportePagina){
+        if(this.reportes_pagina == null){
+            this.reportes_pagina = new ArrayList<>();
+        }
+        this.reportes_pagina.add(reportePagina);
+    }
 
     public Vendedor(){
     }
 
-    public Vendedor(Integer id_vendedor, String nombre, String apellidos, String rfc, String correo, String password, String fechaNacimiento, String telefono) {
+    public Vendedor(Integer id_vendedor, String nombre, String apellidos, String rfc, String correo, String password, String fechaNacimiento, String telefono, List<ReportesPagina> reportesPaginas) {
         this.id_vendedor = id_vendedor;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -37,6 +50,7 @@ public class Vendedor {
         this.password = password;
         this.fechaNacimiento = fechaNacimiento;
         this.telefono = telefono;
+        this.reportes_pagina = reportesPaginas;
     }
 
     public Integer getId_vendedor() {
@@ -101,5 +115,13 @@ public class Vendedor {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public List<ReportesPagina> getReportesPaginas() {
+        return reportes_pagina;
+    }
+
+    public void setReportesPaginas(List<ReportesPagina> reportesPaginas) {
+        this.reportes_pagina = reportesPaginas;
     }
 }
