@@ -1,6 +1,7 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "comentarios_contac_us")
 public class ContactUs {
@@ -14,6 +15,9 @@ public class ContactUs {
     private String phone;
     private String comentario;
 
+    @ManyToMany(mappedBy = "comentarios")
+    private List<Administrador> administradores;
+
     public ContactUs() {
 
     }
@@ -24,6 +28,14 @@ public class ContactUs {
         this.correo = correo;
         this.phone = phone;
         this.comentario = comentario;
+    }
+
+    public List<Administrador> getAdministradores() {
+        return administradores;
+    }
+
+    public void setAdministradores(List<Administrador> administradores) {
+        this.administradores = administradores;
     }
 
     public Integer getIdComentario() {
