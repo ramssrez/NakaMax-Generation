@@ -1,6 +1,8 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "administradores")
 public class Administrador {
@@ -24,6 +26,22 @@ public class Administrador {
     private String github;
     private String linkedin;
 
+    //tabla pivote administrador - contactanos
+    @JoinTable(
+            name = "piv_admin_contactanos",
+            joinColumns = @JoinColumn(name = "fk_admin", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_comentario", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ContactUs> comentarios;
+
+    public void addReport(ContactUs contactUs){
+        if(this.comentarios == null){
+            this.comentarios = new ArrayList<>();
+        }
+        this.comentarios.add(contactUs);
+    }
+
     public Administrador() {
 
     }
@@ -36,6 +54,14 @@ public class Administrador {
         this.correo = correo;
         this.github = github;
         this.linkedin = linkedin;
+    }
+
+    public List<ContactUs> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<ContactUs> comentarios) {
+        this.comentarios = comentarios;
     }
 
     public Integer getId() {
