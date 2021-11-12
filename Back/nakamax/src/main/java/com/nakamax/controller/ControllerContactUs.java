@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("api/comentarios")
 public class ControllerContactUs {
     private final ContactUsService contactUsService;
 
@@ -18,7 +19,7 @@ public class ControllerContactUs {
     }
 
     //Obtiene los comentarios de los usuarios
-    @GetMapping("/comentarios")
+    @GetMapping("/todos")
     public ArrayList<ContactUs> getAll(){
         return contactUsService.findAll();
     }
@@ -29,18 +30,18 @@ public class ControllerContactUs {
         return contactUsService.findById(id);
     }
 
-    @PostMapping("/comentario")
+    @PostMapping("/crea")
     public void save(@RequestBody ContactUs contactUs){
         contactUsService.saveContactUs(contactUs);
     }
 
-    @PutMapping("/comentario")
+    @PutMapping("/actualiza")
     public void update(@RequestBody ContactUs contactUs)
     {
         contactUsService.saveContactUs(contactUs);
     }
 
-    @DeleteMapping("/comentario/{id}")
+    @DeleteMapping("/borra-comentario/{id}")
     public void delete(@PathVariable Integer id)
     {
         contactUsService.delete(id);

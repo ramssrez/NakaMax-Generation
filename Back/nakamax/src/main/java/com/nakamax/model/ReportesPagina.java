@@ -1,6 +1,7 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "reportes_pagina")
 public class ReportesPagina {
@@ -17,6 +18,9 @@ public class ReportesPagina {
 
     @Column(name = "is_link_down", nullable = true)
     private int esLinkCaido;
+
+    @ManyToMany
+    private List<Vendedor> ids;
 
     public ReportesPagina(){
     }

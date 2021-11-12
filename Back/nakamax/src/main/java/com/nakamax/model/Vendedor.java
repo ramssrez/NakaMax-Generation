@@ -1,6 +1,7 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "vendedores")
 public class Vendedor {
@@ -20,6 +21,9 @@ public class Vendedor {
     private String fechaNacimiento;
 
     private String telefono;
+
+    @ManyToMany
+    private List<ReportesPagina> ids;
 
     public Vendedor(){
     }

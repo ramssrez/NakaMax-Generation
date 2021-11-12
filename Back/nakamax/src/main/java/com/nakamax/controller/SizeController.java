@@ -11,9 +11,13 @@ public class SizeController {
 
     private final SizeService sizeService;
 
-    public SizeController(@Autowired SizeService sizeService) this.sizeService = sizeService;
-        @GetMapping ("/size")
-    public ArrayList <Size> getAll ();
+    public SizeController(@Autowired SizeService sizeService) {
+        this.sizeService = sizeService;
+    }
+
+
+    //@GetMapping("/size")
+        //public ArrayList<Size> getAll (){}
 
 
 
