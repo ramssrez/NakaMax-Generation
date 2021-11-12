@@ -12,10 +12,6 @@ public class SizeController {
         this.sizeService = sizeService;
     }
 
-    //@GetMapping("/size")
-    //public ArrayList <Size> getAll () {
-      //  return.sizeService.findAll();
-   // }
 
 
 
