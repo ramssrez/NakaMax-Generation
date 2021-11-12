@@ -1,9 +1,11 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "reportes_pagina")
 public class ReportesPagina {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_reporte_pag", nullable = false)
@@ -18,6 +20,9 @@ public class ReportesPagina {
     @Column(name = "is_link_down", nullable = true)
     private int esLinkCaido;
 
+    @ManyToMany(mappedBy = "reportes_pagina")
+    private List<Vendedor> vendedores;
+
     public ReportesPagina(){
     }
 
@@ -26,6 +31,14 @@ public class ReportesPagina {
         this.descripcion = descripcion;
         this.esGeneral = esGeneral;
         this.esLinkCaido = esLinkCaido;
+    }
+
+    public ReportesPagina(Integer id, String descripcion, int esGeneral, int esLinkCaido, List<Vendedor> vendedores) {
+        this.id = id;
+        this.descripcion = descripcion;
+        this.esGeneral = esGeneral;
+        this.esLinkCaido = esLinkCaido;
+        this.vendedores = vendedores;
     }
 
     public Integer getId() {
@@ -58,5 +71,13 @@ public class ReportesPagina {
 
     public void setEsLinkCaido(int esLinkCaido) {
         this.esLinkCaido = esLinkCaido;
+    }
+
+    public List<Vendedor> getVendedores() {
+        return vendedores;
+    }
+
+    public void setVendedores(List<Vendedor> vendedores) {
+        this.vendedores = vendedores;
     }
 }

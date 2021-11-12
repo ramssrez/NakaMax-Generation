@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 @CrossOrigin( "*" )
 @RestController
+@RequestMapping("api/usuarios/administradores")
 public class AdministradorController {
     private final AdministradorService administradorService;
 
@@ -19,7 +20,7 @@ public class AdministradorController {
     }
 
     //Implementación del método que muestra los administradores
-    @GetMapping( "/admins" )
+    @GetMapping( "/todos" )
     public ArrayList<Administrador> getAdministradores() {
         return administradorService.findAll();
     }
@@ -31,18 +32,18 @@ public class AdministradorController {
     }
 
     //Implementación de la ruta para que se cree un nuevo administrador
-    @PostMapping("/admin")
+    @PostMapping("/crea")
     public Administrador save(@RequestBody Administrador administrador){
         return administradorService.save(administrador);
     }
 
     //Implementación de la ruta para que se elimine un administrador de la base de datos
-    @DeleteMapping("/admin/{id}")
+    @DeleteMapping("/borra-admin/{id}")
     public void delete(@PathVariable Integer id) {
         administradorService.delete(id);
     }
 
-    @PutMapping("/admin")
+    @PutMapping("/actualiza")
     public void update(@RequestBody Administrador administrador) {
         administradorService.save(administrador);
     }
