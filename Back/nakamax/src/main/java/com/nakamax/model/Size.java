@@ -1,9 +1,7 @@
 package com.nakamax.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity (name = "sizes")
 
@@ -18,6 +16,9 @@ public class Size {
 
     private float precio;
 
+    @OneToMany
+    private List<Personalizable> personalizables;
+
     public Size(Integer id_size, String size, float precio) {
         this.id_size = id_size;
         this.size = size;
@@ -25,8 +26,8 @@ public class Size {
     }
 
     public Size () {
-
     }
+
 
     public Integer getId_size() {
         return id_size;
@@ -50,5 +51,13 @@ public class Size {
 
     public void setPrecio(float precio) {
         this.precio = precio;
+    }
+
+    public List<Personalizable> getPersonalizables() {
+        return personalizables;
+    }
+
+    public void setPersonalizables(List<Personalizable> personalizables) {
+        this.personalizables = personalizables;
     }
 }

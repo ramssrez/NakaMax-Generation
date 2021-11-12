@@ -23,6 +23,9 @@ public class ReportesPagina {
     @ManyToMany(mappedBy = "reportes_pagina")
     private List<Vendedor> vendedores;
 
+    @ManyToMany(mappedBy = "reportes_pagina")
+    private List<Comprador> compradores;
+
     public ReportesPagina(){
     }
 
@@ -79,5 +82,13 @@ public class ReportesPagina {
 
     public void setVendedores(List<Vendedor> vendedores) {
         this.vendedores = vendedores;
+    }
+
+    public List<Comprador> getCompradores() {
+        return compradores;
+    }
+
+    public void setCompradores(List<Comprador> compradores) {
+        this.compradores = compradores;
     }
 }

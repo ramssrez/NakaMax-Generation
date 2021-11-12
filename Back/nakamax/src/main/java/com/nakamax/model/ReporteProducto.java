@@ -24,9 +24,8 @@ public class ReporteProducto {
     @Column(name = "is_tardio", nullable = true)
     private int esTardio;
 
-    @JsonIgnore
-    @Column(name = "id_compra")
-    private Integer compra;
+    @OneToOne(mappedBy = "reportes_producto")
+    private Compra compras;
 
     public ReporteProducto(Integer id, String descripcion, int esLlego, int esDañado, int esTardio){
         this.id = id;

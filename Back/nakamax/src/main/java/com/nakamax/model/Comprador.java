@@ -1,6 +1,8 @@
 package com.nakamax.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "compradores")
 public class Comprador {
@@ -15,6 +17,24 @@ public class Comprador {
     private String password;
     @Column(name = "fecha_nacimiento")
     private String fechaNacimiento;
+
+    @OneToMany(mappedBy = "compradores")
+    private List<Compra> compras;
+
+    @JoinTable(
+            name = "piv_repo_comp",
+            joinColumns = @JoinColumn(name = "fk_comprador", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="fk_reporte", nullable = false)
+    )
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<ReportesPagina> reportes_pagina;
+
+    public void addReport(ReportesPagina reportePagina){
+        if(this.reportes_pagina == null){
+            this.reportes_pagina = new ArrayList<>();
+        }
+        this.reportes_pagina.add(reportePagina);
+    }
 
     public Comprador(){
     }
@@ -91,5 +111,21 @@ public class Comprador {
 
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
+    }
+
+    public List<ReportesPagina> getReportes_pagina() {
+        return reportes_pagina;
+    }
+
+    public void setReportes_pagina(List<ReportesPagina> reportes_pagina) {
+        this.reportes_pagina = reportes_pagina;
     }
 }

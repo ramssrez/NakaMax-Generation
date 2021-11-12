@@ -23,8 +23,12 @@ public class Vendedor {
 
     private String telefono;
 
+    @OneToMany
+    private List<Producto> productos;
+
+
     @JoinTable(
-            name = "rel_vendedores_reportes",
+            name = "piv_repo_vend",
             joinColumns = @JoinColumn(name = "fk_vendedor", nullable = false),
             inverseJoinColumns = @JoinColumn(name="fk_reporte", nullable = false)
     )
@@ -123,5 +127,21 @@ public class Vendedor {
 
     public void setReportesPaginas(List<ReportesPagina> reportesPaginas) {
         this.reportes_pagina = reportesPaginas;
+    }
+
+    public List<Producto> getProducto() {
+        return productos;
+    }
+
+    public void setProducto(List<Producto> producto) {
+        this.productos = producto;
+    }
+
+    public List<ReportesPagina> getReportes_pagina() {
+        return reportes_pagina;
+    }
+
+    public void setReportes_pagina(List<ReportesPagina> reportes_pagina) {
+        this.reportes_pagina = reportes_pagina;
     }
 }
