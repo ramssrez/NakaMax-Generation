@@ -24,8 +24,9 @@ public class ReportesPagina {
     private List<Vendedor> vendedores;
 
     @ManyToMany(mappedBy = "reportes_pagina")
-
     private List<Comprador> compradores;
+
+    @ManyToMany(mappedBy = "reportes_pagina")
     private List<Administrador> administradores;
 
     public ReportesPagina(){
@@ -85,18 +86,19 @@ public class ReportesPagina {
     public void setVendedores(List<Vendedor> vendedores) {
         this.vendedores = vendedores;
     }
-
-
+  
     public List<Comprador> getCompradores() {
         return compradores;
     }
 
     public void setCompradores(List<Comprador> compradores) {
         this.compradores = compradores;
+
     }
-        public List<Administrador> getAdministradores () {
+  
+   public List<Administrador> getAdministradores () {
             return administradores;
-        }
+    }
 
 
     public void setAdministradores(List<Administrador> administradores) {
