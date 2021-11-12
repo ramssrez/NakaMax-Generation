@@ -25,8 +25,9 @@ public class ReporteProducto {
     @Column(name = "is_tardio", nullable = true)
     private int esTardio;
 
-    @Column(name = "id_compra")
-    private Integer compra;
+    @OneToOne(mappedBy = "reportes_producto")
+    private Compra compras;
+
 
     @ManyToMany(mappedBy = "reportes_producto")
     private List<Vendedor> vendedores;
@@ -38,14 +39,7 @@ public class ReporteProducto {
         this.esDañado = esDañado;
         this.esTardio = esTardio;
     }
-
-    public Integer getCompra() {
-        return compra;
-    }
-
-    public void setCompra(Integer compra) {
-        this.compra = compra;
-    }
+    
 
     public List<Vendedor> getVendedores() {
         return vendedores;

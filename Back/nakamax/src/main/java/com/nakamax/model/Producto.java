@@ -1,9 +1,7 @@
 package com.nakamax.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity (name="productos")
 
@@ -27,6 +25,12 @@ public class Producto {
     private Integer id_vendedor;
 
     private Integer id_personalizable;
+
+    @ManyToOne
+    private Vendedor vendedores;
+
+    @ManyToOne
+    private Personalizable personalizables;
 
     public Producto(Integer id_producto, String nombre, float costo, String descripcion, String imagen, Integer stock, Integer personalizable, Integer id_vendedor, Integer id_personalizable) {
         this.id_producto = id_producto;
@@ -114,5 +118,21 @@ public class Producto {
 
     public void setId_personalizable(Integer id_personalizable) {
         this.id_personalizable = id_personalizable;
+    }
+
+    public Vendedor getVendedores() {
+        return vendedores;
+    }
+
+    public void setVendedores(Vendedor vendedores) {
+        this.vendedores = vendedores;
+    }
+
+    public Personalizable getPersonalizables() {
+        return personalizables;
+    }
+
+    public void setPersonalizables(Personalizable personalizables) {
+        this.personalizables = personalizables;
     }
 }
