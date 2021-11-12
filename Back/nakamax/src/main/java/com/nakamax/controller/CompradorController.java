@@ -10,14 +10,14 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/compradores")
+@RequestMapping("api/usuarios/compradores")
 public class CompradorController {
     private final CompradorService compradorService;
 
     public CompradorController(@Autowired CompradorService compradorService) {
         this.compradorService = compradorService;
     }
-    @GetMapping("/compradores")
+    @GetMapping("/todos")
     public ArrayList<Comprador> getAll(){
         return compradorService.findAll();
     }
@@ -25,18 +25,18 @@ public class CompradorController {
     public Optional<Comprador> getById(@PathVariable Integer id){
         return compradorService.findById(id);
     }
-    @PostMapping("/comprador")
+    @PostMapping("/crea")
     public void save(@RequestBody Comprador comprador){
         compradorService.saveComprador(comprador);
     }
 
-    @PutMapping("/comprador")
+    @PutMapping("/actualiza")
     public void update(@RequestBody Comprador comprador)
     {
         compradorService.saveComprador(comprador);
     }
 
-    @DeleteMapping("/comprador/{id}")
+    @DeleteMapping("/borra-comprador/{id}")
     public void delete(@PathVariable Integer id)
     {
         compradorService.delete(id);

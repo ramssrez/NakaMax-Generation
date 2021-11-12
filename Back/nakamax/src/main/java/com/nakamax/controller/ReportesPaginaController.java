@@ -17,12 +17,12 @@ public class ReportesPaginaController {
         this.reportesPaginaService = reportesPaginaService;
     }
 
-    @PostMapping("/nuevo")
+    @PostMapping("/crea")
     public ReportesPagina reportesPagina(@RequestBody ReportesPagina reportesPagina){
         return reportesPaginaService.save(reportesPagina);
     }
 
-    @GetMapping("/reportes")
+    @GetMapping("/todos")
     public ArrayList<ReportesPagina> reportes(){
         return reportesPaginaService.findAll();
     }
@@ -32,7 +32,7 @@ public class ReportesPaginaController {
         return reportesPaginaService.findById(id);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("borra/{id}")
     public String delete(@PathVariable Integer id){
         reportesPaginaService.delete(id);
         return "Borrado";

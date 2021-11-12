@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("api/usuarios/vendedores")
 public class VendedorController {
 
     private final VendedorService vendedorService;
@@ -17,7 +18,7 @@ public class VendedorController {
         this.vendedorService = vendedorService;
     }
 
-    @GetMapping("/vendedores")
+    @GetMapping("/todos")
     public ArrayList<Vendedor> getAll(){
         return vendedorService.findAll();
     }
@@ -27,18 +28,18 @@ public class VendedorController {
         return vendedorService.findById(id);
     }
 
-    @PostMapping("/vendedor")
+    @PostMapping("/crea")
     public void save(@RequestBody Vendedor vendedor){
         vendedorService.saveVendedor(vendedor);
     }
 
-    @PutMapping("/vendedor")
+    @PutMapping("/actualiza")
     public void update(@RequestBody Vendedor student)
     {
         vendedorService.saveVendedor(student);
     }
 
-    @DeleteMapping("/vendedor/{id}")
+    @DeleteMapping("/borra-vendedor/{id}")
     public void delete(@PathVariable Integer id)
     {
         vendedorService.delete(id);

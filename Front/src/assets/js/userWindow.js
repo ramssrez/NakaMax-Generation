@@ -204,3 +204,21 @@ $uWbuttonEditRegion.addEventListener('click',()=>{
         $inputRegion.removeChild(desplegable);
     })
 })
+
+//agregando boton dar de alta producto si es vendedor
+const agregarProducto = document.querySelector('#agregarProducto');
+
+// Creación de boton general: agregar producto 
+const btnAgregar = document.createElement('button');
+btnAgregar.type = 'button';
+btnAgregar.innerText = "AGREGAR PRODUCTO";
+btnAgregar.className = 'uWbtn btn m-2';
+
+const esvendedor = true;
+if(esvendedor){
+    agregarProducto.appendChild(btnAgregar);
+}
+
+btnAgregar.addEventListener('click',()=>{
+    window.location.href = "./12-altaProducto.html";
+})
