@@ -31,19 +31,19 @@ public class CategoriaController {
         }
 
         //Guardar
-        @PostMapping("/categoria")
+        @PostMapping("/crea")
         public void saveCategoria (@RequestBody Categoria categoria){
             categoriaService.saveCategoria(categoria);
         }
 
         //Borrar
-        @DeleteMapping ("/categoria/{id}")
+        @DeleteMapping ("/borra-categoria/{id}")
         public void deleteCategoria (@PathVariable Integer id) {
             categoriaService.deleteCategoria(id);
         }
 
         //Actualizar
-        @PutMapping ("/categoria")
+        @PutMapping ("/actualiza")
         public void updateCategoria (@RequestBody Categoria categoria) {
             categoriaService.saveCategoria(categoria);
         }
